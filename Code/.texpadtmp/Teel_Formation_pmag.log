@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  12 APR 2016 15:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015) (preloaded format=pdflatex 2015.5.24)  13 APR 2016 17:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -23,7 +23,9 @@ File: size11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
 \abovecaptionskip=\skip41
 \belowcaptionskip=\skip42
 \bibindent=\dimen102
-) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+ (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
  (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/keyval.sty
 Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
@@ -47,15 +49,23 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 ))
 \Gin@req@height=\dimen103
 \Gin@req@width=\dimen104
+) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\c@r@tfl@t=\count88
+\rotFPtop=\skip43
+\rotFPbot=\skip44
+\rot@float@box=\box26
+\rot@mess@toks=\toks15
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/adjustbox.sty
 Package: adjustbox 2012/05/21 v1.0 Adjusting TeX boxes (trim, clip, ...)
  (/usr/local/texlive/2015/texmf-dist/tex/latex/xkeyval/xkeyval.sty
 Package: xkeyval 2014/12/03 v2.7a package option processing (HA)
  (/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkeyval.tex (/usr/local/texlive/2015/texmf-dist/tex/generic/xkeyval/xkvutils.tex
-\XKV@toks=\toks15
-\XKV@tempa@toks=\toks16
+\XKV@toks=\toks16
+\XKV@tempa@toks=\toks17
 )
-\XKV@depth=\count88
+\XKV@depth=\count89
 File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
 )) (/usr/local/texlive/2015/texmf-dist/tex/latex/adjustbox/adjcalc.sty
 Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
@@ -63,7 +73,7 @@ Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-
 Package: trimclip 2012/05/16 v1.0 Trim and clip general TeX material
  (/usr/local/texlive/2015/texmf-dist/tex/latex/collectbox/collectbox.sty
 Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
-\collectedbox=\box26
+\collectedbox=\box27
 )
 \tc@llx=\dimen105
 \tc@lly=\dimen106
@@ -79,11 +89,11 @@ File: tc-pdftex.def 2012/05/13 v1.0 Clipping driver for pdftex
 \adjbox@Totalheight=\dimen112
  (/usr/local/texlive/2015/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty
 Package: ifoddpage 2011/09/13 v1.0 Conditionals for odd/even page detection
-\c@checkoddpage=\count89
+\c@checkoddpage=\count90
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/varwidth/varwidth.sty
 Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
-\@vwid@box=\box27
-\sift@deathcycles=\count90
+\@vwid@box=\box28
+\sift@deathcycles=\count91
 \@vwid@loff=\dimen113
 \@vwid@roff=\dimen114
 )) (/usr/local/texlive/2015/texmf-dist/tex/latex/graphics/color.sty
@@ -94,7 +104,7 @@ File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 Package color Info: Driver file: pdftex.def on input line 142.
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2014/10/28 v3.00 enumerate extensions (DPC)
-\@enLab=\toks17
+\@enLab=\toks18
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/geometry/geometry.sty
 Package: geometry 2010/09/12 v5.6 Page Geometry
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/ifpdf.sty
@@ -106,9 +116,9 @@ Package ifvtex Info: VTeX not detected.
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 )
-\Gm@cnth=\count91
-\Gm@cntv=\count92
-\c@Gm@tempcnt=\count93
+\Gm@cnth=\count92
+\Gm@cntv=\count93
+\c@Gm@tempcnt=\count94
 \Gm@bindingoffset=\dimen115
 \Gm@wd@mp=\dimen116
 \Gm@odd@mp=\dimen117
@@ -117,17 +127,17 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 \Gm@layoutheight=\dimen120
 \Gm@layouthoffset=\dimen121
 \Gm@layoutvoffset=\dimen122
-\Gm@dimlist=\toks18
+\Gm@dimlist=\toks19
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsmath.sty
 Package: amsmath 2013/01/14 v2.14 AMS math features
-\@mathmargin=\skip43
+\@mathmargin=\skip45
 
 For additional information on amsmath, use the `?' option.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amstext.sty
 Package: amstext 2000/06/29 v2.01
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
-\@emptytoks=\toks19
+\@emptytoks=\toks20
 \ex@=\dimen123
 )) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
@@ -135,41 +145,41 @@ Package: amsbsy 1999/11/29 v1.2d
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count94
+\inf@bad=\count95
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count95
-\leftroot@=\count96
+\uproot@=\count96
+\leftroot@=\count97
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count97
-\DOTSCASE@=\count98
+\classnum@=\count98
+\DOTSCASE@=\count99
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box28
-\strutbox@=\box29
+\Mathstrutbox@=\box29
+\strutbox@=\box30
 \big@size=\dimen125
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
-\tag@help=\toks20
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
-\andhelp@=\toks21
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
+\tag@help=\toks21
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
+\andhelp@=\toks22
 \eqnshift@=\dimen126
 \alignsep@=\dimen127
 \tagshift@=\dimen128
 \tagwidth@=\dimen129
 \totwidth@=\dimen130
 \lineht@=\dimen131
-\@envbody=\toks22
-\multlinegap=\skip44
-\multlinetaggap=\skip45
-\mathdisplay@stack=\toks23
+\@envbody=\toks23
+\multlinegap=\skip46
+\multlinetaggap=\skip47
+\mathdisplay@stack=\toks24
 LaTeX Info: Redefining \[ on input line 2665.
 LaTeX Info: Redefining \] on input line 2666.
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/amssymb.sty
@@ -182,30 +192,30 @@ LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
 (Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
 )) (/usr/local/texlive/2015/texmf-dist/tex/latex/eurosym/eurosym.sty
 Package: eurosym 1998/08/06 v1.1 European currency symbol ``Euro''
-\@eurobox=\box30
+\@eurobox=\box31
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/ucs.sty
 Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
  (/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count106
-\uc@combtoks=\toks24
-\uc@combtoksb=\toks25
-\uc@temptokena=\toks26
+\uc@secondtry=\count107
+\uc@combtoks=\toks25
+\uc@combtoksb=\toks26
+\uc@temptokena=\toks27
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2015/03/17 v1.2c Input encoding file
-\inpenc@prehook=\toks27
-\inpenc@posthook=\toks28
+\inpenc@prehook=\toks28
+\inpenc@posthook=\toks29
  (/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/utf8x.def
 File: utf8x.def 2004/10/17 UCS: Input encoding UTF-8
 )) (/usr/local/texlive/2015/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
 Package: fancyvrb 2008/02/07
  Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix <2008/02/07> (tvz)
-\FV@CodeLineNo=\count107
+\FV@CodeLineNo=\count108
 \FV@InFile=\read1
-\FV@TabBox=\box31
-\c@FancyVerbLine=\count108
-\FV@StepNumber=\count109
+\FV@TabBox=\box32
+\c@FancyVerbLine=\count109
+\FV@StepNumber=\count110
 \FV@OutFile=\write3
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grffile.sty
 Package: grffile 2012/04/05 v1.16 Extended file name support for graphics (HO)
@@ -269,12 +279,12 @@ Package: hycolor 2011/01/30 v1.7 Color options for hyperref/bookmark (HO)
 Package: auxhook 2011/03/04 v1.3 Hooks for auxiliary files (HO)
 )
 \@linkdim=\dimen132
-\Hy@linkcounter=\count110
-\Hy@pagecounter=\count111
+\Hy@linkcounter=\count111
+\Hy@pagecounter=\count112
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/pd1enc.def
 File: pd1enc.def 2012/11/06 v6.83m Hyperref: PDFDocEncoding definition (HO)
 )
-\Hy@SavedSpaceFactor=\count112
+\Hy@SavedSpaceFactor=\count113
  (/usr/local/texlive/2015/texmf-dist/tex/latex/latexconfig/hyperref.cfg
 File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
 )
@@ -285,14 +295,14 @@ Package hyperref Info: Plain pages OFF on input line 4458.
 Package hyperref Info: Backreferencing OFF on input line 4463.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4688.
-\c@Hy@tempcnt=\count113
+\c@Hy@tempcnt=\count114
  (/usr/local/texlive/2015/texmf-dist/tex/latex/url/url.sty
 \Urlmuskip=\muskip11
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 5041.
 \XeTeXLinkMargin=\dimen133
-\Fld@menulength=\count114
+\Fld@menulength=\count115
 \Field@Width=\dimen134
 \Fld@charsize=\dimen135
 Package hyperref Info: Hyper figures OFF on input line 6295.
@@ -304,39 +314,39 @@ Package hyperref Info: Link coloring with OCG OFF on input line 6320.
 Package hyperref Info: PDF/A mode OFF on input line 6325.
 LaTeX Info: Redefining \ref on input line 6365.
 LaTeX Info: Redefining \pageref on input line 6369.
-\Hy@abspage=\count115
-\c@Item=\count116
-\c@Hfootnote=\count117
+\Hy@abspage=\count116
+\c@Item=\count117
+\c@Hfootnote=\count118
 )
 
 Package hyperref Message: Driver (autodetected): hpdftex.
 
 (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/hpdftex.def
 File: hpdftex.def 2012/11/06 v6.83m Hyperref driver for pdfTeX
-\Fld@listcount=\count118
-\c@bookmark@seq@number=\count119
+\Fld@listcount=\count119
+\c@bookmark@seq@number=\count120
  (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
 Package: rerunfilecheck 2011/04/15 v1.7 Rerun checks for auxiliary files (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 282.
 )
-\Hy@SectionHShift=\skip46
+\Hy@SectionHShift=\skip48
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/tools/longtable.sty
 Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
-\LTleft=\skip47
-\LTright=\skip48
-\LTpre=\skip49
-\LTpost=\skip50
-\LTchunksize=\count120
+\LTleft=\skip49
+\LTright=\skip50
+\LTpre=\skip51
+\LTpost=\skip52
+\LTchunksize=\count121
 \LTcapwidth=\dimen136
-\LT@head=\box32
-\LT@firsthead=\box33
-\LT@foot=\box34
-\LT@lastfoot=\box35
-\LT@cols=\count121
-\LT@rows=\count122
-\c@LT@tables=\count123
-\c@LT@chunks=\count124
-\LT@p@ftn=\toks29
+\LT@head=\box33
+\LT@firsthead=\box34
+\LT@foot=\box35
+\LT@lastfoot=\box36
+\LT@cols=\count122
+\LT@rows=\count123
+\c@LT@tables=\count124
+\c@LT@chunks=\count125
+\LT@p@ftn=\toks30
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/booktabs/booktabs.sty
 Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \heavyrulewidth=\dimen137
@@ -349,62 +359,62 @@ Package: booktabs 2005/04/14 v1.61803 publication quality tables
 \cmidrulesep=\dimen144
 \cmidrulekern=\dimen145
 \defaultaddspace=\dimen146
-\@cmidla=\count125
-\@cmidlb=\count126
+\@cmidla=\count126
+\@cmidlb=\count127
 \@aboverulesep=\dimen147
 \@belowrulesep=\dimen148
-\@thisruleclass=\count127
-\@lastruleclass=\count128
+\@thisruleclass=\count128
+\@lastruleclass=\count129
 \@thisrulewidth=\dimen149
 ) (/usr/local/texlive/2015/texmf-dist/tex/generic/ulem/ulem.sty
-\UL@box=\box36
-\UL@hyphenbox=\box37
-\UL@skip=\skip51
-\UL@hook=\toks30
+\UL@box=\box37
+\UL@hyphenbox=\box38
+\UL@skip=\skip53
+\UL@hook=\toks31
 \UL@height=\dimen150
-\UL@pe=\count129
+\UL@pe=\count130
 \UL@pixel=\dimen151
-\ULC@box=\box38
+\ULC@box=\box39
 Package: ulem 2012/05/18
 \ULdepth=\dimen152
 )
-Package color Info: Redefining color red on input line 54.
-Package color Info: Redefining color green on input line 55.
-Package color Info: Redefining color blue on input line 57.
-Package color Info: Redefining color cyan on input line 59.
-Package color Info: Redefining color lightgray on input line 60.
-Package hyperref Info: Option `breaklinks' set `true' on input line 239.
-Package hyperref Info: Option `colorlinks' set `true' on input line 239.
- (/Users/taylorkilian/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.aux)
+Package color Info: Redefining color red on input line 56.
+Package color Info: Redefining color green on input line 57.
+Package color Info: Redefining color blue on input line 59.
+Package color Info: Redefining color cyan on input line 61.
+Package color Info: Redefining color lightgray on input line 62.
+Package hyperref Info: Option `breaklinks' set `true' on input line 241.
+Package hyperref Info: Option `colorlinks' set `true' on input line 241.
+ (/Users/Laurentia/0000_Github/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.aux)
 \openout1 = `Teel_Formation_pmag.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 246.
-LaTeX Font Info:    ... okay on input line 246.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 248.
+LaTeX Font Info:    ... okay on input line 248.
  (/usr/local/texlive/2015/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count130
+\scratchcounter=\count131
 \scratchdimen=\dimen153
-\scratchbox=\box39
-\nofMPsegments=\count131
-\nofMParguments=\count132
-\everyMPshowfont=\toks31
-\MPscratchCnt=\count133
+\scratchbox=\box40
+\nofMPsegments=\count132
+\nofMParguments=\count133
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count134
 \MPscratchDim=\dimen154
-\MPnumerator=\count134
-\makeMPintoPDFobject=\count135
-\everyMPtoPDFconversion=\toks32
+\MPnumerator=\count135
+\makeMPintoPDFobject=\count136
+\everyMPtoPDFconversion=\toks33
 ) (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
 Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
  (/usr/local/texlive/2015/texmf-dist/tex/latex/oberdiek/grfext.sty
@@ -453,733 +463,754 @@ File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 (/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
-\AtBeginShipoutBox=\box40
-Package hyperref Info: Link coloring ON on input line 246.
+\AtBeginShipoutBox=\box41
+Package hyperref Info: Link coloring ON on input line 248.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
  (/usr/local/texlive/2015/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
 Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
-\c@section@level=\count136
+\c@section@level=\count137
 )
-LaTeX Info: Redefining \ref on input line 246.
-LaTeX Info: Redefining \pageref on input line 246.
-LaTeX Info: Redefining \nameref on input line 246.
- (/Users/taylorkilian/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.out) (/Users/taylorkilian/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.out)
+LaTeX Info: Redefining \ref on input line 248.
+LaTeX Info: Redefining \pageref on input line 248.
+LaTeX Info: Redefining \nameref on input line 248.
+ (/Users/Laurentia/0000_Github/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.out) (/Users/Laurentia/0000_Github/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.out)
 \@outlinefile=\write4
 \openout4 = `Teel_Formation_pmag.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 250.
+ (/Users/Laurentia/0000_Github/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.toc
+LaTeX Font Info:    Try loading font information for U+msa on input line 2.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 250.
+LaTeX Font Info:    Try loading font information for U+msb on input line 2.
  (/usr/local/texlive/2015/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Warning: No \author given.
-
-(/Users/taylorkilian/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.toc)
+))
 \tf@toc=\write5
 \openout5 = `Teel_Formation_pmag.toc'.
 
-LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 287.
-LaTeX Font Info:    No file OMScmtt.fd. on input line 287.
+ [1
 
+{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
+Overfull \hbox (8.87585pt too wide) in paragraph at lines 303--338
+[][] 
+ []
 
-LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
-(Font)              using `OMS/cmsy/m/n' instead
-(Font)              for symbol `textbackslash' on input line 287.
-
-[1
-
-{/usr/local/texlive/2015/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] [2] <Teel_Formation_pmag_files/Teel_Formation_pmag_10_0.png, id=81, 621.32124pt x 604.2575pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_10_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_10_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_10_0.png used on input line 352.
-(pdftex.def)             Requested size: 621.31973pt x 604.25603pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 354--355
+<Teel_Formation_pmag_files/Teel_Formation_pmag_11_0.pdf, id=87, 394.47375pt x 377.41pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_11_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_11_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_11_0.pdf used on input line 343.
+(pdftex.def)             Requested size: 394.47278pt x 377.40907pt.
+ [2]
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
-[3 <./Teel_Formation_pmag_files/Teel_Formation_pmag_10_0.png>] [4] (/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/data/uni-0.def
+(/usr/local/texlive/2015/texmf-dist/tex/latex/ucs/data/uni-0.def
 File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-) <Teel_Formation_pmag_files/Teel_Formation_pmag_25_0.png, id=92, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_25_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_25_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_25_0.png used on input line 458.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [5]
-Underfull \hbox (badness 10000) in paragraph at lines 460--461
+) <Teel_Formation_pmag_files/Teel_Formation_pmag_18_0.pdf, id=93, 281.05pt x 294.09875pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_18_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_18_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_18_0.pdf used on input line 368.
+(pdftex.def)             Requested size: 281.0493pt x 294.09802pt.
+ [3 <./Teel_Formation_pmag_files/Teel_Formation_pmag_11_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 370--371
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_29_0.png, id=99, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_29_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_29_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_29_0.png used on input line 470.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [6 <./Teel_Formation_pmag_files/Teel_Formation_pmag_25_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 472--473
+[4 <./Teel_Formation_pmag_files/Teel_Formation_pmag_18_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_22_0.pdf, id=337, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_22_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_22_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_22_0.pdf used on input line 381.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 383--384
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_33_0.png, id=106, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_33_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_33_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_33_0.png used on input line 482.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [7 <./Teel_Formation_pmag_files/Teel_Formation_pmag_29_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 484--485
+[5 <./Teel_Formation_pmag_files/Teel_Formation_pmag_22_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_26_0.pdf, id=502, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_26_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_26_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_26_0.pdf used on input line 394.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 396--397
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_37_0.png, id=114, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_37_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_37_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_37_0.png used on input line 494.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [8 <./Teel_Formation_pmag_files/Teel_Formation_pmag_33_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 496--497
+[6 <./Teel_Formation_pmag_files/Teel_Formation_pmag_26_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_30_0.pdf, id=670, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_30_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_30_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_30_0.pdf used on input line 407.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 409--410
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_41_0.png, id=121, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_41_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_41_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_41_0.png used on input line 506.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [9 <./Teel_Formation_pmag_files/Teel_Formation_pmag_37_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 508--509
+[7 <./Teel_Formation_pmag_files/Teel_Formation_pmag_30_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_34_0.pdf, id=836, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_34_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_34_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_34_0.pdf used on input line 420.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 422--423
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_45_0.png, id=128, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_45_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_45_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_45_0.png used on input line 518.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [10 <./Teel_Formation_pmag_files/Teel_Formation_pmag_41_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 520--521
+[8 <./Teel_Formation_pmag_files/Teel_Formation_pmag_34_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_38_0.pdf, id=1007, 281.05pt x 312.16624pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_38_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_38_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_38_0.pdf used on input line 433.
+(pdftex.def)             Requested size: 281.0493pt x 312.16548pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 435--436
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.png, id=135, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.png used on input line 533.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [11 <./Teel_Formation_pmag_files/Teel_Formation_pmag_45_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 535--536
+[9 <./Teel_Formation_pmag_files/Teel_Formation_pmag_38_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_43_0.pdf, id=1184, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_43_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_43_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_43_0.pdf used on input line 449.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 451--452
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_53_0.png, id=142, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_53_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_53_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_53_0.png used on input line 543.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [12 <./Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 545--546
+[10 <./Teel_Formation_pmag_files/Teel_Formation_pmag_43_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_46_0.pdf, id=1349, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_46_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_46_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_46_0.pdf used on input line 462.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 464--465
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_57_0.png, id=148, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_57_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_57_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_57_0.png used on input line 555.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [13 <./Teel_Formation_pmag_files/Teel_Formation_pmag_53_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 557--558
+[11 <./Teel_Formation_pmag_files/Teel_Formation_pmag_46_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.pdf, id=1518, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.pdf used on input line 475.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 477--478
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.png, id=156, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.png used on input line 570.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [14 <./Teel_Formation_pmag_files/Teel_Formation_pmag_57_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 572--573
+[12 <./Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_55_0.pdf, id=1695, 281.05pt x 312.16624pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_55_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_55_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_55_0.pdf used on input line 491.
+(pdftex.def)             Requested size: 281.0493pt x 312.16548pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 493--494
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.png, id=163, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.png used on input line 582.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [15 <./Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 584--585
+[13 <./Teel_Formation_pmag_files/Teel_Formation_pmag_55_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_59_0.pdf, id=1876, 281.05pt x 312.16624pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_59_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_59_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_59_0.pdf used on input line 504.
+(pdftex.def)             Requested size: 281.0493pt x 312.16548pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 506--507
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_69_0.png, id=170, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_69_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_69_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_69_0.png used on input line 591.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [16 <./Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 593--594
+[14 <./Teel_Formation_pmag_files/Teel_Formation_pmag_59_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.pdf, id=2071, 281.05pt x 312.16624pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.pdf used on input line 517.
+(pdftex.def)             Requested size: 281.0493pt x 312.16548pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 519--520
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_73_0.png, id=178, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_73_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_73_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_73_0.png used on input line 605.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [17 <./Teel_Formation_pmag_files/Teel_Formation_pmag_69_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 607--608
+[15 <./Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.pdf, id=2254, 281.05pt x 312.16624pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.pdf used on input line 532.
+(pdftex.def)             Requested size: 281.0493pt x 312.16548pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 534--535
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_77_0.png, id=185, 425.59pt x 441.65pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_77_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_77_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_77_0.png used on input line 619.
-(pdftex.def)             Requested size: 425.58894pt x 441.64891pt.
- [18 <./Teel_Formation_pmag_files/Teel_Formation_pmag_73_0.png>]
+[16 <./Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_70_0.pdf, id=2447, 281.05pt x 330.23375pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_70_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_70_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_70_0.pdf used on input line 547.
+(pdftex.def)             Requested size: 281.0493pt x 330.23293pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 549--550
+
+ []
+
+[17 <./Teel_Formation_pmag_files/Teel_Formation_pmag_70_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_74_0.pdf, id=2642, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_74_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_74_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_74_0.pdf used on input line 560.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 562--563
+
+ []
+
+[18 <./Teel_Formation_pmag_files/Teel_Formation_pmag_74_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_79_0.pdf, id=2789, 353.32pt x 312.16624pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_79_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_79_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_79_0.pdf used on input line 577.
+(pdftex.def)             Requested size: 353.31914pt x 312.16548pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 579--580
+
+ []
+
+[19 <./Teel_Formation_pmag_files/Teel_Formation_pmag_79_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_84_0.pdf, id=2946, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_84_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_84_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_84_0.pdf used on input line 593.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 595--596
+
+ []
+
+[20 <./Teel_Formation_pmag_files/Teel_Formation_pmag_84_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_88_0.pdf, id=3114, 281.05pt x 312.16624pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_88_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_88_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_88_0.pdf used on input line 606.
+(pdftex.def)             Requested size: 281.0493pt x 312.16548pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 608--609
+
+ []
+
+[21 <./Teel_Formation_pmag_files/Teel_Formation_pmag_88_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_92_0.pdf, id=3294, 281.05pt x 294.09875pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_92_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_92_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_92_0.pdf used on input line 619.
+(pdftex.def)             Requested size: 281.0493pt x 294.09802pt.
+
 Underfull \hbox (badness 10000) in paragraph at lines 621--622
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_81_0.png, id=192, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_81_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_81_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_81_0.png used on input line 631.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [19 <./Teel_Formation_pmag_files/Teel_Formation_pmag_77_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 633--634
+[22 <./Teel_Formation_pmag_files/Teel_Formation_pmag_92_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_96_0.pdf, id=3469, 281.05pt x 294.09875pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_96_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_96_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_96_0.pdf used on input line 632.
+(pdftex.def)             Requested size: 281.0493pt x 294.09802pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 634--635
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_85_0.png, id=200, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_85_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_85_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_85_0.png used on input line 643.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [20 <./Teel_Formation_pmag_files/Teel_Formation_pmag_81_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 645--646
+[23 <./Teel_Formation_pmag_files/Teel_Formation_pmag_96_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_100_0.pdf, id=3643, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_100_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_100_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_100_0.pdf used on input line 645.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 647--648
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_89_0.png, id=207, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_89_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_89_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_89_0.png used on input line 655.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [21 <./Teel_Formation_pmag_files/Teel_Formation_pmag_85_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 657--658
+[24 <./Teel_Formation_pmag_files/Teel_Formation_pmag_100_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_104_0.pdf, id=3793, 281.05pt x 312.16624pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_104_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_104_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_104_0.pdf used on input line 658.
+(pdftex.def)             Requested size: 281.0493pt x 312.16548pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 660--661
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_93_0.png, id=214, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_93_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_93_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_93_0.png used on input line 667.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [22 <./Teel_Formation_pmag_files/Teel_Formation_pmag_89_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 669--670
+[25 <./Teel_Formation_pmag_files/Teel_Formation_pmag_104_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.pdf, id=3971, 281.05pt x 312.16624pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.pdf used on input line 676.
+(pdftex.def)             Requested size: 281.0493pt x 312.16548pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 678--679
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_97_0.png, id=221, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_97_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_97_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_97_0.png used on input line 679.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [23 <./Teel_Formation_pmag_files/Teel_Formation_pmag_93_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 681--682
+[26 <./Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_113_0.pdf, id=4142, 281.05pt x 294.09875pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_113_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_113_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_113_0.pdf used on input line 689.
+(pdftex.def)             Requested size: 281.0493pt x 294.09802pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 691--692
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_101_0.png, id=228, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_101_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_101_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_101_0.png used on input line 691.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [24 <./Teel_Formation_pmag_files/Teel_Formation_pmag_97_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 693--694
+[27 <./Teel_Formation_pmag_files/Teel_Formation_pmag_113_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_117_0.pdf, id=4334, 281.05pt x 307.1475pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_117_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_117_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_117_0.pdf used on input line 702.
+(pdftex.def)             Requested size: 281.0493pt x 307.14674pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 704--705
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_105_0.png, id=235, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_105_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_105_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_105_0.png used on input line 703.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [25 <./Teel_Formation_pmag_files/Teel_Formation_pmag_101_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 705--706
+[28 <./Teel_Formation_pmag_files/Teel_Formation_pmag_117_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_121_0.pdf, id=4521, 281.05pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_121_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_121_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_121_0.pdf used on input line 715.
+(pdftex.def)             Requested size: 281.0493pt x 282.05305pt.
 
- []
-
-<Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.png, id=243, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.png used on input line 715.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [26 <./Teel_Formation_pmag_files/Teel_Formation_pmag_105_0.png>]
 Underfull \hbox (badness 10000) in paragraph at lines 717--718
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_114_0.png, id=250, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_114_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_114_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_114_0.png used on input line 732.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [27 <./Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 734--735
+[29 <./Teel_Formation_pmag_files/Teel_Formation_pmag_121_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_125_0.pdf, id=4686, 329.23pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_125_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_125_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_125_0.pdf used on input line 728.
+(pdftex.def)             Requested size: 329.22919pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 730--731
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_118_0.png, id=257, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_118_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_118_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_118_0.png used on input line 744.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [28 <./Teel_Formation_pmag_files/Teel_Formation_pmag_114_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 746--747
+[30 <./Teel_Formation_pmag_files/Teel_Formation_pmag_125_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.pdf, id=4869, 281.05pt x 294.09875pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.pdf used on input line 745.
+(pdftex.def)             Requested size: 281.0493pt x 294.09802pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 747--748
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_122_0.png, id=264, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_122_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_122_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_122_0.png used on input line 756.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [29 <./Teel_Formation_pmag_files/Teel_Formation_pmag_118_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 758--759
+[31 <./Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_134_0.pdf, id=5047, 352.31625pt x 282.05376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_134_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_134_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_134_0.pdf used on input line 760.
+(pdftex.def)             Requested size: 352.31538pt x 282.05305pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 762--763
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_126_0.png, id=271, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_126_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_126_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_126_0.png used on input line 768.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [30 <./Teel_Formation_pmag_files/Teel_Formation_pmag_122_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 770--771
+
+Overfull \hbox (52.20404pt too wide) in paragraph at lines 780--815
+[][] 
+ []
+
+<Teel_Formation_pmag_files/Teel_Formation_pmag_141_0.pdf, id=5048, 456.70625pt x 368.37625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_141_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_141_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_141_0.pdf used on input line 820.
+(pdftex.def)             Requested size: 456.70512pt x 368.37534pt.
+ [32 <./Teel_Formation_pmag_files/Teel_Formation_pmag_134_0.pdf>] [33]
+Underfull \hbox (badness 10000) in paragraph at lines 822--823
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.png, id=278, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.png used on input line 780.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [31 <./Teel_Formation_pmag_files/Teel_Formation_pmag_126_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 782--783
+<Teel_Formation_pmag_files/Teel_Formation_pmag_142_0.pdf, id=5249, 345.29pt x 392.46625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_142_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_142_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_142_0.pdf used on input line 826.
+(pdftex.def)             Requested size: 345.28914pt x 392.46527pt.
+ [34 <./Teel_Formation_pmag_files/Teel_Formation_pmag_141_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 828--829
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_135_0.png, id=286, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_135_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_135_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_135_0.png used on input line 801.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [32 <./Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 803--804
+
+Overfull \hbox (38.95311pt too wide) in paragraph at lines 836--871
+[][] 
+ []
+
+<Teel_Formation_pmag_files/Teel_Formation_pmag_145_0.pdf, id=5555, 467.7475pt x 368.37625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_145_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_145_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_145_0.pdf used on input line 876.
+(pdftex.def)             Requested size: 467.74634pt x 368.37534pt.
+ [35 <./Teel_Formation_pmag_files/Teel_Formation_pmag_142_0.pdf>] [36]
+Underfull \hbox (badness 10000) in paragraph at lines 878--879
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_140_0.png, id=293, 425.59pt x 427.5975pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_140_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_140_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_140_0.png used on input line 817.
-(pdftex.def)             Requested size: 425.58894pt x 427.59645pt.
- [33 <./Teel_Formation_pmag_files/Teel_Formation_pmag_135_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 819--820
+<Teel_Formation_pmag_files/Teel_Formation_pmag_146_0.pdf, id=6059, 345.29pt x 392.46625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_146_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_146_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_146_0.pdf used on input line 882.
+(pdftex.def)             Requested size: 345.28914pt x 392.46527pt.
+ [37 <./Teel_Formation_pmag_files/Teel_Formation_pmag_145_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 884--885
 
  []
 
-[34 <./Teel_Formation_pmag_files/Teel_Formation_pmag_140_0.png>] [35] <Teel_Formation_pmag_files/Teel_Formation_pmag_147_0.png, id=311, 497.86pt x 509.905pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_147_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_147_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_147_0.png used on input line 932.
-(pdftex.def)             Requested size: 497.85878pt x 509.90375pt.
- [36]
-Underfull \hbox (badness 10000) in paragraph at lines 934--935
+
+Overfull \hbox (48.92636pt too wide) in paragraph at lines 893--920
+[][] 
+ []
+
+<Teel_Formation_pmag_files/Teel_Formation_pmag_150_0.pdf, id=6366, 430.60875pt x 368.37625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_150_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_150_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_150_0.pdf used on input line 925.
+(pdftex.def)             Requested size: 430.60768pt x 368.37534pt.
+ [38 <./Teel_Formation_pmag_files/Teel_Formation_pmag_146_0.pdf>] [39]
+Underfull \hbox (badness 10000) in paragraph at lines 927--928
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_148_0.png, id=316, 383.4325pt x 450.68375pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_148_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_148_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_148_0.png used on input line 938.
-(pdftex.def)             Requested size: 383.43156pt x 450.68263pt.
- [37 <./Teel_Formation_pmag_files/Teel_Formation_pmag_147_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 940--941
+<Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.pdf, id=6937, 345.29pt x 392.46625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.pdf used on input line 931.
+(pdftex.def)             Requested size: 345.28914pt x 392.46527pt.
+ [40 <./Teel_Formation_pmag_files/Teel_Formation_pmag_150_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 933--934
 
  []
 
-[38 <./Teel_Formation_pmag_files/Teel_Formation_pmag_148_0.png>] [39] <Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.png, id=333, 497.86pt x 509.905pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.png used on input line 1043.
-(pdftex.def)             Requested size: 497.85878pt x 509.90375pt.
- [40]
-Underfull \hbox (badness 10000) in paragraph at lines 1045--1046
+
+Overfull \hbox (35.67543pt too wide) in paragraph at lines 940--967
+[][] 
+ []
+
+<Teel_Formation_pmag_files/Teel_Formation_pmag_154_0.pdf, id=7194, 371.3875pt x 368.37625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_154_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_154_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_154_0.pdf used on input line 972.
+(pdftex.def)             Requested size: 371.38658pt x 368.37534pt.
+ [41 <./Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.pdf>] [42]
+Underfull \hbox (badness 10000) in paragraph at lines 974--975
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_152_0.png, id=338, 435.6275pt x 505.89pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_152_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_152_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_152_0.png used on input line 1049.
-(pdftex.def)             Requested size: 435.62643pt x 505.88875pt.
- [41 <./Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1051--1052
+<Teel_Formation_pmag_files/Teel_Formation_pmag_155_0.pdf, id=7713, 345.29pt x 392.46625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_155_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_155_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_155_0.pdf used on input line 978.
+(pdftex.def)             Requested size: 345.28914pt x 392.46527pt.
+ [43 <./Teel_Formation_pmag_files/Teel_Formation_pmag_154_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 980--981
 
  []
 
-[42 <./Teel_Formation_pmag_files/Teel_Formation_pmag_152_0.png>] [43] <Teel_Formation_pmag_files/Teel_Formation_pmag_156_0.png, id=357, 497.86pt x 509.905pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_156_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_156_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_156_0.png used on input line 1132.
-(pdftex.def)             Requested size: 497.85878pt x 509.90375pt.
- [44]
-Underfull \hbox (badness 10000) in paragraph at lines 1134--1135
+
+Overfull \hbox (34.50877pt too wide) in paragraph at lines 986--995
+[][] 
+ []
+
+<Teel_Formation_pmag_files/Teel_Formation_pmag_158_0.pdf, id=7971, 476.78125pt x 296.10625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_158_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_158_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_158_0.pdf used on input line 1000.
+(pdftex.def)             Requested size: 476.78008pt x 296.10551pt.
+ [44 <./Teel_Formation_pmag_files/Teel_Formation_pmag_155_0.pdf>] [45]
+Underfull \hbox (badness 10000) in paragraph at lines 1002--1003
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_157_0.png, id=362, 435.6275pt x 505.89pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_157_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_157_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_157_0.png used on input line 1138.
-(pdftex.def)             Requested size: 435.62643pt x 505.88875pt.
- [45 <./Teel_Formation_pmag_files/Teel_Formation_pmag_156_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1140--1141
+LaTeX Font Info:    Try loading font information for OMS+cmtt on input line 1031.
+LaTeX Font Info:    No file OMScmtt.fd. on input line 1031.
+
+LaTeX Font Warning: Font shape `OMS/cmtt/m/n' undefined
+(Font)              using `OMS/cmsy/m/n' instead
+(Font)              for symbol `textbraceleft' on input line 1031.
+
+[46 <./Teel_Formation_pmag_files/Teel_Formation_pmag_158_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_167_0.pdf, id=8646, 486.81876pt x 440.64626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_167_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_167_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_167_0.pdf used on input line 1053.
+(pdftex.def)             Requested size: 486.81757pt x 440.64517pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1055--1056
 
  []
 
-[46 <./Teel_Formation_pmag_files/Teel_Formation_pmag_157_0.png>] [47] <Teel_Formation_pmag_files/Teel_Formation_pmag_160_0.png, id=378, 497.86pt x 509.905pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_160_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_160_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_160_0.png used on input line 1219.
-(pdftex.def)             Requested size: 497.85878pt x 509.90375pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1221--1222
-
- []
-
-[48 <./Teel_Formation_pmag_files/Teel_Formation_pmag_160_0.png>] <Teel_Formation_pmag_files/Teel_Formation_pmag_161_0.png, id=384, 435.6275pt x 505.89pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_161_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_161_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_161_0.png used on input line 1225.
-(pdftex.def)             Requested size: 435.62643pt x 505.88875pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1227--1228
+<Teel_Formation_pmag_files/Teel_Formation_pmag_169_1.pdf, id=8647, 323.2075pt x 328.22626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_169_1.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_169_1.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_169_1.pdf used on input line 1065.
+(pdftex.def)             Requested size: 323.20671pt x 328.22545pt.
+ [47 <./Teel_Formation_pmag_files/Teel_Formation_pmag_167_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1067--1068
 
  []
 
-[49 <./Teel_Formation_pmag_files/Teel_Formation_pmag_161_0.png>] <Teel_Formation_pmag_files/Teel_Formation_pmag_164_0.png, id=392, 478.78876pt x 365.365pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_164_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_164_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_164_0.png used on input line 1251.
-(pdftex.def)             Requested size: 478.78758pt x 365.3641pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1253--1254
-
- []
-
-[50 <./Teel_Formation_pmag_files/Teel_Formation_pmag_164_0.png>] <Teel_Formation_pmag_files/Teel_Formation_pmag_174_0.png, id=398, 570.13pt x 582.175pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_174_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_174_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_174_0.png used on input line 1309.
-(pdftex.def)             Requested size: 570.12862pt x 582.17358pt.
- [51]
-Underfull \hbox (badness 10000) in paragraph at lines 1311--1312
+<Teel_Formation_pmag_files/Teel_Formation_pmag_169_2.pdf, id=9068, 323.2075pt x 328.22626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_169_2.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_169_2.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_169_2.pdf used on input line 1070.
+(pdftex.def)             Requested size: 323.20671pt x 328.22545pt.
+ [48 <./Teel_Formation_pmag_files/Teel_Formation_pmag_169_1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1072--1073
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_176_1.png, id=404, 345.29pt x 355.3275pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_176_1.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_176_1.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_176_1.png used on input line 1321.
-(pdftex.def)             Requested size: 345.28914pt x 355.32661pt.
- [52 <./Teel_Formation_pmag_files/Teel_Formation_pmag_174_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1323--1324
+<Teel_Formation_pmag_files/Teel_Formation_pmag_169_4.pdf, id=9202, 394.47375pt x 281.05pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_169_4.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_169_4.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_169_4.pdf used on input line 1082.
+(pdftex.def)             Requested size: 394.47278pt x 281.0493pt.
+ [49 <./Teel_Formation_pmag_files/Teel_Formation_pmag_169_2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1084--1085
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_176_2.png, id=410, 345.29pt x 355.3275pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_176_2.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_176_2.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_176_2.png used on input line 1326.
-(pdftex.def)             Requested size: 345.28914pt x 355.32661pt.
- [53 <./Teel_Formation_pmag_files/Teel_Formation_pmag_176_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1328--1329
+<Teel_Formation_pmag_files/Teel_Formation_pmag_171_0.pdf, id=9336, 544.0325pt x 392.46625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_171_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_171_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_171_0.pdf used on input line 1091.
+(pdftex.def)             Requested size: 544.03117pt x 392.46527pt.
+ [50 <./Teel_Formation_pmag_files/Teel_Formation_pmag_169_4.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1093--1094
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_176_4.png, id=416, 395.4775pt x 282.05376pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_176_4.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_176_4.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_176_4.png used on input line 1338.
-(pdftex.def)             Requested size: 395.47653pt x 282.05305pt.
- [54 <./Teel_Formation_pmag_files/Teel_Formation_pmag_176_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1340--1341
+<Teel_Formation_pmag_files/Teel_Formation_pmag_177_0.pdf, id=9431, 545.03625pt x 440.64626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_177_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_177_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_177_0.pdf used on input line 1124.
+(pdftex.def)             Requested size: 545.03493pt x 440.64517pt.
+ [51 <./Teel_Formation_pmag_files/Teel_Formation_pmag_171_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1126--1127
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_178_0.png, id=422, 546.04pt x 505.89pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_178_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_178_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_178_0.png used on input line 1347.
-(pdftex.def)             Requested size: 546.03867pt x 505.88875pt.
- [55 <./Teel_Formation_pmag_files/Teel_Formation_pmag_176_4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1349--1350
+<Teel_Formation_pmag_files/Teel_Formation_pmag_179_1.pdf, id=9982, 323.2075pt x 328.22626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_179_1.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_179_1.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_179_1.pdf used on input line 1136.
+(pdftex.def)             Requested size: 323.20671pt x 328.22545pt.
+ [52 <./Teel_Formation_pmag_files/Teel_Formation_pmag_177_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1138--1139
 
  []
 
-[56 <./Teel_Formation_pmag_files/Teel_Formation_pmag_178_0.png>] <Teel_Formation_pmag_files/Teel_Formation_pmag_184_0.png, id=435, 573.14125pt x 582.175pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_184_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_184_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_184_0.png used on input line 1380.
-(pdftex.def)             Requested size: 573.13985pt x 582.17358pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1382--1383
-
- []
-
-<Teel_Formation_pmag_files/Teel_Formation_pmag_186_1.png, id=436, 345.29pt x 355.3275pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_186_1.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_186_1.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_186_1.png used on input line 1392.
-(pdftex.def)             Requested size: 345.28914pt x 355.32661pt.
- [57 <./Teel_Formation_pmag_files/Teel_Formation_pmag_184_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1394--1395
+<Teel_Formation_pmag_files/Teel_Formation_pmag_179_2.pdf, id=10548, 323.2075pt x 328.22626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_179_2.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_179_2.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_179_2.pdf used on input line 1141.
+(pdftex.def)             Requested size: 323.20671pt x 328.22545pt.
+ [53 <./Teel_Formation_pmag_files/Teel_Formation_pmag_179_1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1143--1144
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_186_2.png, id=442, 345.29pt x 355.3275pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_186_2.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_186_2.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_186_2.png used on input line 1397.
-(pdftex.def)             Requested size: 345.28914pt x 355.32661pt.
- [58 <./Teel_Formation_pmag_files/Teel_Formation_pmag_186_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1399--1400
+<Teel_Formation_pmag_files/Teel_Formation_pmag_179_4.pdf, id=10684, 394.47375pt x 281.05pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_179_4.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_179_4.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_179_4.pdf used on input line 1153.
+(pdftex.def)             Requested size: 394.47278pt x 281.0493pt.
+ [54 <./Teel_Formation_pmag_files/Teel_Formation_pmag_179_2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1155--1156
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_186_4.png, id=448, 395.4775pt x 282.05376pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_186_4.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_186_4.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_186_4.png used on input line 1409.
-(pdftex.def)             Requested size: 395.47653pt x 282.05305pt.
- [59 <./Teel_Formation_pmag_files/Teel_Formation_pmag_186_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1411--1412
+<Teel_Formation_pmag_files/Teel_Formation_pmag_181_0.pdf, id=10821, 480.79625pt x 392.46625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_181_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_181_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_181_0.pdf used on input line 1163.
+(pdftex.def)             Requested size: 480.79506pt x 392.46527pt.
+ [55 <./Teel_Formation_pmag_files/Teel_Formation_pmag_179_4.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1165--1166
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.png, id=454, 481.8pt x 394.47375pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.png used on input line 1419.
-(pdftex.def)             Requested size: 481.79881pt x 394.47278pt.
- [60 <./Teel_Formation_pmag_files/Teel_Formation_pmag_186_4.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1421--1422
+<Teel_Formation_pmag_files/Teel_Formation_pmag_182_0.pdf, id=10917, 490.83376pt x 392.46625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_182_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_182_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_182_0.pdf used on input line 1169.
+(pdftex.def)             Requested size: 490.83255pt x 392.46527pt.
+ [56 <./Teel_Formation_pmag_files/Teel_Formation_pmag_181_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1171--1172
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_189_0.png, id=460, 491.8375pt x 394.47375pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_189_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_189_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_189_0.png used on input line 1425.
-(pdftex.def)             Requested size: 491.83629pt x 394.47278pt.
- [61 <./Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1427--1428
+
+Overfull \hbox (44.6764pt too wide) in paragraph at lines 1178--1189
+[][] 
+ []
+
+
+Overfull \hbox (27.75887pt too wide) in paragraph at lines 1194--1205
+[][] 
+ []
+
+<Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.pdf, id=11397, 507.8975pt x 440.64626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.pdf used on input line 1215.
+(pdftex.def)             Requested size: 507.89627pt x 440.64517pt.
+ [57 <./Teel_Formation_pmag_files/Teel_Formation_pmag_182_0.pdf>] [58] [59]
+Underfull \hbox (badness 10000) in paragraph at lines 1217--1218
 
  []
 
-[62 <./Teel_Formation_pmag_files/Teel_Formation_pmag_189_0.png>] <Teel_Formation_pmag_files/Teel_Formation_pmag_195_0.png, id=473, 570.13pt x 582.175pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_195_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_195_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_195_0.png used on input line 1487.
-(pdftex.def)             Requested size: 570.12862pt x 582.17358pt.
- [63]
-Underfull \hbox (badness 10000) in paragraph at lines 1489--1490
+<Teel_Formation_pmag_files/Teel_Formation_pmag_190_1.pdf, id=11886, 323.2075pt x 328.22626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_190_1.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_190_1.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_190_1.pdf used on input line 1228.
+(pdftex.def)             Requested size: 323.20671pt x 328.22545pt.
+ [60 <./Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1230--1231
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_197_1.png, id=478, 345.29pt x 355.3275pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_197_1.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_197_1.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_197_1.png used on input line 1500.
-(pdftex.def)             Requested size: 345.28914pt x 355.32661pt.
- [64 <./Teel_Formation_pmag_files/Teel_Formation_pmag_195_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1502--1503
+<Teel_Formation_pmag_files/Teel_Formation_pmag_190_2.pdf, id=12332, 323.2075pt x 328.22626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_190_2.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_190_2.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_190_2.pdf used on input line 1233.
+(pdftex.def)             Requested size: 323.20671pt x 328.22545pt.
+ [61 <./Teel_Formation_pmag_files/Teel_Formation_pmag_190_1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1235--1236
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_197_2.png, id=485, 345.29pt x 355.3275pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_197_2.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_197_2.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_197_2.png used on input line 1505.
-(pdftex.def)             Requested size: 345.28914pt x 355.32661pt.
- [65 <./Teel_Formation_pmag_files/Teel_Formation_pmag_197_1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1507--1508
+<Teel_Formation_pmag_files/Teel_Formation_pmag_190_4.pdf, id=12467, 394.47375pt x 281.05pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_190_4.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_190_4.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_190_4.pdf used on input line 1245.
+(pdftex.def)             Requested size: 394.47278pt x 281.0493pt.
+ [62 <./Teel_Formation_pmag_files/Teel_Formation_pmag_190_2.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1247--1248
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_197_4.png, id=491, 395.4775pt x 282.05376pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_197_4.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_197_4.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_197_4.png used on input line 1517.
-(pdftex.def)             Requested size: 395.47653pt x 282.05305pt.
- [66 <./Teel_Formation_pmag_files/Teel_Formation_pmag_197_2.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1519--1520
-
- []
-
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1552.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 1281.
 (/usr/local/texlive/2015/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1552.
- [67 <./Teel_Formation_pmag_files/Teel_Formation_pmag_197_4.png>] <Teel_Formation_pmag_files/Teel_Formation_pmag_208_0.png, id=505, 421.575pt x 505.89pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_208_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_208_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_208_0.png used on input line 1583.
-(pdftex.def)             Requested size: 421.57396pt x 505.88875pt.
- [68]
-Underfull \hbox (badness 10000) in paragraph at lines 1585--1586
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 1281.
+ [63 <./Teel_Formation_pmag_files/Teel_Formation_pmag_190_4.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_201_0.pdf, id=12696, 319.1925pt x 392.46625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_201_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_201_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_201_0.pdf used on input line 1312.
+(pdftex.def)             Requested size: 319.19171pt x 392.46527pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1314--1315
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_210_0.png, id=510, 404.51125pt x 437.635pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_210_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_210_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_210_0.png used on input line 1593.
-(pdftex.def)             Requested size: 404.51025pt x 437.63393pt.
- [69 <./Teel_Formation_pmag_files/Teel_Formation_pmag_208_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1595--1596
+[64 <./Teel_Formation_pmag_files/Teel_Formation_pmag_201_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_209_0.pdf, id=13194, 383.4325pt x 364.36125pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_209_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_209_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_209_0.pdf used on input line 1403.
+(pdftex.def)             Requested size: 383.43156pt x 364.36035pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1405--1406
 
  []
 
-[70 <./Teel_Formation_pmag_files/Teel_Formation_pmag_210_0.png>] [71] [72] <Teel_Formation_pmag_files/Teel_Formation_pmag_218_0.png, id=529, 445.665pt x 420.57124pt>
+[65 <./Teel_Formation_pmag_files/Teel_Formation_pmag_209_0.pdf>] [66] <Teel_Formation_pmag_files/Teel_Formation_pmag_215_1.pdf, id=13628, 370.38374pt x 448.67625pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_215_1.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_215_1.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_215_1.pdf used on input line 1478.
+(pdftex.def)             Requested size: 370.38283pt x 448.67516pt.
+ [67]
+Underfull \hbox (badness 10000) in paragraph at lines 1480--1481
+
+ []
+
+<Teel_Formation_pmag_files/Teel_Formation_pmag_218_0.png, id=13634, 576.1525pt x 476.78125pt>
 File: Teel_Formation_pmag_files/Teel_Formation_pmag_218_0.png Graphic file (type png)
  <use Teel_Formation_pmag_files/Teel_Formation_pmag_218_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_218_0.png used on input line 1757.
-(pdftex.def)             Requested size: 445.66391pt x 420.57022pt.
- [73]
-Underfull \hbox (badness 10000) in paragraph at lines 1759--1760
-
- []
-
-<Teel_Formation_pmag_files/Teel_Formation_pmag_222_0.png, id=535, 639.3486pt x 389.2944pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_222_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_222_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_222_0.png used on input line 1769.
-(pdftex.def)             Requested size: 639.34703pt x 389.29344pt.
- [74 <./Teel_Formation_pmag_files/Teel_Formation_pmag_218_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1771--1772
-
- []
-
-<Teel_Formation_pmag_files/Teel_Formation_pmag_225_1.png, id=542, 421.575pt x 505.89pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_225_1.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_225_1.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_225_1.png used on input line 1802.
-(pdftex.def)             Requested size: 421.57396pt x 505.88875pt.
- [75 <./Teel_Formation_pmag_files/Teel_Formation_pmag_222_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 1804--1805
-
- []
-
-[76 <./Teel_Formation_pmag_files/Teel_Formation_pmag_225_1.png>] <Teel_Formation_pmag_files/Teel_Formation_pmag_228_0.png, id=554, 576.1525pt x 476.78125pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_228_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_228_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_228_0.png used on input line 1821.
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_218_0.png used on input line 1499.
 (pdftex.def)             Requested size: 576.15108pt x 476.78008pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1823--1824
-
- []
-
-[77 <./Teel_Formation_pmag_files/Teel_Formation_pmag_228_0.png>] [78] <Teel_Formation_pmag_files/Teel_Formation_pmag_234_0.png, id=564, 624.3325pt x 366.36874pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_234_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_234_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_234_0.png used on input line 1920.
-(pdftex.def)             Requested size: 624.33098pt x 366.36784pt.
-
-Underfull \hbox (badness 10000) in paragraph at lines 1922--1923
+ [68 <./Teel_Formation_pmag_files/Teel_Formation_pmag_215_1.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1501--1502
 
  []
 
-[79 <./Teel_Formation_pmag_files/Teel_Formation_pmag_234_0.png>] <Teel_Formation_pmag_files/Teel_Formation_pmag_238_1.png, id=571, 904.37875pt x 547.04375pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_238_1.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_238_1.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_238_1.png used on input line 1966.
-(pdftex.def)             Requested size: 904.37656pt x 547.0424pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 1968--1969
+Overfull \hbox (12.31705pt too wide) in paragraph at lines 1509--1553
+[][] 
+ []
+
+[69 <./Teel_Formation_pmag_files/Teel_Formation_pmag_218_0.png>] <Teel_Formation_pmag_files/Teel_Formation_pmag_224_0.pdf, id=14407, 501.875pt x 303.1325pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_224_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_224_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_224_0.pdf used on input line 1564.
+(pdftex.def)             Requested size: 501.87376pt x 303.13176pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1566--1567
 
  []
 
-[80 <./Teel_Formation_pmag_files/Teel_Formation_pmag_238_1.png>] <Teel_Formation_pmag_files/Teel_Formation_pmag_243_0.png, id=577, 714.67pt x 726.715pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_243_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_243_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_243_0.png used on input line 2015.
-(pdftex.def)             Requested size: 714.66824pt x 726.71321pt.
- [81]
-Underfull \hbox (badness 10000) in paragraph at lines 2017--2018
+[70 <./Teel_Formation_pmag_files/Teel_Formation_pmag_224_0.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_228_1.pdf, id=15223, 735.74875pt x 378.41376pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_228_1.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_228_1.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_228_1.pdf used on input line 1609.
+(pdftex.def)             Requested size: 735.74695pt x 378.41283pt.
+
+Underfull \hbox (badness 10000) in paragraph at lines 1611--1612
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_245_0.png, id=582, 714.67pt x 726.715pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_245_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_245_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_245_0.png used on input line 2023.
-(pdftex.def)             Requested size: 714.66824pt x 726.71321pt.
- [82 <./Teel_Formation_pmag_files/Teel_Formation_pmag_243_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2025--2026
+[71 <./Teel_Formation_pmag_files/Teel_Formation_pmag_228_1.pdf>] <Teel_Formation_pmag_files/Teel_Formation_pmag_233_0.pdf, id=17661, 425.59pt x 440.64626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_233_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_233_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_233_0.pdf used on input line 1650.
+(pdftex.def)             Requested size: 425.58894pt x 440.64517pt.
+ [72]
+Underfull \hbox (badness 10000) in paragraph at lines 1652--1653
 
  []
 
-<Teel_Formation_pmag_files/Teel_Formation_pmag_247_0.png, id=588, 714.67pt x 726.715pt>
-File: Teel_Formation_pmag_files/Teel_Formation_pmag_247_0.png Graphic file (type png)
- <use Teel_Formation_pmag_files/Teel_Formation_pmag_247_0.png>
-Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_247_0.png used on input line 2034.
-(pdftex.def)             Requested size: 714.66824pt x 726.71321pt.
- [83 <./Teel_Formation_pmag_files/Teel_Formation_pmag_245_0.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 2036--2037
+<Teel_Formation_pmag_files/Teel_Formation_pmag_235_0.pdf, id=17666, 425.59pt x 440.64626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_235_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_235_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_235_0.pdf used on input line 1658.
+(pdftex.def)             Requested size: 425.58894pt x 440.64517pt.
+ [73 <./Teel_Formation_pmag_files/Teel_Formation_pmag_233_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1660--1661
 
  []
 
-[84 <./Teel_Formation_pmag_files/Teel_Formation_pmag_247_0.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2123.
- [85]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2123.
- (/Users/taylorkilian/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 2123.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2123.
+<Teel_Formation_pmag_files/Teel_Formation_pmag_237_0.pdf, id=17834, 425.59pt x 440.64626pt>
+File: Teel_Formation_pmag_files/Teel_Formation_pmag_237_0.pdf Graphic file (type pdf)
+ <use Teel_Formation_pmag_files/Teel_Formation_pmag_237_0.pdf>
+Package pdftex.def Info: Teel_Formation_pmag_files/Teel_Formation_pmag_237_0.pdf used on input line 1669.
+(pdftex.def)             Requested size: 425.58894pt x 440.64517pt.
+ [74 <./Teel_Formation_pmag_files/Teel_Formation_pmag_235_0.pdf>]
+Underfull \hbox (badness 10000) in paragraph at lines 1671--1672
+
+ []
+
+[75 <./Teel_Formation_pmag_files/Teel_Formation_pmag_237_0.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1756.
+ [76]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1756.
+ (/Users/Laurentia/0000_Github/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1756.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1756.
 Package rerunfilecheck Info: File `Teel_Formation_pmag.out' has not changed.
-(rerunfilecheck)             Checksum: <no file>.
+(rerunfilecheck)             Checksum: E8340E697BD466B38513C3366E19225E;1024.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2123.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1756.
  ) 
 Here is how much of TeX's memory you used:
- 9275 strings out of 493089
- 147278 string characters out of 6134842
- 238872 words of memory out of 5000000
- 12454 multiletter control sequences out of 15000+600000
- 11626 words of font info for 45 fonts, out of 8000000 for 9000
+ 9371 strings out of 493089
+ 148185 string characters out of 6134842
+ 258541 words of memory out of 5000000
+ 12552 multiletter control sequences out of 15000+600000
+ 10725 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,6n,35p,396b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
-Output written on /Users/taylorkilian/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.pdf (85 pages, 3014063 bytes).
+ 36i,12n,35p,396b,480s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2015/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on /Users/Laurentia/0000_Github/2016_Teel_Basalts/Code/.texpadtmp/Teel_Formation_pmag.pdf (76 pages, 4378117 bytes).
 PDF statistics:
- 666 PDF objects out of 1000 (max. 8388607)
- 437 compressed objects within 5 object streams
- 142 named destinations out of 1000 (max. 500000)
- 422 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 18256 PDF objects out of 18468 (max. 8388607)
+ 12166 compressed objects within 122 object streams
+ 133 named destinations out of 1000 (max. 500000)
+ 428 words of extra memory for PDF output out of 10000 (max. 10000000)
 

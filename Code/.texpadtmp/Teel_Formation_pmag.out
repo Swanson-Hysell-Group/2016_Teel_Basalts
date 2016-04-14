@@ -1,12 +1,14 @@
-\BOOKMARK [1][-]{section.1}{Paleomagntism of the Teel Formation}{}% 1
-\BOOKMARK [2][-]{subsection.1.1}{Teel Volcanics Data Analysis}{section.1}% 2
-\BOOKMARK [3][-]{subsubsection.1.1.1}{Import Modules}{subsection.1.1}% 3
-\BOOKMARK [3][-]{subsubsection.1.1.2}{Sampling localities}{subsection.1.1}% 4
-\BOOKMARK [3][-]{subsubsection.1.1.3}{Principal-component analysis of data}{subsection.1.1}% 5
-\BOOKMARK [3][-]{subsubsection.1.1.4}{Paleomagnetic data summary}{subsection.1.1}% 6
-\BOOKMARK [3][-]{subsubsection.1.1.5}{Paleomagnetic Poles for the Teel Formation}{subsection.1.1}% 7
-\BOOKMARK [2][-]{subsection.1.2}{Pole compilation for Siberia, North China, and Mongolian terranes}{section.1}% 8
-\BOOKMARK [3][-]{subsubsection.1.2.1}{Import existing paleomagnetic data}{subsection.1.2}% 9
-\BOOKMARK [2][-]{subsection.1.3}{Paleolatitude diagram}{section.1}% 10
-\BOOKMARK [2][-]{subsection.1.4}{Regional overprints in Precambrian rocks}{section.1}% 11
-\BOOKMARK [2][-]{subsection.1.5}{Additional References}{section.1}% 12
+\BOOKMARK [1][-]{section.1}{Teel Volcanics Paleomagnetic Data Analysis}{}% 1
+\BOOKMARK [2][-]{subsection.1.1}{Import Modules}{section.1}% 2
+\BOOKMARK [2][-]{subsection.1.2}{Sampling localities}{section.1}% 3
+\BOOKMARK [2][-]{subsection.1.3}{Site level data}{section.1}% 4
+\BOOKMARK [2][-]{subsection.1.4}{Paleomagnetic site data summary}{section.1}% 5
+\BOOKMARK [2][-]{subsection.1.5}{Paleomagnetic Poles for the Teel Formation}{section.1}% 6
+\BOOKMARK [1][-]{section.2}{Pole compilation for Siberia, North China, and Mongolian terranes}{}% 7
+\BOOKMARK [2][-]{subsection.2.1}{Import existing paleomagnetic data}{section.2}% 8
+\BOOKMARK [3][-]{subsubsection.2.1.1}{Siberia}{subsection.2.1}% 9
+\BOOKMARK [3][-]{subsubsection.2.1.2}{North China}{subsection.2.1}% 10
+\BOOKMARK [3][-]{subsubsection.2.1.3}{Mongolia pole compilation}{subsection.2.1}% 11
+\BOOKMARK [2][-]{subsection.2.2}{Paleolatitude diagram}{section.2}% 12
+\BOOKMARK [1][-]{section.3}{Regional overprints in Precambrian rocks}{}% 13
+\BOOKMARK [1][-]{section.4}{Data Repository References}{}% 14
