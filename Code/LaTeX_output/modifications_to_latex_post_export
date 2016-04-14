@@ -1,0 +1,16 @@
+change \begin{tabular} to {\tiny\begin{tabular}
+change \end{tabular} to \end{tabular}}
+
+add \usepackage{rotating}
+where necessary use:
+\begin{sidewaystable}
+\end{sidewaystable}
+
+add
+\parskip = 0.1in
+\parindent = 0.0in
+
+\newpage between sites
+
+add
+\usepackage{url}
