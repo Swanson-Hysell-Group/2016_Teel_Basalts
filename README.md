@@ -10,3 +10,7 @@ or can be downloaded from this notebook and run.
 
 ## Data
  The measurement level paleomagnetic data for this study are availible in MagIC format within the MagIC_format folder and CIT format within the CIT_format folder. Additional data used within the Jupyter notebook such as poles for the apparent polar wander paths are within the tables folder.
+
+## GPlates
+
+This folder contains the paleogeographic reconstruction used in the manuscript. The reconstruction builds upon the work of Domeier (2016) and Domeier and Torsvik (2014) while incorporating the new data developed in this study. Animations are included in the main folder and the subfolder reconstruction_files contains all the necessary files that developed the reconstruction using GPlates (http://www.gplates.org/). The reference frame to use for spin axis reconstruction (i.e. paleomagnetic not mantle reference frame) when viewing the reconstruction in GPlates is 1.
