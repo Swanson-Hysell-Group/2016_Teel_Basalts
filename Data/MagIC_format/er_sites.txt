@@ -1,1 +1,31 @@
-tab 	er_sites			er_citation_names	er_location_name	er_site_name	site_lat	site_lonThis study	Khukh_Davaa 	Z30	47.10038	95.37550This study	Khukh_Davaa 	Z31	47.10049	95.37604This study	Khukh_Davaa 	Z32	47.10094	95.37684This study	Khukh_Davaa 	Z33	47.10107	95.37705This study	Khukh_Davaa 	Z34	47.10111	95.37712This study	Khukh_Davaa 	Z35	47.10069	95.37747This study	Khukh_Davaa 	Z36	47.10221	95.37959This study	Khukh_Davaa 	Z37	47.10211	95.37971This study	Khukh_Davaa 	Z38	47.09855	95.38445This study	Khukh_Davaa 	Z39	47.09860	95.38467This study	Khukh_Davaa 	Z40	47.09859	95.38474This study	Khukh_Davaa 	Z41	47.10109	95.37744This study	Khukh_Davaa 	Z42	47.09577	95.38577This study	Khukh_Davaa 	Z43	47.09570	95.38638This study	Khukh_Davaa 	Z44	47.09571	95.38651This study	Khukh_Davaa 	Z45	47.09562	95.38676This study	Khukh_Davaa 	Z46	47.09563	95.38692This study	Khukh_Davaa 	Z47	47.09568	95.38727This study	Khukh_Davaa 	Z48	47.09570	95.38744This study	Khukh_Davaa 	Z49	47.09581	95.38747This study	Khukh_Davaa 	Z50	47.09575	95.38781This study	Khukh_Davaa 	Z51	47.09584	95.38802This study	Khukh_Davaa 	Z52	47.09583	95.38815This study	Khukh_Davaa 	Z53	47.09442	95.37205This study	Khukh_Davaa 	Z54	47.09502	95.37299This study	Khukh_Davaa 	Z55	47.09525	95.37351This study	Khukh_Davaa 	Z56	47.06403	95.42075This study	Khukh_Davaa 	Z57	47.06277	95.42039This study	Khukh_Davaa 	Z58	47.06277	95.42045
+tab	er_sites
+er_site_name	er_location_name	er_citation_names	site_class	site_definition	site_lat	site_lithology	site_lon	site_type
+Z30	Khukh_Davaa	This study	Extrusive	s	47.10038	Rhyolite	95.3755	Lava Flow
+Z31	Khukh_Davaa	This study	Extrusive	s	47.10049	Basalt	95.37604	Lava Flow
+Z32	Khukh_Davaa	This study	Extrusive	s	47.10094	Basalt	95.37684	Lava Flow
+Z33	Khukh_Davaa	This study	Extrusive	s	47.10107	Basalt	95.37705	Lava Flow
+Z34	Khukh_Davaa	This study	Extrusive	s	47.10111	Basalt	95.37712	Lava Flow
+Z35	Khukh_Davaa	This study	Extrusive	s	47.10069	Basalt	95.37747	Lava Flow
+Z36	Khukh_Davaa	This study	Extrusive	s	47.10221	Basalt	95.37959	Lava Flow
+Z37	Khukh_Davaa	This study	Extrusive	s	47.10211	Basalt	95.37971	Lava Flow
+Z38	Khukh_Davaa	This study	Extrusive	s	47.09855	Basalt	95.38445	Lava Flow
+Z39	Khukh_Davaa	This study	Extrusive	s	47.09860	Basalt	95.38467	Lava Flow
+Z40	Khukh_Davaa	This study	Extrusive	s	47.09859	Basalt	95.38474	Lava Flow
+Z41	Khukh_Davaa	This study	Extrusive	s	47.10109	Basalt	95.37744	Lava Flow
+Z42	Khukh_Davaa	This study	Extrusive	s	47.09577	Basalt	95.38577	Lava Flow
+Z43	Khukh_Davaa	This study	Extrusive	s	47.09570	Basalt	95.38638	Lava Flow
+Z44	Khukh_Davaa	This study	Extrusive	s	47.09571	Basalt	95.38651	Lava Flow
+Z45	Khukh_Davaa	This study	Extrusive	s	47.09562	Basalt	95.38676	Lava Flow
+Z46	Khukh_Davaa	This study	Extrusive	s	47.09563	Basalt	95.38692	Lava Flow
+Z47	Khukh_Davaa	This study	Extrusive	s	47.09568	Basalt	95.38727	Lava Flow
+Z48	Khukh_Davaa	This study	Extrusive	s	47.09570	Basalt	95.38744	Lava Flow
+Z49	Khukh_Davaa	This study	Extrusive	s	47.09581	Basalt	95.38747	Lava Flow
+Z50	Khukh_Davaa	This study	Extrusive	s	47.09575	Basalt	95.38781	Lava Flow
+Z51	Khukh_Davaa	This study	Extrusive	s	47.09584	Basalt	95.38802	Lava Flow
+Z52	Khukh_Davaa	This study	Extrusive	s	47.09583	Basalt	95.38815	Lava Flow
+Z53	Khukh_Davaa	This study	Extrusive	s	47.09442	Basalt	95.37205	Lava Flow
+Z54	Khukh_Davaa	This study	Extrusive	s	47.09502	Basalt	95.37299	Lava Flow
+Z55	Khukh_Davaa	This study	Extrusive	s	47.09525	Basalt	95.37351	Lava Flow
+Z56	Khukh_Davaa	This study	Extrusive	s	47.06403	Basalt	95.42075	Lava Flow
+Z57	Khukh_Davaa	This study	Extrusive	s	47.06277	Basalt	95.42039	Lava Flow
+Z58	Khukh_Davaa	This study	Extrusive	s	47.06277	Basalt	95.42045	Lava Flow
