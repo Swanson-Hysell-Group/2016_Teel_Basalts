@@ -1,5 +1,5 @@
 # Paleomagnetism of the Late Ordovician Teel basalts of the Zavkhan Terrane – Paleozoic paleogeography of Mongolia
-This repository is associated with a paper authored by T. M. Kilian, N. L. Swanson-Hysell, U. Bold, J. Crowley, and F. A. Macdonald that is currently in review at the GSA journal Lithosphere. The study is focused on the Late Ordovician  Teel Basalts of the Zavkhan Terrane and the paleogeographic history of Mongolia. 
+This repository is associated with a paper authored by T. M. Kilian, N. L. Swanson-Hysell, U. Bold, J. Crowley, and F. A. Macdonald that is currently in review at the GSA journal Lithosphere. The study is focused on the Late Ordovician  Teel Basalts of the Zavkhan Terrane and the paleogeographic history of Mongolia.
 
 **This repository contains**:
 

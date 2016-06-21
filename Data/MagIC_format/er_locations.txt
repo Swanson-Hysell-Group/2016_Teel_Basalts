@@ -1,0 +1,3 @@
+tab	er_locations
+er_location_name	er_citation_names	location_begin_lat	location_begin_lon	location_description	location_end_lat	location_end_lon	location_type
+Khukh_Davaa	This study	47.06277	95.42039	Region of sampled Teel Formation basalt flows	47.10221	95.42075	Region
