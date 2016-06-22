@@ -95,11 +95,7 @@ Z35.1a	DE-BFL	923	953	HEM	m	g
 Z35.2a	DE-BFL	77	423	LOW	g	g
 Z35.2a	DE-BFL	573	833	MAG	y	g
 Z35.2a	DE-BFL	933	953	HEM	m	g
-<<<<<<< HEAD
-Z35.3a	DE-BFL	0	373	LOW	g	g
-=======
 Z35.3a	DE-BFL	0	373	LOW	g	b
->>>>>>> origin/master
 Z35.3a	DE-BFL	623	852	MAG	y	b
 Z35.3a	DE-BFL	933	953	HEM	m	b
 Z35.4a	DE-BFL	77	423	LOW	g	g

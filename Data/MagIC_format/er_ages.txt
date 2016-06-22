@@ -1,31 +1,1 @@
-tab	er_ages
-er_specimen_name	er_sample_name	er_site_name	er_location_name	er_citation_names	magic_method_codes	age_unit	age
-		Z30	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z31	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z32	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z33	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z34	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z35	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z36	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z37	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z38	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z39	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z40	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z41	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z42	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z43	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z44	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z45	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z46	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z47	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z48	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z49	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z50	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z51	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z52	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z53	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z54	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z55	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z56	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z57	Khukh_Davaa	This study	GM-UPB	Ma	446
-		Z58	Khukh_Davaa	This study	GM-UPB	Ma	446
+tab	er_ageser_site_name	er_location_name	er_citation_names	magic_method_codes	age_unit	ageZ30	Khukh_Davaa	This study	GM-UPB	Ma	446Z31	Khukh_Davaa	This study	GM-UPB	Ma	446Z32	Khukh_Davaa	This study	GM-UPB	Ma	446Z33	Khukh_Davaa	This study	GM-UPB	Ma	446Z34	Khukh_Davaa	This study	GM-UPB	Ma	446Z35	Khukh_Davaa	This study	GM-UPB	Ma	446Z36	Khukh_Davaa	This study	GM-UPB	Ma	446Z37	Khukh_Davaa	This study	GM-UPB	Ma	446Z38	Khukh_Davaa	This study	GM-UPB	Ma	446Z39	Khukh_Davaa	This study	GM-UPB	Ma	446Z40	Khukh_Davaa	This study	GM-UPB	Ma	446Z41	Khukh_Davaa	This study	GM-UPB	Ma	446Z42	Khukh_Davaa	This study	GM-UPB	Ma	446Z43	Khukh_Davaa	This study	GM-UPB	Ma	446Z44	Khukh_Davaa	This study	GM-UPB	Ma	446Z45	Khukh_Davaa	This study	GM-UPB	Ma	446Z46	Khukh_Davaa	This study	GM-UPB	Ma	446Z47	Khukh_Davaa	This study	GM-UPB	Ma	446Z48	Khukh_Davaa	This study	GM-UPB	Ma	446Z49	Khukh_Davaa	This study	GM-UPB	Ma	446Z50	Khukh_Davaa	This study	GM-UPB	Ma	446Z51	Khukh_Davaa	This study	GM-UPB	Ma	446Z52	Khukh_Davaa	This study	GM-UPB	Ma	446Z53	Khukh_Davaa	This study	GM-UPB	Ma	446Z54	Khukh_Davaa	This study	GM-UPB	Ma	446Z55	Khukh_Davaa	This study	GM-UPB	Ma	446Z56	Khukh_Davaa	This study	GM-UPB	Ma	446Z57	Khukh_Davaa	This study	GM-UPB	Ma	446Z58	Khukh_Davaa	This study	GM-UPB	Ma	446
