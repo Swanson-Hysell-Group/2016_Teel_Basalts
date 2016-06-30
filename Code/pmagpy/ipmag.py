@@ -19,7 +19,7 @@ def igrf(input_list):
     """
     Prints out Declination, Inclination, Intensity from the IGRF model.
 
-    Arguments
+    Parameters
     ----------
     input_list : list with format [Date, Altitude, Latitude, Longitude]
     Date must be in format XXXX.XXXX with years and decimals of a year (A.D.)
@@ -42,12 +42,15 @@ def fisher_mean(dec=None, inc=None, di_block=None):
     di_block (a nested list a nested list of [dec,inc,1.0]). Returns a
     dictionary with the Fisher mean and statistical parameters.
 
-    Keywords
+    Parameters
     ----------
     dec: list of declinations
     inc: list of inclinations
 
+    or
+
     di_block: a nested list of [dec,inc,1.0]
+
     A di_block can be provided instead of dec, inc lists in which case it will
     be used. Either dec, inc lists or a di_block need to passed to the function.
     """
@@ -58,19 +61,22 @@ def fisher_mean(dec=None, inc=None, di_block=None):
         return pmag.fisher_mean(di_block)
 
 
-def bingham_mean(dec, inc, di_block=None):
+def bingham_mean(dec=None, inc=None, di_block=None):
     """
     Calculates the Bingham mean and associated parameters from either a list of
     declination values and a separate list of inclination values or from a
     di_block (a nested list a nested list of [dec,inc,1.0]). Returns a
     dictionary with the Bingham mean and statistical parameters.
 
-    Keywords
+    Parameters
     ----------
     dec: list of declinations
     inc: list of inclinations
 
+    or
+
     di_block: a nested list of [dec,inc,1.0]
+
     A di_block can be provided instead of dec, inc lists in which case it will
     be used. Either dec, inc lists or a di_block need to passed to the function.
     """
@@ -86,9 +92,9 @@ def print_direction_mean(mean_dictionary):
     Does a pretty job printing a Fisher mean and associated statistics for
     directional data.
 
-    Arguments
+    Parameters
     ----------
-    mean_dictionary: output of pmag.fisher_mean
+    mean_dictionary: output dictionary of pmag.fisher_mean
     """
     print 'Dec: ' + str(round(mean_dictionary['dec'],1)) + '  Inc: ' + str(round(mean_dictionary['inc'],1))
     print 'Number of directions in mean (n): ' + str(mean_dictionary['n'])
@@ -101,9 +107,9 @@ def print_pole_mean(mean_dictionary):
     Does a pretty job printing a Fisher mean and associated statistics for
     mean paleomagnetic poles.
 
-    Arguments
+    Parameters
     ----------
-    mean_dictionary: output of pmag.fisher_mean
+    mean_dictionary: output dictionary of pmag.fisher_mean
     """
     print 'Plong: ' + str(round(mean_dictionary['dec'],1)) + '  Plat: ' + str(round(mean_dictionary['inc'],1))
     print 'Number of directions in mean (n): ' + str(mean_dictionary['n'])
@@ -179,7 +185,7 @@ def unsquish(incs,f):
     This function applies an unflattening factor (f) to inclination data
     (incs) and returns 'unsquished' values.
 
-    Arguments
+    Parameters
     ----------
     incs : list of inclination values or a single value
     f : unflattening factor (between 0.0 and 1.0)
@@ -205,7 +211,7 @@ def squish(incs,f):
     This function applies an flattening factor (f) to inclination data
     (incs) and returns 'squished' values.
 
-    Arguments
+    Parameters
     ----------
     incs : list of inclination values or a single value
     f : flattening factor (between 0.0 and 1.0)
@@ -236,13 +242,17 @@ def do_flip(dec=None, inc=None, di_block=None):
     nested list of [dec,inc,1.0]) is specified then it is used and the function
     returns a di_block with the flipped directions.
 
-    Keywords (defaults are used if not specified)
+    Parameters
     ----------
     dec: list of declinations
     inc: list of inclinations
 
+    or
+
     di_block: a nested list of [dec,inc,1.0]
-    (di_block can be provided instead of dec, inc in which case it will be used)
+
+    A di_block can be provided instead of dec, inc lists in which case it will
+    be used. Either dec, inc lists or a di_block need to passed to the function.
     """
     if di_block is None:
         dec_flip = []
@@ -259,7 +269,7 @@ def do_flip(dec=None, inc=None, di_block=None):
         return dflip
 
 
-def bootstrap_fold_test(Data,num_sims=1000,min_untilt=-10,max_untilt=120, bedding_error=0, save = False, save_folder = '.',fmt = 'svg'):
+def bootstrap_fold_test(Data,num_sims=1000,min_untilt=-10,max_untilt=120, bedding_error=0, save = False, save_folder = '.',fmt = 'svg',ninety_nine=False):
     """
     Conduct a bootstrap fold test (Tauxe and Watson, 1994)
 
@@ -271,11 +281,11 @@ def bootstrap_fold_test(Data,num_sims=1000,min_untilt=-10,max_untilt=120, beddin
     maxima. If the confidence bounds enclose 100% unfolding, the data "pass"
     the fold test.
 
-    Required Arguments
+    Required Parameters
     ----------
     Data : a numpy array of directional data [dec,inc,dip_direction,dip]
 
-    Optional Keywords (defaults are used if not specified)
+    Optional Parameters (defaults are used if not specified)
     ----------
     NumSims : number of bootstrap samples (default is 1000)
     min_untilt : minimum percent untilting applied to the data (default is -10%)
@@ -342,9 +352,13 @@ def bootstrap_fold_test(Data,num_sims=1000,min_untilt=-10,max_untilt=120, beddin
     plt.axvline(x=Untilt[lower],ymin=0,ymax=1,linewidth=1,linestyle='--')
     plt.axvline(x=Untilt[upper],ymin=0,ymax=1,linewidth=1,linestyle='--')
     title = '%i - %i %s'%(Untilt[lower],Untilt[upper],'percent unfolding')
+    if ninety_nine is True:
+        print 'tightest grouping of vectors obtained at (99% confidence bounds):'
+        print Untilt[int(.005*num_sims)], ' - ', Untilt[int(.995*num_sims)],'percent unfolding'
     print ""
     print 'tightest grouping of vectors obtained at (95% confidence bounds):'
     print title
+    print ""
     print 'range of all bootstrap samples: '
     print Untilt[0], ' - ', Untilt[-1],'percent unfolding'
     plt.title(title)
@@ -363,12 +377,12 @@ def common_mean_bootstrap(Data1,Data2,NumSims=1000, save=False, save_folder = '.
     one for z). If the 95 percent confidence bounds for each component overlap
     each other, the two directions are not significantly different.
 
-    Arguments
+    Parameters
     ----------
     Data1 : a nested list of directional data [dec,inc] (a di_block)
     Data2 : a nested list of directional data [dec,inc] (a di_block)
 
-    Optional Keywords (defaults are used if not specified)
+    Optional Parameters (defaults are used if not specified)
     ----------
     NumSims : number of bootstrap samples (default is 1000)
     save : optional save of plots (default is False)
@@ -445,12 +459,12 @@ def common_mean_watson(Data1,Data2,NumSims=5000,plot='no', save=False, save_fold
     angle between the two sample mean directions and the corresponding
     McFadden and McElhinny (1990) classification is printed.
 
-    Required Arguments
+    Required Parameters
     ----------
     Data1 : a nested list of directional data [dec,inc] (a di_block)
     Data2 : a nested list of directional data [dec,inc] (a di_block)
 
-    Optional Keywords (defaults are used if not specified)
+    Optional Parameters (defaults are used if not specified)
     ----------
     NumSims : number of Monte Carlo simulations (default is 5000)
     plot : the default is no plot ('no'). Putting 'yes' will the plot the CDF from
@@ -581,17 +595,19 @@ def reversal_test_bootstrap(dec=None, inc=None, di_block=None, plot_stereo = Fal
     determine whether two populations of directions could be from an antipodal
     common mean.
 
-    Required Arguments
+    Required Parameters
     ----------
     dec: list of declinations
     inc: list of inclinations
 
     or
 
-    di_block: a nested list of [dec,inc,1.0]
-    (di_block can be provided instead of dec, inc in which case it will be used)
+    di_block: a nested list of [dec,inc]
 
-    Optional Keywords (defaults are used if not specified)
+    A di_block can be provided instead of dec, inc lists in which case it will
+    be used. Either dec, inc lists or a di_block need to passed to the function.
+
+    Optional Parameters (defaults are used if not specified)
     ----------
     plot_stereo : before plotting the CDFs, plot stereonet with the
     bidirectionally separated data (default is False)
@@ -624,17 +640,19 @@ def reversal_test_MM1990(dec=None, inc=None, di_block=None, plot_CDF=False, plot
     the critical angle between the two sample mean directions and the
     corresponding McFadden and McElhinny (1990) classification.
 
-    Required Arguments
+    Required Parameters
     ----------
     dec: list of declinations
     inc: list of inclinations
 
     or
 
-    di_block: a nested list of [dec,inc,1.0]
-    (di_block can be provided instead of dec, inc in which case it will be used)
+    di_block: a nested list of [dec,inc]
 
-    Optional Keywords (defaults are used if not specified)
+    A di_block can be provided instead of dec, inc lists in which case it will
+    be used. Either dec, inc lists or a di_block need to passed to the function.
+
+    Optional Parameters (defaults are used if not specified)
     ----------
     plot_CDF : plot the CDF accompanying the printed results (default is False)
     plot_stereo : plot stereonet with the bidirectionally separated data
@@ -664,23 +682,31 @@ def reversal_test_MM1990(dec=None, inc=None, di_block=None, plot_CDF=False, plot
         common_mean_watson(directions1, directions2, plot = 'yes', save=save, save_folder=save_folder, fmt=fmt)
 
 
-def fishqq(longitude, latitude):
+def fishqq(lon=None, lat=None, di_block=None):
     """
     Test whether a distribution is Fisherian and make a corresponding Q-Q plot.
     The Q-Q plot shows the data plotted against the value expected from a
     Fisher distribution. The first plot is the uniform plot which is the
-    Fisher model distribution in terms of longitude. The second plot is the
-    exponential plot which is the Fisher model distribution in terms of latitude.
-    In addition to the plots, the test statistics Mu (uniform) and Me (exponential)
-    are calculated and compared against the critical test values. If Mu or Me are
-    too large in comparision to the test statistics, the hypothesis that the
-    distribution is Fisherian is rejected (see Fisher et al., 1987).
+    Fisher model distribution in terms of longitude (declination). The second
+    plot is the exponential plot which is the Fisher model distribution in terms
+    of latitude (inclination). In addition to the plots, the test statistics Mu
+    (uniform) and Me (exponential) are calculated and compared against the
+    critical test values. If Mu or Me are too large in comparision to the test
+    statistics, the hypothesis that the distribution is Fisherian is rejected
+    (see Fisher et al., 1987).
 
     Parameters:
-    longitude : longitude or declination of the data
-    latitude : latitude or inclination of the data
+    -----------
+    lon : longitude or declination of the data
+    lat : latitude or inclination of the data
+
+    or
+
+    di_block: a nested list of [lon,lat,1.0] or [dec,inc,1.0]
+    (di_block can be provided instead of lon, lat in which case it will be used)
 
     Output:
+    -----------
     dictionary containing
     lon : mean longitude (or declination)
     lat : mean latitude (or inclination)
@@ -694,15 +720,19 @@ def fishqq(longitude, latitude):
     two of these dictionaries will be returned
 
     """
-    DIs = make_di_block(longitude,latitude)
-    ppars = pmag.doprinc(DIs) # get principal directions
+    if di_block is None:
+        all_dirs = make_di_block(lon, lat)
+    else:
+        all_dirs = di_block
+
+    ppars = pmag.doprinc(all_dirs) # get principal directions
 
     rDIs = []
     nDIs = []
     QQ_dict1 = {}
     QQ_dict2 = {}
 
-    for rec in DIs:
+    for rec in all_dirs:
         angle=pmag.angle([rec[0],rec[1]],[ppars['dec'],ppars['inc']])
         if angle>90.:
             rDIs.append(rec)
@@ -792,18 +822,58 @@ def fishqq(longitude, latitude):
         print 'you need N> 10 for at least one mode'
 
 
-def lat_from_inc(inc):
+def lat_from_inc(inc,a95=None):
     """
     Calculate paleolatitude from inclination using the dipole equation
+
+    Required Parameter
+    ----------
+    inc: (paleo)magnetic inclination in degrees
+
+    Optional Parameter
+    ----------
+    a95: 95% confidence interval from Fisher mean
+
+    Returns
+    ----------
+    if a95 is provided paleo_lat, paleo_lat_max, paleo_lat_min are returned
+    otherwise, it just returns paleo_lat
     """
     rad=np.pi/180.
-    paleo_lat=np.arctan(0.5*np.tan(inc*rad))/rad
-    return paleo_lat
+    paleo_lat = np.arctan(0.5*np.tan(inc*rad))/rad
+    if a95 is not None:
+        paleo_lat_max = np.arctan(0.5*np.tan((inc+a95)*rad))/rad
+        paleo_lat_min = np.arctan(0.5*np.tan((inc-a95)*rad))/rad
+        return paleo_lat, paleo_lat_max, paleo_lat_min
+    else:
+        return paleo_lat
+
+
+def lat_from_pole(ref_loc_lon,ref_loc_lat,pole_plon,pole_plat):
+    """
+    Calculate paleolatitude for a reference location based on a paleomagnetic pole
+
+    Required Parameters
+    ----------
+    ref_loc_lon: longitude of reference location in degrees
+    ref_loc_lat: latitude of reference location
+    pole_plon: paleopole longitude in degrees
+    pole_plat: paleopole latitude in degrees
+    """
+
+    ref_loc = (ref_loc_lon,ref_loc_lat)
+    pole = (pole_plon, pole_plat)
+    paleo_lat = 90-pmag.angle(pole,ref_loc)
+    return float(paleo_lat)
 
 
 def inc_from_lat(lat):
     """
-    Calculate inclination predicted from latitude using the dipole equation.
+    Calculate inclination predicted from latitude using the dipole equation
+
+    Parameter
+    ----------
+    lat: latitude in degrees
     """
     rad=np.pi/180.
     inc=np.arctan(2*np.tan(lat*rad))/rad
@@ -874,7 +944,7 @@ def plot_di(dec=None, inc=None, di_block=None, color='k', marker='o', markersize
     >plt.figure(num=fignum,figsize=(10,10),dpi=160)
     >ipmag.plot_net(fignum)
 
-    Required Arguments
+    Required Parameters
     -----------
     dec : declination being plotted
     inc : inclination being plotted
@@ -884,7 +954,7 @@ def plot_di(dec=None, inc=None, di_block=None, color='k', marker='o', markersize
     di_block: a nested list of [dec,inc,1.0]
     (di_block can be provided instead of dec, inc in which case it will be used)
 
-    Optional Keywords
+    Optional Parameters (defaults are used if not specified)
     -----------
     color : the default color is black. Other colors can be chosen (e.g. 'r')
     marker : the default marker is a circle ('o')
@@ -942,13 +1012,13 @@ def plot_di_mean(dec,inc,a95,color='k',marker='o',markersize=20,label='',legend=
     >plt.figure(num=fignum,figsize=(10,10),dpi=160)
     >ipmag.plot_net(fignum)
 
-    Required Arguments
+    Required Parameters
     -----------
     dec : declination of mean being plotted
     inc : inclination of mean being plotted
     a95 : a95 confidence ellipse of mean being plotted
 
-    Optional Keywords
+    Optional Parameters (defaults are used if not specified)
     -----------
     color : the default color is black. Other colors can be chosen (e.g. 'r').
     marker : the default is a circle. Other symbols can be chosen (e.g. 's').
@@ -982,14 +1052,14 @@ def plot_pole(mapname,plong,plat,A95,label='',color='k',marker='o',markersize=20
     This function plots a paleomagnetic pole and A95 error ellipse on whatever
     current map projection has been set using the basemap plotting library.
 
-    Required Arguments
+    Required Parameters
     -----------
     mapname : the name of the current map that has been developed using basemap
     plong : the longitude of the paleomagnetic pole being plotted (in degrees E)
     plat : the latitude of the paleomagnetic pole being plotted (in degrees)
     A95 : the A_95 confidence ellipse of the paleomagnetic pole (in degrees)
 
-    Optional Keywords
+    Optional Parameters (defaults are used if not specified)
     -----------
     color : the default color is black. Other colors can be chosen (e.g. 'r')
     marker : the default is a circle. Other symbols can be chosen (e.g. 's')
@@ -1010,14 +1080,14 @@ def plot_pole_colorbar(mapname,plong,plat,A95,cmap,vmin,vmax,label='',color='k',
     This function plots a paleomagnetic pole and A95 error ellipse on whatever
     current map projection has been set using the basemap plotting library.
 
-    Required Arguments
+    Required Parameters
     -----------
     mapname : the name of the current map that has been developed using basemap
     plong : the longitude of the paleomagnetic pole being plotted (in degrees E)
     plat : the latitude of the paleomagnetic pole being plotted (in degrees)
     A95 : the A_95 confidence ellipse of the paleomagnetic pole (in degrees)
 
-    Optional Keywords
+    Optional Parameters (defaults are used if not specified)
     -----------
     label : a string that is the label for the paleomagnetic pole being plotted
     color : the color desired for the symbol and its A95 ellipse (default is 'k' aka black)
@@ -1043,7 +1113,7 @@ def plot_vgp(mapname,vgp_lon=None,vgp_lat=None,di_block=None,label='',color='k',
     plong : the longitude of the paleomagnetic pole being plotted (in degrees E)
     plat : the latitude of the paleomagnetic pole being plotted (in degrees)
 
-    Optional Parameters
+    Optional Parameters (defaults are used if not specified)
     -----------
     color : the color desired for the symbol and its A95 ellipse (default is 'k' aka black)
     marker : the marker shape desired for the pole mean symbol (default is 'o' aka a circle)
@@ -1066,7 +1136,7 @@ def vgp_calc(dataframe,tilt_correction='yes', site_lon = 'site_lon', site_lat = 
     -----------
     dataframe : the name of the pandas.DataFrame containing the data
 
-    ----- the following default keys can be changes by keyword argument -----
+    ----- the following default parameters can be changes by keyword argument -----
     tilt-correction : 'yes' is the default and uses tilt-corrected data (dec_tc, inc_tc), 'no' uses data that is not tilt-corrected and is in geographic coordinates
     dataframe['site_lat'] : the name of the Dataframe column containing the latitude of the site
     dataframe['site_lon'] : the name of the Dataframe column containing the longitude of the site
@@ -1144,7 +1214,7 @@ def sb_vgp_calc(dataframe,site_correction = 'yes', dec_tc = 'dec_tc', inc_tc = '
     dataframe['k'] : fisher precision parameter for directions
     dataframe['vgp_lat'] : VGP latitude
     dataframe['vgp_lon'] : VGP longitude
-    ----- the following default keys can be changes by keyword argument -----
+    ----- the following default parameters can be changes by keyword argument -----
     dataframe['inc_tc'] : tilt-corrected inclination
     dataframe['dec_tc'] : tilt-corrected declination
 
@@ -1224,24 +1294,39 @@ def make_di_block(dec,inc):
 
 def unpack_di_block(di_block):
     """
-    This function unpacks a nested list of [dec,inc,1.] into a list of
-    declination values and a list of inclination values.
+    This function unpacks a nested list of [dec,inc,mag_moment] into a list of
+    declination values, a list of inclination values and a list of magnetic
+    moment values. Mag_moment values are optional, while dec and inc values are
+    required.
     """
     dec_list = []
     inc_list = []
+    moment_list = []
 
     for n in range(0,len(di_block)):
         dec = di_block[n][0]
         inc = di_block[n][1]
         dec_list.append(dec)
         inc_list.append(inc)
-    return dec_list, inc_list
+        if len(di_block[n])>2:
+            moment = di_block[n][2]
+            moment_list.append(moment)
+
+    return dec_list, inc_list, moment_list
 
 
 def make_diddd_array(dec,inc,dip_direction,dip):
     """
-    Some pmag.py functions require a numpy array of dec, inc, dip direction, dip [dec,inc,dd,dip] as input. This
-    function makes such a list
+    Some pmag.py functions such as the bootstrap fold test require a numpy array
+     of dec, inc, dip direction, dip [dec,inc,dd,dip] as input. This function
+     makes such a list.
+
+    Parameters
+    -----------
+    dec : paleomagnetic declination in degrees
+    inc : paleomagnetic inclination in degrees
+    dip_direction : the dip direction of bedding (in degrees between 0 and 360)
+    dip: dip of bedding (in degrees)
     """
     diddd_block=[]
     for n in range(0,len(dec)):
@@ -1366,6 +1451,10 @@ def combine_magic(filenames, outfile):
     Takes a list of magic-formatted files, concatenates them, and creates a single file.
     Returns true if the operation was successful.
 
+    Parameters
+    -----------
+    filenames : list of MagIC formatted files
+    outfile : name of output file
     """
     datasets = []
     if not filenames:
@@ -4754,7 +4843,6 @@ def agm_magic(agm_file, samp_infile=None, outfile='agm_measurements.txt', spec_o
     OUTPUT
         MagIC format files: magic_measurements, er_specimens, er_sample, er_site
     """
-
     #return False, 'fake error message'
     citation='This study'
     MeasRecs=[]
@@ -5144,7 +5232,7 @@ def dayplot(path_to_file = '.',hyst_file="rmag_hysteresis.txt",
     (Neel, 1955; plots after Tauxe et al., 2002); plots 'linear mixing'
     curve from Dunlop and Carter-Stiglitz (2006).
 
-    Optional Keywords (defaults are used if not specified)
+    Optional Parameters (defaults are used if not specified)
     ----------
     path_to_file : path to directory that contains files (default is current directory, '.')
     hyst_file : hysteresis file (default is 'rmag_hysteresis.txt')
@@ -5228,12 +5316,12 @@ def smooth(x,window_len,window='bartlett'):
     with average of the first (last) ten values of the signal, to evoid jumps
     at the beggining/end. Output is an array of the smoothed signal.
 
-    Required Arguments
+    Required Parameters
     ----------
     x : the input signal, equaly spaced!
     window_len : the dimension of the smoothing window
 
-    Optional Keywords (defaults are used if not specified)
+    Optional Parameters (defaults are used if not specified)
     ----------
     window : type of window from numpy library ['flat','hanning','hamming','bartlett','blackman']
         (default is Bartlett)
@@ -5279,7 +5367,7 @@ def deriv1(x,y,i,n):
     'i' is calculated by least square fit of 'n' points before
     and after position.
 
-    Required Arguments
+    Required Parameters
     ----------
     x : array of x axis
     y : array of y axis
@@ -5309,7 +5397,7 @@ def curie(path_to_file = '.',file_name = 'magic_measurements.txt',
     The estimated curie temp. is the maximum of the 2nd derivative.
     Temperature steps should be in multiples of 1.0 degrees.
 
-    Optional Keywords (defaults are used if not specified)
+    Optional Parameters (defaults are used if not specified)
     ----------
     path_to_file : path to directory that contains file (default is current directory, '.')
     file_name : name of file to be opened (default is 'magic_measurements.txt')
@@ -5463,7 +5551,7 @@ def chi_magic(path_to_file = '.', file_name = 'magic_measurements.txt',
     Generates plots that compare susceptibility to temperature at different
     frequencies.
 
-    Optional Keywords (defaults are used if not specified)
+    Optional Parameters (defaults are used if not specified)
     ----------
     path_to_file : path to directory that contains file (default is current directory, '.')
     file_name : name of file to be opened (default is 'magic_measurements.txt')
@@ -5578,7 +5666,7 @@ def pmag_results_extract(res_file="pmag_results.txt", crit_file="", spec_file=""
     Possible output files: Directions, Intensities, SiteNfo, Criteria,
                            Specimens
 
-    Optional Keywords (defaults are used if not specified)
+    Optional Parameters (defaults are used if not specified)
     ----------
     res_file : name of pmag_results file (default is "pmag_results.txt")
     crit_file : name of criteria file (default is "pmag_criteria.txt")
@@ -5927,12 +6015,13 @@ def pmag_results_extract(res_file="pmag_results.txt", crit_file="", spec_file=""
 
 def demag_magic(path_to_file = '.', file_name = 'magic_measurements.txt',
                save = False, save_folder = '.', fmt='svg', plot_by='loc',
-               treat=None, XLP = "", individual = None):
+               treat=None, XLP = "", individual = None, average_measurements = False,
+               single_plot = False):
     '''
     Takes demagnetization data (from magic_measurements file) and outputs
     intensity plots (with optional save).
 
-    Arguments
+    Parameters
     -----------
     path_to_file : path to directory that contains files (default is current directory, '.')
     file_name : name of measurements file (default is 'magic_measurements.txt')
@@ -5955,6 +6044,9 @@ def demag_magic(path_to_file = '.', file_name = 'magic_measurements.txt',
         or specimen, you may not wish to see (or wait for) every single plot. You can
         therefore specify a particular plot by setting this keyword argument to
         a string of the site/sample/specimen name.
+    average_measurements : Option to average demagnetization measurements by
+        the grouping specified with the 'plot_by' keyword argument (default is False)
+    single_plot : Option to output a single plot with all measurements (default is False)
     '''
 
     FIG={} # plot dictionary
@@ -6025,8 +6117,11 @@ def demag_magic(path_to_file = '.', file_name = 'magic_measurements.txt',
     int_key=IntMeths[0] # plot first intensity method found - normalized to initial value anyway - doesn't matter which used
     # print plotlist
     if individual is not None:
-        plotlist = []
-        plotlist.append(individual)
+        if type(individual) == list or type(individual)==tuple:
+            plotlist = list(individual)
+        else:
+            plotlist = []
+            plotlist.append(individual)
     for plot in plotlist:
         print plot,'plotting by: ',plot_key
         PLTblock=pmag.get_dictitem(data,plot_key,plot,'T') # fish out all the data for this type of plot
@@ -6042,15 +6137,33 @@ def demag_magic(path_to_file = '.', file_name = 'magic_measurements.txt',
             for rec in PLTblock:
                 if rec['er_specimen_name'] not in spcs:
                     spcs.append(rec['er_specimen_name'])
-            for spc in spcs:
-                SPCblock=pmag.get_dictitem(PLTblock,'er_specimen_name',spc,'T') # plot specimen by specimen
-                INTblock=[]
-                for rec in SPCblock:
-                    INTblock.append([float(rec[dmag_key]),0,0,float(rec[int_key]),1,rec['measurement_flag']])
-                if len(INTblock)>2:
-                    pmagplotlib.plotMT(FIG['demag'],INTblock,title,0,units,norm)
+            if average_measurements is False:
+                for spc in spcs:
+                    SPCblock=pmag.get_dictitem(PLTblock,'er_specimen_name',spc,'T') # plot specimen by specimen
+                    INTblock=[]
+                    for rec in SPCblock:
+                        INTblock.append([float(rec[dmag_key]),0,0,float(rec[int_key]),1,rec['measurement_flag']])
+                    if len(INTblock)>2:
+                        pmagplotlib.plotMT(FIG['demag'],INTblock,title,0,units,norm)
+            else:
+                AVGblock={}
+                for spc in spcs:
+                    SPCblock=pmag.get_dictitem(PLTblock,'er_specimen_name',spc,'T') # plot specimen by specimen
+                    for rec in SPCblock:
+                        if rec['measurement_flag'] == 'g':
+                            if float(rec[dmag_key]) not in AVGblock.keys():
+                                AVGblock[float(rec[dmag_key])] = [float(rec[int_key])]
+                            else:
+                                AVGblock[float(rec[dmag_key])].append(float(rec[int_key]))
+                INTblock = []
+                for step in sorted(AVGblock.keys()):
+                    INTblock.append([float(step), 0, 0, float(sum(AVGblock[step]))/float(len(AVGblock[step])), 1, 'g'])
+                pmagplotlib.plotMT(FIG['demag'],INTblock,title,0,units,norm)
         if save==True:
             plt.savefig(os.path.join(save_folder, title)+ '.' + fmt)
+        if single_plot is False:
+            plt.show()
+    if single_plot is True:
         plt.show()
 
 
@@ -6061,7 +6174,7 @@ def iplotHYS(fignum,B,M,s):
     This function has been adapted from pmagplotlib.iplotHYS for specific use
     within a Jupyter notebook.
 
-    Arguments
+    Parameters
     -----------
     fignum : reference number for matplotlib figure being created
     B : list of B (flux density) values of hysteresis experiment
@@ -6161,7 +6274,7 @@ def hysteresis_magic(path_to_file = '.',hyst_file="rmag_hysteresis.txt",
     If selected, this function also plots hysteresis loops, delta M curves,
     d (Delta M)/dB curves, and IRM backfield curves.
 
-    Arguments (defaults are used if not specified)
+    Parameters (defaults are used if not specified)
     ----------
     path_to_file : path to directory that contains files (default is current directory, '.')
     hyst_file : hysteresis file (default is 'rmag_hysteresis.txt')
@@ -6344,11 +6457,11 @@ def find_ei(data, nb=1000, save = False, save_folder = '.', fmt='svg',
     Fisherian distribution.
     Finds bootstrap confidence bounds
 
-    Arguments
+    Required Parameter
     -----------
     data: a nested list of dec/inc pairs
 
-    Keywords
+    Optional Parameters (defaults are used unless specified)
     -----------
     nb: number of bootstrapped pseudo-samples (default is 1000)
     save: Boolean argument to save plots (default is False)
