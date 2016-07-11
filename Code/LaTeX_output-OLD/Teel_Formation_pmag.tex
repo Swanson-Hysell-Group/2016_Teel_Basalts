@@ -1,0 +1,1756 @@
+
+% Default to the notebook output style
+
+    
+
+% Default to the notebook output style
+
+
+% Inherit from the specified cell style.
+
+
+
+
+    
+\documentclass[11pt]{article}
+
+    \parskip = 0.1in
+	\parindent = 0.0in
+    
+    \usepackage{rotating}
+    \usepackage{graphicx} % Used to insert images
+    \usepackage{adjustbox} % Used to constrain images to a maximum size 
+    \usepackage{color} % Allow colors to be defined
+    \usepackage{enumerate} % Needed for markdown enumerations to work
+    \usepackage{geometry} % Used to adjust the document margins
+    \usepackage{amsmath} % Equations
+    \usepackage{amssymb} % Equations
+    \usepackage{eurosym} % defines \euro
+    \usepackage[mathletters]{ucs} % Extended unicode (utf-8) support
+    \usepackage[utf8x]{inputenc} % Allow utf-8 characters in the tex document
+    \usepackage{fancyvrb} % verbatim replacement that allows latex
+    \usepackage{grffile} % extends the file name processing of package graphics 
+                         % to support a larger range 
+    % The hyperref package gives us a pdf with properly built
+    % internal navigation ('pdf bookmarks' for the table of contents,
+    % internal cross-reference links, web links for URLs, etc.)
+    \usepackage{hyperref}
+    \usepackage{longtable} % longtable support required by pandoc >1.10
+    \usepackage{booktabs}  % table support for pandoc > 1.12.2
+    \usepackage{ulem} % ulem is needed to support strikethroughs (\sout)
+    \usepackage{url}
+
+    
+    
+    \definecolor{orange}{cmyk}{0,0.4,0.8,0.2}
+    \definecolor{darkorange}{rgb}{.71,0.21,0.01}
+    \definecolor{darkgreen}{rgb}{.12,.54,.11}
+    \definecolor{myteal}{rgb}{.26, .44, .56}
+    \definecolor{gray}{gray}{0.45}
+    \definecolor{lightgray}{gray}{.95}
+    \definecolor{mediumgray}{gray}{.8}
+    \definecolor{inputbackground}{rgb}{.95, .95, .85}
+    \definecolor{outputbackground}{rgb}{.95, .95, .95}
+    \definecolor{traceback}{rgb}{1, .95, .95}
+    % ansi colors
+    \definecolor{red}{rgb}{.6,0,0}
+    \definecolor{green}{rgb}{0,.65,0}
+    \definecolor{brown}{rgb}{0.6,0.6,0}
+    \definecolor{blue}{rgb}{0,.145,.698}
+    \definecolor{purple}{rgb}{.698,.145,.698}
+    \definecolor{cyan}{rgb}{0,.698,.698}
+    \definecolor{lightgray}{gray}{0.5}
+    
+    % bright ansi colors
+    \definecolor{darkgray}{gray}{0.25}
+    \definecolor{lightred}{rgb}{1.0,0.39,0.28}
+    \definecolor{lightgreen}{rgb}{0.48,0.99,0.0}
+    \definecolor{lightblue}{rgb}{0.53,0.81,0.92}
+    \definecolor{lightpurple}{rgb}{0.87,0.63,0.87}
+    \definecolor{lightcyan}{rgb}{0.5,1.0,0.83}
+    
+    % commands and environments needed by pandoc snippets
+    % extracted from the output of `pandoc -s`
+    \providecommand{\tightlist}{%
+      \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+    \DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+    % Add ',fontsize=\small' for more characters per line
+    \newenvironment{Shaded}{}{}
+    \newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.56,0.13,0.00}{{#1}}}
+    \newcommand{\DecValTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\FloatTok}[1]{\textcolor[rgb]{0.25,0.63,0.44}{{#1}}}
+    \newcommand{\CharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\StringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\CommentTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textit{{#1}}}}
+    \newcommand{\OtherTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{{#1}}}
+    \newcommand{\AlertTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.02,0.16,0.49}{{#1}}}
+    \newcommand{\RegionMarkerTok}[1]{{#1}}
+    \newcommand{\ErrorTok}[1]{\textcolor[rgb]{1.00,0.00,0.00}{\textbf{{#1}}}}
+    \newcommand{\NormalTok}[1]{{#1}}
+    
+    % Additional commands for more recent versions of Pandoc
+    \newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.53,0.00,0.00}{{#1}}}
+    \newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.25,0.44,0.63}{{#1}}}
+    \newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.73,0.40,0.53}{{#1}}}
+    \newcommand{\ImportTok}[1]{{#1}}
+    \newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.73,0.13,0.13}{\textit{{#1}}}}
+    \newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\VariableTok}[1]{\textcolor[rgb]{0.10,0.09,0.49}{{#1}}}
+    \newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.00,0.44,0.13}{\textbf{{#1}}}}
+    \newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.40,0.40,0.40}{{#1}}}
+    \newcommand{\BuiltInTok}[1]{{#1}}
+    \newcommand{\ExtensionTok}[1]{{#1}}
+    \newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.74,0.48,0.00}{{#1}}}
+    \newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.49,0.56,0.16}{{#1}}}
+    \newcommand{\InformationTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    \newcommand{\WarningTok}[1]{\textcolor[rgb]{0.38,0.63,0.69}{\textbf{\textit{{#1}}}}}
+    
+    
+    % Define a nice break command that doesn't care if a line doesn't already
+    % exist.
+    \def\br{\hspace*{\fill} \\* }
+    % Math Jax compatability definitions
+    \def\gt{>}
+    \def\lt{<}
+    % Document parameters
+    \title{Teel\_Formation\_pmag}
+    
+    
+    
+
+    % Pygments definitions
+    
+\makeatletter
+\def\PY@reset{\let\PY@it=\relax \let\PY@bf=\relax%
+    \let\PY@ul=\relax \let\PY@tc=\relax%
+    \let\PY@bc=\relax \let\PY@ff=\relax}
+\def\PY@tok#1{\csname PY@tok@#1\endcsname}
+\def\PY@toks#1+{\ifx\relax#1\empty\else%
+    \PY@tok{#1}\expandafter\PY@toks\fi}
+\def\PY@do#1{\PY@bc{\PY@tc{\PY@ul{%
+    \PY@it{\PY@bf{\PY@ff{#1}}}}}}}
+\def\PY#1#2{\PY@reset\PY@toks#1+\relax+\PY@do{#2}}
+
+\expandafter\def\csname PY@tok@nv\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@nt\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@mf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gp\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@nf\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@gu\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.50,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@vc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@m\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@sh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@cp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.74,0.48,0.00}{##1}}}
+\expandafter\def\csname PY@tok@s1\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@w\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.73,0.73}{##1}}}
+\expandafter\def\csname PY@tok@mi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@il\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@sx\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@sd\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@sc\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@ow\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@no\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@vg\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@si\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@vi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@c\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@mo\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@cm\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@sb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@s2\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@kp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gh\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gi\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.63,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.67,0.13,1.00}{##1}}}
+\expandafter\def\csname PY@tok@k\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ss\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.10,0.09,0.49}{##1}}}
+\expandafter\def\csname PY@tok@c1\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@ne\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.82,0.25,0.23}{##1}}}
+\expandafter\def\csname PY@tok@err\endcsname{\def\PY@bc##1{\setlength{\fboxsep}{0pt}\fcolorbox[rgb]{1.00,0.00,0.00}{1,1,1}{\strut ##1}}}
+\expandafter\def\csname PY@tok@mh\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@na\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.49,0.56,0.16}{##1}}}
+\expandafter\def\csname PY@tok@gr\endcsname{\def\PY@tc##1{\textcolor[rgb]{1.00,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cs\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@nc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@nb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@ni\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.60,0.60,0.60}{##1}}}
+\expandafter\def\csname PY@tok@go\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.53,0.53,0.53}{##1}}}
+\expandafter\def\csname PY@tok@kt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.69,0.00,0.25}{##1}}}
+\expandafter\def\csname PY@tok@ch\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@gs\endcsname{\let\PY@bf=\textbf}
+\expandafter\def\csname PY@tok@sr\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.53}{##1}}}
+\expandafter\def\csname PY@tok@kd\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@nn\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.00,1.00}{##1}}}
+\expandafter\def\csname PY@tok@o\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@gd\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.00,0.00}{##1}}}
+\expandafter\def\csname PY@tok@gt\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.27,0.87}{##1}}}
+\expandafter\def\csname PY@tok@ge\endcsname{\let\PY@it=\textit}
+\expandafter\def\csname PY@tok@s\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.73,0.13,0.13}{##1}}}
+\expandafter\def\csname PY@tok@mb\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.40,0.40,0.40}{##1}}}
+\expandafter\def\csname PY@tok@kr\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@kc\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@bp\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.00,0.50,0.00}{##1}}}
+\expandafter\def\csname PY@tok@cpf\endcsname{\let\PY@it=\textit\def\PY@tc##1{\textcolor[rgb]{0.25,0.50,0.50}{##1}}}
+\expandafter\def\csname PY@tok@se\endcsname{\let\PY@bf=\textbf\def\PY@tc##1{\textcolor[rgb]{0.73,0.40,0.13}{##1}}}
+\expandafter\def\csname PY@tok@nl\endcsname{\def\PY@tc##1{\textcolor[rgb]{0.63,0.63,0.00}{##1}}}
+
+\def\PYZbs{\char`\\}
+\def\PYZus{\char`\_}
+\def\PYZob{\char`\{}
+\def\PYZcb{\char`\}}
+\def\PYZca{\char`\^}
+\def\PYZam{\char`\&}
+\def\PYZlt{\char`\<}
+\def\PYZgt{\char`\>}
+\def\PYZsh{\char`\#}
+\def\PYZpc{\char`\%}
+\def\PYZdl{\char`\$}
+\def\PYZhy{\char`\-}
+\def\PYZsq{\char`\'}
+\def\PYZdq{\char`\"}
+\def\PYZti{\char`\~}
+% for compatibility with earlier versions
+\def\PYZat{@}
+\def\PYZlb{[}
+\def\PYZrb{]}
+\makeatother
+
+
+    % Exact colors from NB
+    \definecolor{incolor}{rgb}{0.0, 0.0, 0.5}
+    \definecolor{outcolor}{rgb}{0.545, 0.0, 0.0}
+
+
+
+    
+    % Prevent overflowing lines due to hard-to-break entities
+    \sloppy 
+    % Setup hyperref package
+    \hypersetup{
+      breaklinks=true,  % so long urls are correctly broken across lines
+      colorlinks=true,
+      urlcolor=blue,
+      linkcolor=darkorange,
+      citecolor=darkgreen,
+      }
+    % Slightly bigger margins than the latex defaults
+    
+    \geometry{verbose,tmargin=1in,bmargin=1in,lmargin=1in,rmargin=1in}
+    
+    
+
+    \begin{document}
+
+    
+{\Large Date repository materials for Paleomagnetism of the Late Ordovician Teel basalts of the
+Zavkhan Terrane -- Paleozoic paleogeography of Mongolia}
+    
+\tableofcontents
+
+    \section{Teel Volcanics Paleomagnetic Data
+Analysis}\label{teel-volcanics-data-analysis}
+
+    This notebook is the data repository for a manuscript entitled:
+
+\textbf{Paleomagnetism of the Late Ordovician Teel basalts of the
+Zavkhan Terrane -- Paleozoic paleogeography of Mongolia}
+
+T. M. Kilian, N. L. Swanson-Hysell, U. Bold, J. Crowley, and F. A.
+Macdonald
+
+This manuscript is in review at the GSA journal Lithosphere.
+
+This notebook contains data analysis related to paleomagnetic data
+generated from basalt flows of the Late Ordovician Teel Formation from
+the Zavkhan Terrane. The underlying data are availible both within the
+MagIC Database and in the GitHub repository association with this work: \url{https://github.com/Swanson-Hysell-Group/2016\_Teel\_Basalts}
+
+    \subsection{Import Modules}\label{import-modules}
+
+
+
+    Write template file (no\_code.tpl) so that when the notebook is
+converted to a latex (then pdf) it excludes the large code blocks. This
+requires an additional arguement when using nbconveter and also requires
+that adding tables of content term after the document begins; can also
+add author. Can't include examples here because they affect the file
+when in latex.
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+Overwriting no\_code\_latex.tplx
+    \end{Verbatim}
+
+    \subsection{Sampling localities}\label{sampling-localities}
+
+    Table of site locality coordinates given in WGS84 as well as a very
+simple map. Exact stratigraphic positions are shown in main text; order
+of stratigraphic position is given in ``stat\_pos'' column of table. The
+paleomagnetic data from these sites may need to be tilt-corrected
+(depending on the the age of magnetization) according to nearby
+measurements of bedding. The bedding tilts used for sites Z30 to Z55
+come from interflow sedimentary rocks. The tilt-corrections for Z56 to
+Z58 are more uncertain and are based on interpretted flow banding.
+
+\texttt{\color{outcolor}Out[{\color{outcolor}5}]:}
+    
+{\tiny\begin{tabular}{llllrrrrr}
+\toprule
+{} & er\_citation\_names & er\_location\_name & er\_site\_name &  site\_lat &  site\_lon &  strat\_pos &  sample\_bed\_dip\_direction &  sample\_bed\_dip \\
+\midrule
+0  &        This study &     Khukh\_Davaa  &          Z30 &  47.10038 &  95.37550 &        4.0 &                        88 &              58 \\
+1  &        This study &     Khukh\_Davaa  &          Z31 &  47.10049 &  95.37604 &        5.0 &                        88 &              58 \\
+2  &        This study &     Khukh\_Davaa  &          Z32 &  47.10094 &  95.37684 &        6.0 &                        84 &              55 \\
+3  &        This study &     Khukh\_Davaa  &          Z33 &  47.10107 &  95.37705 &        7.0 &                        84 &              55 \\
+4  &        This study &     Khukh\_Davaa  &          Z34 &  47.10111 &  95.37712 &        8.0 &                        84 &              55 \\
+5  &        This study &     Khukh\_Davaa  &          Z35 &  47.10069 &  95.37747 &        9.0 &                        84 &              55 \\
+6  &        This study &     Khukh\_Davaa  &          Z36 &  47.10221 &  95.37959 &       11.0 &                        89 &              47 \\
+7  &        This study &     Khukh\_Davaa  &          Z37 &  47.10211 &  95.37971 &       12.0 &                        89 &              47 \\
+8  &        This study &     Khukh\_Davaa  &          Z38 &  47.09855 &  95.38445 &       13.0 &                        87 &              46 \\
+9  &        This study &     Khukh\_Davaa  &          Z39 &  47.09860 &  95.38467 &       14.0 &                        87 &              46 \\
+10 &        This study &     Khukh\_Davaa  &          Z40 &  47.09859 &  95.38474 &       15.0 &                        87 &              46 \\
+11 &        This study &     Khukh\_Davaa  &          Z41 &  47.10109 &  95.37744 &       10.0 &                        84 &              55 \\
+12 &        This study &     Khukh\_Davaa  &          Z42 &  47.09577 &  95.38577 &       16.0 &                        87 &              37 \\
+13 &        This study &     Khukh\_Davaa  &          Z43 &  47.09570 &  95.38638 &       17.0 &                        87 &              37 \\
+14 &        This study &     Khukh\_Davaa  &          Z44 &  47.09571 &  95.38651 &       18.0 &                        87 &              37 \\
+15 &        This study &     Khukh\_Davaa  &          Z45 &  47.09562 &  95.38676 &       19.0 &                        87 &              37 \\
+16 &        This study &     Khukh\_Davaa  &          Z46 &  47.09563 &  95.38692 &       20.0 &                        87 &              37 \\
+17 &        This study &     Khukh\_Davaa  &          Z47 &  47.09568 &  95.38727 &       21.0 &                        87 &              37 \\
+18 &        This study &     Khukh\_Davaa  &          Z48 &  47.09570 &  95.38744 &       22.0 &                        91 &              28 \\
+19 &        This study &     Khukh\_Davaa  &          Z49 &  47.09581 &  95.38747 &       23.0 &                        91 &              28 \\
+20 &        This study &     Khukh\_Davaa  &          Z50 &  47.09575 &  95.38781 &       24.0 &                        91 &              28 \\
+21 &        This study &     Khukh\_Davaa  &          Z51 &  47.09584 &  95.38802 &       25.0 &                        91 &              28 \\
+22 &        This study &     Khukh\_Davaa  &          Z52 &  47.09583 &  95.38815 &       26.0 &                        91 &              28 \\
+23 &        This study &     Khukh\_Davaa  &          Z53 &  47.09442 &  95.37205 &        1.0 &                        88 &              58 \\
+24 &        This study &     Khukh\_Davaa  &          Z54 &  47.09502 &  95.37299 &        2.0 &                        88 &              58 \\
+25 &        This study &     Khukh\_Davaa  &          Z55 &  47.09525 &  95.37351 &        3.0 &                        88 &              58 \\
+26 &        This study &     Khukh\_Davaa  &          Z56 &  47.06403 &  95.42075 &        NaN &                       165 &              24 \\
+27 &        This study &     Khukh\_Davaa  &          Z57 &  47.06277 &  95.42039 &        NaN &                       165 &              24 \\
+28 &        This study &     Khukh\_Davaa  &          Z58 &  47.06277 &  95.42045 &        NaN &                       165 &              24 \\
+\bottomrule
+\end{tabular}}
+
+    
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_11_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subsection{Site level data}\label{site-level-data}
+
+    Below we import paleomagnetic results that were analyzed using
+demag\_gui.py from the PmagPy python package. These are the vector
+component fits to all Teel sample data. Components have been classified
+according to their relative temperature ranges. `LOW' components are
+typically below 200ºC, `MAG' refers to a temperature range within the
+unblocking range of magnetite (up to 580ºC), `HEM' refers to vector
+components fit to data points in the unblocking range of hematite (up to
+680ºC), and `MID' refers to components with temperature ranges between
+`LOW' and `MAG'.
+
+
+    \paragraph{Z30}\label{z30}
+
+    Site Z30 is a rhyolite. The site has `LOW', `MAG' and poorly resolved
+`HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_18_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z31}\label{z31}
+
+    The site has `LOW' (less than 200ºC) and `MAG' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_22_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z32}\label{z32}
+
+    The site has `LOW' (less than 200ºC) and `MAG' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_26_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z33}\label{z33}
+
+    The site has `LOW' (less than 200ºC) and `MAG' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_30_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z34}\label{z34}
+
+    The site has `LOW' (less than 200ºC) and `MAG' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_34_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z35}\label{z35}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_38_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Data points shown with triangles were vectors from sample Z35.3 that
+were dropped from the mean calculation.
+
+\newpage
+
+    \paragraph{Z36}\label{z36}
+
+    The site has `LOW' and `MAG' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_43_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z37}\label{z37}
+
+The site has `LOW' and `MAG' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_46_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z38}\label{z38}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_50_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Only two samples yielded hematite components, therefore no mean was
+calculated for the hematite component.
+
+\newpage
+
+    \paragraph{Z39}\label{z39}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_55_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z40}\label{z40}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_59_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z41}\label{z41}
+
+The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_62_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z42}\label{z42}
+
+    The site has `LOW', `MAG' and `HEM' components. A middle temperature
+component, MID, was also fit to demagnetization steps between `LOW' and
+`MAG'.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_66_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z43}\label{z43}
+
+    The site has `LOW', `MAG' and `HEM' components. A middle temperature
+component, MID, was also fit to demagnetization steps between `LOW' and
+`MAG'.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_70_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z44}\label{z44}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_74_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    The remanence of Z44 specimens is dominated by hematite such that the
+magnetite component is poorly resolved.
+
+\newpage
+
+    \paragraph{Z45}\label{z45}
+
+    Hematite, magnetite, and low temperature, LOW (less than 200ºC),
+components were calculated for Z45.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_79_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    The remanence of Z45 specimens is dominated by hematite such that the
+magnetite component is poorly resolved.
+
+\newpage
+
+    \paragraph{Z46}\label{z46}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_84_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z47}\label{z47}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_88_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z48}\label{z48}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_92_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z49}\label{z49}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_96_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z50}\label{z50}
+
+    The site has `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_100_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z51}\label{z51}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_104_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Magnetite components from two samples (Z51.1 and Z51.2) were excluded
+because of their similarity to hematite components (the hematite
+remanence mixed with that of magnetite) and different demagnetization
+behavior compared to the other magnetite components.
+
+\newpage
+
+    \paragraph{Z52}\label{z52}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_109_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z53}\label{z53}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_113_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z54}\label{z54}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_117_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z55}\label{z55}
+
+    The site has `LOW' and `MAG'.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_121_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z56}\label{z56}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_125_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    This site is in a different dip panel along with Z57 and Z58. A
+magnetite component distinct from the hematite component was not
+resolved. Z57 has similar behavior.
+
+\newpage
+
+    \paragraph{Z57}\label{z57}
+
+    The site has `LOW', `MAG' and `HEM' components.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_130_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \newpage
+    
+    \paragraph{Z58}\label{z58}
+
+    Magnetite, mid-, and low- temperature, LOW (less than 200ºC), components
+were calculated for Z58. The middle temperature component derives from
+demagnetization steps between LOW and magnetite.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_134_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Results from flow Z58 are very different from all of the other sites.
+
+    \subsection{Paleomagnetic site data
+summary}\label{paleomagnetic-site-data-summary}
+
+    Create tables, distinguished by component type, of mean directions for
+all Teel flows.
+
+    \paragraph{Magnetite directions}\label{magnetite-directions}
+
+    \subparagraph{Geographic coordinates -
+magnetite}\label{geographic-coordinates---magnetite}
+
+\texttt{\color{outcolor}Out[{\color{outcolor}66}]:}
+    
+    \begin{sidewaystable}
+    {\tiny\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+{} &  strat\_pos &  site\_lat &  site\_lon &     dec\_geo &    inc\_geo &    alpha95 &   n &           k &         r &        csd &  paleolatitude &    vgp\_lat &     vgp\_lon &  vgp\_lat\_rev &  vgp\_lon\_rev \\
+\midrule
+Z30\_mag\_geo &        4.0 &  47.10038 &  95.37550 &   61.199035 & -73.861110 &  11.712582 &   7 &   27.513985 &  6.781929 &  15.442168 &     -59.940264 & -28.018244 &  245.559596 &    28.018244 &    65.559596 \\
+Z31\_mag\_geo &        5.0 &  47.10049 &  95.37604 &  168.103623 & -72.234668 &   3.753459 &   8 &  218.756351 &  7.968001 &   5.476520 &     -57.348450 & -77.463763 &  244.552326 &    77.463763 &    64.552326 \\
+Z32\_mag\_geo &        6.0 &  47.10094 &  95.37684 &  170.358827 & -65.228366 &   7.987595 &   9 &   42.504477 &  8.811785 &  12.424178 &     -47.295204 & -83.450449 &  190.612182 &    83.450449 &    10.612182 \\
+Z33\_mag\_geo &        7.0 &  47.10107 &  95.37705 &  184.611118 & -78.580341 &   4.579774 &   8 &  147.251468 &  7.952462 &   6.675060 &     -68.002034 & -68.966892 &  280.189909 &    68.966892 &   100.189909 \\
+Z34\_mag\_geo &        8.0 &  47.10111 &  95.37712 &  165.710954 & -76.241270 &   2.846954 &  10 &  288.897760 &  9.968847 &   4.765549 &     -63.908090 & -71.445651 &  255.430852 &    71.445651 &    75.430852 \\
+Z35\_mag\_geo &        9.0 &  47.10069 &  95.37747 &  180.035625 & -56.117492 &   6.392221 &   6 &  110.823428 &  5.954883 &   7.694302 &     -36.670242 & -79.569519 &   95.219636 &    79.569519 &   275.219636 \\
+Z36\_mag\_geo &       11.0 &  47.10221 &  95.37959 &  184.602274 & -73.483650 &   4.160116 &   8 &  178.256399 &  7.960731 &   6.066839 &     -59.330031 & -77.472930 &  286.256471 &    77.472930 &   106.256471 \\
+Z37\_mag\_geo &       12.0 &  47.10211 &  95.37971 &  172.808147 & -74.694707 &   7.476051 &   9 &   48.384817 &  8.834659 &  11.644758 &     -61.306496 & -75.207168 &  261.763513 &    75.207168 &    81.763513 \\
+Z38\_mag\_geo &       13.0 &  47.09855 &  95.38445 &  170.143849 & -68.504682 &   8.040139 &  10 &   37.061501 &  9.757160 &  13.305265 &     -51.774894 & -82.077055 &  225.175390 &    82.077055 &    45.175390 \\
+Z39\_mag\_geo &       14.0 &  47.09860 &  95.38467 &  196.103583 & -56.022026 &   6.360400 &   6 &  111.925588 &  5.955327 &   7.656324 &     -36.571555 & -74.094885 &   41.007252 &    74.094885 &   221.007252 \\
+Z40\_mag\_geo &       15.0 &  47.09859 &  95.38474 &  171.882175 & -71.414505 &   4.837145 &   9 &  114.250096 &  8.929978 &   7.578037 &     -56.078745 & -79.716310 &  249.190583 &    79.716310 &    69.190583 \\
+Z41\_mag\_geo &       10.0 &  47.10109 &  95.37744 &  175.528998 & -59.942821 &   4.580179 &   8 &  147.225628 &  7.952454 &   6.675646 &     -40.828095 & -82.952676 &  124.113660 &    82.952676 &   304.113660 \\
+Z42\_mag\_geo &       16.0 &  47.09577 &  95.38577 &  196.391432 & -44.308602 &  11.150650 &   8 &   25.632057 &  7.726904 &  15.999017 &     -26.015899 & -65.259739 &   58.086778 &    65.259739 &   238.086778 \\
+Z43\_mag\_geo &       17.0 &  47.09570 &  95.38638 &  188.500123 & -36.936066 &  10.749181 &   8 &   27.509935 &  7.745546 &  15.443305 &     -20.601392 & -62.620370 &   77.877325 &    62.620370 &   257.877325 \\
+Z44\_mag\_geo &       18.0 &  47.09571 &  95.38651 &  177.320106 &  25.952966 &  12.333051 &   5 &   39.443485 &  4.898589 &  12.897258 &      13.677537 & -29.179269 &   98.369133 &    29.179269 &   278.369133 \\
+Z45\_mag\_geo &       19.0 &  47.09562 &  95.38676 &  185.281245 &  22.577189 &   8.142853 &   8 &   47.231012 &  7.851792 &  11.786134 &      11.744294 & -30.970825 &   89.353703 &    30.970825 &   269.353703 \\
+Z46\_mag\_geo &       20.0 &  47.09563 &  95.38692 &  209.744992 & -58.036511 &   6.728463 &   8 &   68.732148 &  7.898155 &   9.770236 &     -38.705303 & -66.823872 &   15.721243 &    66.823872 &   195.721243 \\
+Z47\_mag\_geo &       21.0 &  47.09568 &  95.38727 &  208.133979 & -59.587799 &   5.606451 &   8 &   98.575940 &  7.928989 &   8.158298 &     -40.424813 & -68.748397 &   13.361225 &    68.748397 &   193.361225 \\
+Z48\_mag\_geo &       22.0 &  47.09570 &  95.38744 &  207.921657 & -49.345442 &   6.760918 &   8 &   68.082983 &  7.897184 &   9.816705 &     -30.209549 & -62.672462 &   33.565359 &    62.672462 &   213.565359 \\
+Z49\_mag\_geo &       23.0 &  47.09581 &  95.38747 &  213.177701 & -57.526629 &   9.488165 &   7 &   41.429419 &  6.855175 &  12.584345 &     -38.154890 & -64.234334 &   13.523120 &    64.234334 &   193.523120 \\
+Z50\_mag\_geo &       24.0 &  47.09575 &  95.38781 &  183.717358 &  16.532802 &   3.910452 &   8 &  201.619149 &  7.965281 &   5.704520 &       8.442107 & -34.363744 &   90.931921 &    34.363744 &   270.931921 \\
+Z51\_mag\_geo &       25.0 &  47.09584 &  95.38802 &  206.717692 & -54.030732 &  10.393892 &   5 &   55.146896 &  4.927466 &  10.907481 &     -34.565590 & -66.394972 &   27.782142 &    66.394972 &   207.782142 \\
+Z52\_mag\_geo &       26.0 &  47.09583 &  95.38815 &  182.835182 & -55.213178 &  12.719642 &   6 &   28.697188 &  5.825767 &  15.120472 &     -35.744789 & -78.453731 &   83.817965 &    78.453731 &   263.817965 \\
+Z53\_mag\_geo &        1.0 &  47.09442 &  95.37205 &  172.278467 & -71.983776 &   3.594132 &   8 &  238.494787 &  7.970649 &   5.245001 &     -56.957385 & -79.068440 &  252.646197 &    79.068440 &    72.646197 \\
+Z54\_mag\_geo &        2.0 &  47.09502 &  95.37299 &  170.318109 & -69.453189 &   8.193477 &   8 &   46.660914 &  7.849982 &  11.857917 &     -53.143586 & -81.346675 &  233.270089 &    81.346675 &    53.270089 \\
+Z55\_mag\_geo &        3.0 &  47.09525 &  95.37351 &  166.386553 & -64.854630 &   5.625088 &   8 &   97.930102 &  7.928520 &   8.185155 &     -46.807981 & -80.714545 &  188.596346 &    80.714545 &     8.596346 \\
+Z56\_mag\_geo &        NaN &  47.06403 &  95.42075 &  179.680351 &  -4.756236 &   5.057226 &   6 &  176.489683 &  5.971670 &   6.097129 &      -2.382222 & -45.317329 &   95.874936 &    45.317329 &   275.874936 \\
+Z57\_mag\_geo &        NaN &  47.06277 &  95.42039 &  178.786826 &  -8.456342 &  13.052562 &   6 &   27.299686 &  5.816848 &  15.502659 &      -4.251323 & -47.175716 &   97.200362 &    47.175716 &   277.200362 \\
+Z58\_mag\_geo &        NaN &  47.06277 &  95.42045 &  128.167765 & -19.352349 &  17.533117 &   6 &   15.552391 &  5.678506 &  20.539338 &      -9.960183 & -32.768009 &  162.478280 &    32.768009 &   342.478280 \\
+\bottomrule
+\end{tabular}}
+\end{sidewaystable}
+    
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_141_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_142_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subparagraph{Tilt-corrected coordinates -
+magnetite}\label{tilt-corrected-coordinates---magnetite}
+
+\texttt{\color{outcolor}Out[{\color{outcolor}69}]:}
+    
+\begin{sidewaystable}
+    {\tiny\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+{} &  strat\_pos &  site\_lat &  site\_lon &      dec\_tc &     inc\_tc &    alpha95 &   n &           k &         r &        csd &  paleolatitude &    vgp\_lat &     vgp\_lon &  vgp\_lat\_rev &  vgp\_lon\_rev \\
+\midrule
+Z30\_mag &        4.0 &  47.10038 &  95.37550 &  278.379367 & -46.010280 &  11.715664 &   7 &   27.500012 &  6.781818 &  15.446091 &     -27.381947 & -14.408220 &  340.470733 &    14.408220 &   160.470733 \\
+Z31\_mag &        5.0 &  47.10049 &  95.37604 &  246.928001 & -33.319165 &   3.753646 &   8 &  218.734693 &  7.967998 &   5.476791 &     -18.194560 & -28.826591 &    9.314505 &    28.826591 &   189.314505 \\
+Z32\_mag &        6.0 &  47.10094 &  95.37684 &  234.132395 & -32.854953 &   7.997970 &   9 &   42.396758 &  8.811306 &  12.439952 &     -17.895640 & -37.203135 &   19.865666 &    37.203135 &   199.865666 \\
+Z33\_mag &        7.0 &  47.10107 &  95.37705 &  250.685156 & -32.176114 &   4.581718 &   8 &  147.127336 &  7.952422 &   6.677876 &     -17.462312 & -25.759713 &    7.086542 &    25.759713 &   187.086542 \\
+Z34\_mag &        8.0 &  47.10111 &  95.37712 &  247.131951 & -35.840117 &   2.844796 &  10 &  289.334789 &  9.968894 &   4.761948 &     -19.856873 & -29.843343 &    7.791244 &    29.843343 &   187.791244 \\
+Z35\_mag &        9.0 &  47.10069 &  95.37747 &  226.181747 & -25.332749 &   6.399180 &   6 &  110.584559 &  5.954786 &   7.702608 &     -13.316749 & -38.856026 &   31.001433 &    38.856026 &   211.001433 \\
+Z36\_mag &       11.0 &  47.10221 &  95.37959 &  247.531592 & -39.317142 &   4.170654 &   8 &  177.361534 &  7.960533 &   6.082124 &     -22.268860 & -31.221631 &    5.455763 &    31.221631 &   185.455763 \\
+Z37\_mag &       12.0 &  47.10211 &  95.37971 &  248.052322 & -42.739898 &   7.478423 &   9 &   48.354733 &  8.834556 &  11.648380 &     -24.798438 & -32.562210 &    2.867308 &    32.562210 &   182.867308 \\
+Z38\_mag &       13.0 &  47.09855 &  95.38445 &  237.351592 & -42.681665 &   8.027422 &  10 &   37.175977 &  9.757908 &  13.284763 &     -24.753981 & -39.808772 &   10.899760 &    39.808772 &   190.899760 \\
+Z39\_mag &       14.0 &  47.09860 &  95.38467 &  230.880551 & -26.400672 &   6.363220 &   6 &  111.827254 &  5.955288 &   7.659690 &     -13.939647 & -36.393048 &   26.087975 &    36.393048 &   206.087975 \\
+Z40\_mag &       15.0 &  47.09859 &  95.38474 &  241.380972 & -42.753133 &   4.822532 &   9 &  114.937717 &  8.930397 &   7.555335 &     -24.808549 & -37.108819 &    7.746124 &    37.108819 &   187.746124 \\
+Z41\_mag &       10.0 &  47.10109 &  95.37744 &  229.065998 & -29.074319 &   4.590751 &   8 &  146.552710 &  7.952236 &   6.690955 &     -15.536089 & -38.748850 &   26.425574 &    38.748850 &   206.425574 \\
+Z42\_mag &       16.0 &  47.09577 &  95.38577 &  219.102263 & -24.487183 &  11.152830 &   8 &   25.622407 &  7.726802 &  16.002029 &     -12.829071 & -42.668310 &   38.628730 &    42.668310 &   218.628730 \\
+Z43\_mag &       17.0 &  47.09570 &  95.38638 &  208.946090 & -22.598975 &  10.757156 &   8 &   27.470571 &  7.745182 &  15.454365 &     -11.756542 & -47.094786 &   51.278792 &    47.094786 &   231.278792 \\
+Z44\_mag &       18.0 &  47.09571 &  95.38651 &  160.933464 &  20.616106 &  12.332689 &   5 &   39.445745 &  4.898595 &  12.896888 &      10.652755 & -29.797321 &  117.098874 &    29.797321 &   297.098874 \\
+Z45\_mag &       19.0 &  47.09562 &  95.38676 &  169.181253 &  22.723096 &   8.151115 &   8 &   47.137245 &  7.851497 &  11.797851 &      11.826377 & -30.288956 &  107.671016 &    30.288956 &   287.671016 \\
+Z46\_mag &       20.0 &  47.09563 &  95.38692 &  235.938073 & -30.336640 &   6.723991 &   8 &   68.822329 &  7.898289 &   9.763833 &     -16.309766 & -34.865831 &   19.680166 &    34.865831 &   199.680166 \\
+Z47\_mag &       21.0 &  47.09568 &  95.38727 &  236.225390 & -32.077321 &   5.605537 &   8 &   98.607774 &  7.929012 &   8.156981 &     -17.399618 & -35.463534 &   18.516120 &    35.463534 &   198.516120 \\
+Z48\_mag &       22.0 &  47.09570 &  95.38744 &  227.700040 & -32.087392 &   6.771057 &   8 &   67.882078 &  7.896880 &   9.831221 &     -17.406005 & -41.018935 &   26.092301 &    41.018935 &   206.092301 \\
+Z49\_mag &       23.0 &  47.09581 &  95.38747 &  235.973353 & -37.612989 &   9.479951 &   7 &   41.499592 &  6.855420 &  12.573700 &     -21.068304 & -38.228444 &   15.487683 &    38.228444 &   195.487683 \\
+Z50\_mag &       24.0 &  47.09575 &  95.38781 &  175.405740 &  15.829522 &   3.922362 &   8 &  200.402350 &  7.965070 &   5.721812 &       8.068715 & -34.684493 &  100.922274 &    34.684493 &   280.922274 \\
+Z51\_mag &       25.0 &  47.09584 &  95.38802 &  229.796663 & -36.494284 &  10.382678 &   5 &   55.264038 &  4.927620 &  10.895915 &     -20.299603 & -41.779935 &   21.526652 &    41.779935 &   201.526652 \\
+Z52\_mag &       26.0 &  47.09583 &  95.38815 &  216.149983 & -45.789543 &  12.698064 &   6 &   28.791577 &  5.826338 &  15.095667 &     -27.201966 & -55.462438 &   27.657758 &    55.462438 &   207.657758 \\
+Z53\_mag &        1.0 &  47.09442 &  95.37205 &  246.701511 & -31.999187 &   3.599051 &   8 &  237.845848 &  7.970569 &   5.252151 &     -17.350100 & -28.388510 &   10.165158 &    28.388510 &   190.165158 \\
+Z54\_mag &        2.0 &  47.09502 &  95.37299 &  243.678159 & -32.414475 &   8.199873 &   8 &   46.589636 &  7.849752 &  11.866984 &     -17.613960 & -30.621692 &   12.284724 &    30.621692 &   192.284724 \\
+Z55\_mag &        3.0 &  47.09525 &  95.37351 &  238.040663 & -33.518307 &   5.611932 &   8 &   98.385329 &  7.928851 &   8.166197 &     -18.323455 & -34.914855 &   16.200615 &    34.914855 &   196.200615 \\
+Z56\_mag &        NaN &  47.06403 &  95.42075 &  181.601802 & -27.881082 &   5.069905 &   6 &  175.612751 &  5.971528 &   6.112333 &     -14.816796 & -57.725144 &   92.519901 &    57.725144 &   272.519901 \\
+Z57\_mag &        NaN &  47.06277 &  95.42039 &  181.062329 & -31.634060 &  13.082813 &   6 &   27.177964 &  5.816027 &  15.537336 &     -17.119456 & -60.043844 &   93.386864 &    60.043844 &   273.386864 \\
+Z58\_mag &        NaN &  47.06277 &  95.42045 &  119.444412 & -37.602921 &  17.552705 &   6 &   15.519815 &  5.677831 &  20.560882 &     -21.061319 & -35.140582 &  179.028128 &    35.140582 &   359.028128 \\
+\bottomrule
+\end{tabular}}
+\end{sidewaystable}
+    
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_145_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_146_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \paragraph{Hematite directions}\label{hematite-directions}
+
+    \subparagraph{Geographic coordinates -
+hematite}\label{geographic-coordinates---hematite}
+
+\texttt{\color{outcolor}Out[{\color{outcolor}72}]:}
+\begin{sidewaystable}    
+    {\tiny\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+{} &  strat\_pos &  site\_lat &  site\_lon &     dec\_geo &    inc\_geo &    alpha95 &  n &           k &         r &        csd &  paleolatitude &    vgp\_lat &     vgp\_lon &  vgp\_lat\_rev &  vgp\_lon\_rev \\
+\midrule
+Z35\_hem\_geo &        4.0 &  47.10038 &  95.37550 &  185.352162 &  -5.560896 &   5.747798 &  6 &  136.842402 &  5.963462 &   6.924281 &      -2.787011 & -45.444034 &   87.744611 &    45.444034 &   267.744611 \\
+Z30\_hem\_geo &        9.0 &  47.10069 &  95.37747 &  148.799913 & -68.209834 &  49.957167 &  7 &    2.413452 &  4.513935 &  52.139357 &     -51.356099 & -69.351223 &  208.833918 &    69.351223 &    28.833918 \\
+Z38\_hem\_geo &       13.0 &  47.09855 &  95.38445 &  195.565071 & -26.364592 &   8.833229 &  2 &  801.477440 &  1.998752 &   2.861142 &     -13.918471 & -54.362780 &   68.832083 &    54.362780 &   248.832083 \\
+Z39\_hem\_geo &       14.0 &  47.09860 &  95.38467 &  196.313095 & -15.623428 &   8.663295 &  5 &   78.962990 &  4.949343 &   9.115347 &      -7.959659 & -48.458523 &   70.583219 &    48.458523 &   250.583219 \\
+Z40\_hem\_geo &       15.0 &  47.09859 &  95.38474 &  189.173033 & -23.507115 &   7.794855 &  7 &   60.926778 &  6.901521 &  10.377217 &     -12.269627 & -54.326542 &   79.891757 &    54.326542 &   259.891757 \\
+Z41\_hem\_geo &       10.0 &  47.10109 &  95.37744 &  178.834997 & -26.225350 &  16.086290 &  5 &   23.576274 &  4.830338 &  16.681974 &     -13.836835 & -56.721476 &   97.439300 &    56.721476 &   277.439300 \\
+Z42\_hem\_geo &       16.0 &  47.09577 &  95.38577 &  165.448451 &  27.278167 &  16.388007 &  6 &   17.664613 &  5.716948 &  19.272274 &      14.457588 & -27.077402 &  111.243174 &    27.077402 &   291.243174 \\
+Z43\_hem\_geo &       17.0 &  47.09570 &  95.38638 &  182.753379 &  12.734651 &   6.220142 &  8 &   80.262873 &  7.912787 &   9.041233 &       6.446942 & -36.401745 &   91.986451 &    36.401745 &   271.986451 \\
+Z44\_hem\_geo &       18.0 &  47.09571 &  95.38651 &  182.138846 &  26.690156 &   2.023836 &  7 &  890.663468 &  6.993263 &   2.714115 &      14.109891 & -28.764330 &   93.020083 &    28.764330 &   273.020083 \\
+Z45\_hem\_geo &       19.0 &  47.09562 &  95.38676 &  179.431606 &  23.111384 &   4.657126 &  8 &  142.431974 &  7.950854 &   6.787053 &      12.045434 & -30.856760 &   96.034300 &    30.856760 &   276.034300 \\
+Z46\_hem\_geo &       20.0 &  47.09563 &  95.38692 &  199.630710 &  23.039855 &  43.076043 &  2 &   35.743651 &  1.972023 &  13.548324 &      12.005012 & -28.348190 &   73.462329 &    28.348190 &   253.462329 \\
+Z47\_hem\_geo &       21.0 &  47.09568 &  95.38727 &  186.530284 &  -3.818259 &  14.407211 &  7 &   18.506577 &  6.675791 &  18.828771 &      -1.911251 & -44.460110 &   86.223719 &    44.460110 &   266.223719 \\
+Z48\_hem\_geo &       22.0 &  47.09570 &  95.38744 &  186.680865 &  20.745840 &   5.248580 &  8 &  112.342494 &  7.937691 &   7.642105 &      10.724316 & -31.873027 &   87.651814 &    31.873027 &   267.651814 \\
+Z49\_hem\_geo &       23.0 &  47.09581 &  95.38747 &  201.506939 &   6.066986 &  11.535574 &  6 &   34.686217 &  5.855851 &  13.753288 &       3.042020 & -36.413576 &   68.327763 &    36.413576 &   248.327763 \\
+Z50\_hem\_geo &       24.0 &  47.09575 &  95.38781 &  185.576900 &  22.848691 &   3.695319 &  8 &  225.663876 &  7.968980 &   5.392051 &      11.897134 & -30.796567 &   89.031882 &    30.796567 &   269.031882 \\
+Z51\_hem\_geo &       25.0 &  47.09584 &  95.38802 &  184.630448 &  22.563173 &  10.926624 &  5 &   49.990867 &  4.919985 &  11.456176 &      11.736415 & -31.022182 &   90.095926 &    31.022182 &   270.095926 \\
+Z52\_hem\_geo &       26.0 &  47.09583 &  95.38815 &  182.777548 &  21.100104 &  13.120981 &  6 &   27.025581 &  5.814990 &  15.581078 &      10.920183 & -31.930956 &   92.174224 &    31.930956 &   272.174224 \\
+Z53\_hem\_geo &        1.0 &  47.09442 &  95.37205 &  176.883446 & -21.454440 &   5.750351 &  7 &  111.157505 &  6.946023 &   7.682731 &     -11.116766 & -53.926099 &  100.570110 &    53.926099 &   280.570110 \\
+Z54\_hem\_geo &        2.0 &  47.09502 &  95.37299 &  166.032855 & -40.835976 &  52.801938 &  8 &    2.056913 &  4.596843 &  56.477701 &     -23.370939 & -63.768703 &  125.457583 &    63.768703 &   305.457583 \\
+Z56\_hem\_geo &        NaN &  47.06403 &  95.42075 &  179.194265 &   1.511589 &   8.593573 &  6 &   61.741195 &  5.919017 &  10.308548 &       0.755926 & -42.174837 &   96.507901 &    42.174837 &   276.507901 \\
+Z57\_hem\_geo &        NaN &  47.06277 &  95.42039 &  181.947932 &   4.332196 &   7.473594 &  4 &  152.109621 &  3.980277 &   6.567600 &       2.169198 & -40.738280 &   92.851012 &    40.738280 &   272.851012 \\
+\bottomrule
+\end{tabular}}
+\end{sidewaystable}
+    
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_150_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_151_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subparagraph{Tilt-corrected coordinates -
+hematite}\label{tilt-corrected-coordinates---hematite}
+
+\texttt{\color{outcolor}Out[{\color{outcolor}75}]:}
+    \begin{sidewaystable}
+    {\tiny\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+{} &  strat\_pos &  site\_lat &  site\_lon &      dec\_tc &     inc\_tc &    alpha95 &  n &           k &         r &        csd &  paleolatitude &    vgp\_lat &     vgp\_lon &  vgp\_lat\_rev &  vgp\_lon\_rev \\
+\midrule
+Z35\_hem &        4.0 &  47.10038 &  95.37550 &  185.114311 &   6.025809 &   5.727598 &  6 &  137.802632 &  5.963716 &   6.900114 &       3.021259 & -39.676603 &   88.733786 &    39.676603 &   268.733786 \\
+Z30\_hem &        9.0 &  47.10069 &  95.37747 &  242.928054 & -40.237690 &  49.931876 &  7 &    2.414928 &  4.515454 &  52.123423 &     -22.933069 & -34.802858 &    8.295178 &    34.802858 &   188.295178 \\
+Z38\_hem &       13.0 &  47.09855 &  95.38445 &  208.352571 &  -5.900502 &   8.908547 &  2 &  788.017587 &  1.998731 &   2.885473 &      -2.958094 & -39.500385 &   57.459211 &    39.500385 &   237.459211 \\
+Z39\_hem &       14.0 &  47.09860 &  95.38467 &  201.539571 &   2.413034 &   8.658960 &  5 &   79.041121 &  4.949393 &   9.110841 &       1.207052 & -38.143076 &   67.563030 &    38.143076 &   247.563030 \\
+Z40\_hem &       15.0 &  47.09859 &  95.38474 &  202.157748 &  -7.928196 &   7.788149 &  7 &   61.030111 &  6.901688 &  10.368429 &      -3.983165 & -42.830083 &   64.518459 &    42.830083 &   244.518459 \\
+Z41\_hem &       10.0 &  47.10109 &  95.37744 &  198.411151 & -11.058439 &  16.113432 &  5 &   23.500114 &  4.829788 &  16.708984 &      -5.581195 & -45.565273 &   68.698517 &    45.565273 &   248.698517 \\
+Z42\_hem &       16.0 &  47.09577 &  95.38577 &  151.386122 &  14.995751 &  16.374487 &  6 &   17.692229 &  5.717390 &  19.257227 &       7.628503 & -29.676516 &  128.501026 &    29.676516 &   308.501026 \\
+Z43\_hem &       17.0 &  47.09570 &  95.38638 &  173.787706 &  13.587096 &   6.227989 &  8 &   80.063147 &  7.912569 &   9.052503 &       6.890414 & -35.733259 &  102.991555 &    35.733259 &   282.991555 \\
+Z44\_hem &       18.0 &  47.09571 &  95.38651 &  163.946455 &  23.981346 &   2.033549 &  7 &  882.184819 &  6.993199 &   2.727126 &      12.539568 & -28.658505 &  113.302682 &    28.658505 &   293.302682 \\
+Z45\_hem &       19.0 &  47.09562 &  95.38676 &  164.416633 &  19.689336 &   4.665334 &  8 &  141.934618 &  7.950682 &   6.798934 &      10.144077 & -31.097230 &  113.374942 &    31.097230 &   293.374942 \\
+Z46\_hem &       20.0 &  47.09563 &  95.38692 &  180.134056 &  31.708243 &  43.051197 &  2 &   35.782409 &  1.972053 &  13.540984 &      17.166216 & -25.738041 &   95.244729 &    25.738041 &   275.244729 \\
+Z47\_hem &       21.0 &  47.09568 &  95.38727 &  186.913270 &   2.679432 &  14.418197 &  7 &   18.479833 &  6.675322 &  18.842390 &       1.340449 & -41.186055 &   86.186406 &    41.186055 &   266.186406 \\
+Z48\_hem &       22.0 &  47.09570 &  95.38744 &  175.819816 &  20.880528 &   5.256939 &  8 &  111.988554 &  7.937494 &   7.654172 &      10.798704 & -31.985346 &  100.230031 &    31.985346 &   280.230031 \\
+Z49\_hem &       23.0 &  47.09581 &  95.38747 &  196.482372 &  14.863765 &  11.529913 &  6 &   34.719353 &  5.855988 &  13.746724 &       7.559053 & -33.419750 &   75.695091 &    33.419750 &   255.695091 \\
+Z50\_hem &       24.0 &  47.09575 &  95.38781 &  173.713227 &  22.176830 &   3.699165 &  8 &  225.196841 &  7.968916 &   5.397639 &      11.519700 & -31.115698 &  102.587676 &    31.115698 &   282.587676 \\
+Z51\_hem &       25.0 &  47.09584 &  95.38802 &  173.080330 &  21.478208 &  10.923883 &  5 &   50.015473 &  4.920025 &  11.453358 &      11.129977 & -31.446845 &  103.352735 &    31.446845 &   283.352735 \\
+Z52\_hem &       26.0 &  47.09583 &  95.38815 &  172.236460 &  19.385124 &  13.100041 &  6 &   27.109018 &  5.815560 &  15.557081 &       9.978044 & -32.507612 &  104.465028 &    32.507612 &   284.465028 \\
+Z53\_hem &        1.0 &  47.09442 &  95.37205 &  195.874742 & -12.092261 &   5.754882 &  7 &  110.984038 &  6.945938 &   7.688733 &      -6.114213 & -46.812655 &   71.955927 &    46.812655 &   251.955927 \\
+Z54\_hem &        2.0 &  47.09502 &  95.37299 &  210.517882 & -28.621488 &  52.793211 &  8 &    2.057276 &  4.597443 &  56.472722 &     -15.261779 & -49.341300 &   46.618190 &    49.341300 &   226.618190 \\
+Z56\_hem &        NaN &  47.06403 &  95.42075 &  180.301491 & -21.711722 &   8.592210 &  6 &   61.760484 &  5.919042 &  10.306938 &     -11.259937 & -54.195001 &   94.915322 &    54.195001 &   274.915322 \\
+Z57\_hem &        NaN &  47.06277 &  95.42039 &  182.841002 & -18.592084 &   7.462069 &  4 &  152.576865 &  3.980338 &   6.557536 &      -9.547317 & -52.406934 &   90.824846 &    52.406934 &   270.824846 \\
+\bottomrule
+\end{tabular}}
+\end{sidewaystable}
+    
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_154_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_155_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \paragraph{Mid-temperature directions}\label{mid-temperature-directions}
+
+\texttt{\color{outcolor}Out[{\color{outcolor}78}]:}
+    \begin{sidewaystable}
+    {\tiny\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+{} &  strat\_pos &  site\_lat &  site\_lon &     dec\_geo &    inc\_geo &    alpha95 &  n &           k &         r &        csd &  paleolatitude &    vgp\_lat &     vgp\_lon &  vgp\_lat\_rev &  vgp\_lon\_rev \\
+\midrule
+Z42\_mid &       16.0 &  47.09577 &  95.38577 &  332.936127 & -68.973663 &  22.704625 &  4 &   17.342624 &  3.827016 &  19.450359 &     -52.447527 & -12.194273 &  291.867415 &    12.194273 &   111.867415 \\
+Z43\_mid &       17.0 &  47.09570 &  95.38638 &  214.749151 & -62.316153 &  27.256978 &  4 &   12.329873 &  3.756688 &  23.067776 &     -43.621783 & -65.542782 &    0.679322 &    65.542782 &   180.679322 \\
+Z58\_mid &        NaN &  47.06277 &  95.42045 &  169.686782 & -61.093602 &   4.004771 &  6 &  280.878503 &  5.982199 &   4.833100 &     -42.161138 & -81.183719 &  155.401297 &    81.183719 &   335.401297 \\
+\bottomrule
+\end{tabular}}
+\end{sidewaystable}
+    
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_158_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Flow Z58 yielded a completely different mid-temperature result compared
+to all other sites. The magnetite direction is completely different than
+all other results. The mean direction is very imprecise (SE and
+moderately-shallow down) but is closest in orientation to the Middle to
+Late Carboniferous `A' component of Edel et al. (2014).
+
+    \subsection{Paleomagnetic Poles for the Teel
+Formation}\label{paleomagnetic-poles-for-the-teel-formation}
+
+    We interpret the primary paleomagnetic direction for the Teel basalts to
+be held by (titano)magnetite with a secondary remanence held by hematite
+holding a distinct direction. However, demagnetization data from some
+sites within the most oxidized flows show similarities betwee the
+remanence directions of magnetite and hematite that correspond to the
+hematite direction seen in other flows that have a distinct magnetite
+direction. We suspect that these flows were overprinted in the
+remagnetization event that led to the hematite overprint. As a result we
+exclude this flows where magnetite corresponds to the distinct hematite
+direction from the calculation of the mean magnetite pole.
+
+    \paragraph{Primary magnetite pole - including fold
+test}\label{primary-magnetite-pole---including-fold-test}
+
+
+
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}82}]:} \{'alpha95': 4.9431252055096131,
+          'csd': 13.058928417331206,
+          'dec': 236.6128693429381,
+          'inc': -34.995940978983391,
+          'k': 38.472902790170508,
+          'n': 23,
+          'r': 22.428168960372265\}
+\end{Verbatim}
+        
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}83}]:} \{'alpha95': 5.7116821039230583,
+          'csd': 15.025346173655382,
+          'dec': 186.62753154703333,
+          'inc': -64.852074989296611,
+          'k': 29.061703291478157,
+          'n': 23,
+          'r': 22.24299000029874\}
+\end{Verbatim}
+        
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_167_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Bootstrap fold test (Tauxe and Watson, 1994)
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+doing  1000  iterations{\ldots}please be patient{\ldots}
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_169_1.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_169_2.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+tightest grouping of vectors obtained at (95\% confidence bounds):
+52 - 97 percent unfolding
+range of all bootstrap samples: 
+-10  -  106 percent unfolding
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_169_4.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Below the tilt-corrected magnetite VGPs are plotted on the globe and
+shaded according to their relative stratigraphic positions.
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_171_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \paragraph{Secondary hematite pole - including fold
+test}\label{secondary-hematite-pole---including-fold-test}
+
+
+
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}89}]:} \{'alpha95': 9.2608689622177227,
+          'csd': 20.97901071644646,
+          'dec': 184.58560616364625,
+          'inc': 3.8459585385145614,
+          'k': 14.907335584818336,
+          'n': 18,
+          'r': 16.85962183494998\}
+\end{Verbatim}
+        
+
+            \begin{Verbatim}[commandchars=\\\{\}]
+{\color{outcolor}Out[{\color{outcolor}90}]:} \{'alpha95': 9.4955663885263011,
+          'csd': 21.474669531178204,
+          'dec': 182.89089648457883,
+          'inc': 6.1094491428847837,
+          'k': 14.227122114351561,
+          'n': 18,
+          'r': 16.805099171613119\}
+\end{Verbatim}
+        
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_177_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Bootstrap fold test (Tauxe and Watson, 1994)
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+doing  1000  iterations{\ldots}please be patient{\ldots}
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_179_1.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_179_2.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+tightest grouping of vectors obtained at (95\% confidence bounds):
+-20 - 119 percent unfolding
+range of all bootstrap samples: 
+-20  -  119 percent unfolding
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_179_4.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Below the geographic and tilt-corrected hematite VGPs are plotted on the
+globe and shaded according to their relative stratigraphic positions.
+Note the similar positions between the two coordinate system means.
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_181_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_182_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \paragraph{Present local field overprint - negative fold
+test}\label{present-local-field-overprint---negative-fold-test}
+
+\texttt{\color{outcolor}Out[{\color{outcolor}95}]:}
+\begin{sidewaystable}    
+    {\tiny\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+{} &  strat\_pos &  site\_lat &  site\_lon &     dec\_geo &    inc\_geo &    alpha95 &   n &           k &         r &        csd &  paleolatitude &    vgp\_lat &     vgp\_lon &  vgp\_lat\_rev &  vgp\_lon\_rev \\
+\midrule
+Z30\_low\_geo &        4.0 &  47.10038 &  95.37550 &  346.473053 &  68.261419 &  11.458361 &   7 &   28.705783 &  6.790983 &  15.118208 &      51.429142 &  80.188638 &   36.526238 &   -80.188638 &   216.526238 \\
+Z31\_low\_geo &        5.0 &  47.10049 &  95.37604 &    0.054372 &  64.923839 &   3.618073 &   8 &  235.361535 &  7.970259 &   5.279798 &      46.897847 &  89.793993 &  264.986185 &   -89.793993 &    84.986185 \\
+Z32\_low\_geo &        6.0 &  47.10094 &  95.37684 &   25.452043 &  61.325382 &   8.812910 &   8 &   40.461392 &  7.826996 &  12.733993 &      42.434489 &  71.428192 &  190.579622 &   -71.428192 &    10.579622 \\
+Z33\_low\_geo &        7.0 &  47.10107 &  95.37705 &    0.930272 &  64.380739 &   6.003504 &   8 &   86.089978 &  7.918690 &   8.729889 &      46.196993 &  88.893147 &  239.802233 &   -88.893147 &    59.802233 \\
+Z34\_low\_geo &        8.0 &  47.10111 &  95.37712 &    0.648074 &  62.405014 &   3.865736 &  10 &  157.128808 &  9.942722 &   6.461854 &      43.729780 &  86.598151 &  267.460060 &   -86.598151 &    87.460060 \\
+\bottomrule
+\end{tabular}}
+\end{sidewaystable}
+    
+
+\texttt{\color{outcolor}Out[{\color{outcolor}96}]:}
+\begin{sidewaystable}    
+    {\tiny\begin{tabular}{lrrrrrrrrrrrrrrr}
+\toprule
+{} &  strat\_pos &  site\_lat &  site\_lon &     dec\_tc &     inc\_tc &    alpha95 &   n &           k &         r &        csd &  paleolatitude &    vgp\_lat &     vgp\_lon &  vgp\_lat\_rev &  vgp\_lon\_rev \\
+\midrule
+Z30\_low &        4.0 &  47.10038 &  95.37550 &  62.140855 &  33.713657 &  11.463681 &   7 &   28.680029 &  6.790795 &  15.124995 &      18.450285 &  32.248029 &  192.800152 &   -32.248029 &    12.800152 \\
+Z31\_low &        5.0 &  47.10049 &  95.37604 &  59.403835 &  27.876060 &   3.615270 &   8 &  235.725142 &  7.970304 &   5.275724 &      14.813793 &  31.483537 &  198.002746 &   -31.483537 &    18.002746 \\
+Z32\_low &        6.0 &  47.10094 &  95.37684 &  25.452043 &  61.325382 &   8.812910 &   8 &   40.461392 &  7.826996 &  12.733993 &      42.434489 &  71.428192 &  190.579622 &   -71.428192 &    10.579622 \\
+Z33\_low &        7.0 &  47.10107 &  95.37705 &  54.800714 &  28.344304 &   6.009620 &   8 &   85.916769 &  7.918526 &   8.738684 &      15.094685 &  34.722681 &  201.658195 &   -34.722681 &    21.658195 \\
+Z34\_low &        8.0 &  47.10111 &  95.37712 &  52.688703 &  27.653908 &   3.866823 &  10 &  157.041051 &  9.942690 &   6.463659 &      14.681124 &  35.788473 &  203.849471 &   -35.788473 &    23.849471 \\
+\bottomrule
+\end{tabular}}
+\end{sidewaystable}
+    
+
+    A number of poles are excluded because of inconsistencies between
+samples within site which resulted in large a95 values for these sites:
+Z45, Z51, and Z52.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_188_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subparagraph{Bootstrap fold test (Tauxe and Watson,
+1994)}\label{bootstrap-fold-test-tauxe-and-watson-1994}
+
+
+    \begin{Verbatim}[commandchars=\\\{\}]
+doing  1000  iterations{\ldots}please be patient{\ldots}
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_190_1.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_190_2.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \begin{Verbatim}[commandchars=\\\{\}]
+tightest grouping of vectors obtained at (95\% confidence bounds):
+-19 - 9 percent unfolding
+range of all bootstrap samples: 
+-20  -  18 percent unfolding
+    \end{Verbatim}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_190_4.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \paragraph{Teel poles summary}\label{teel-poles-summary}
+
+\texttt{\color{outcolor}Out[{\color{outcolor}100}]:}
+    
+    {\tiny\begin{tabular}{lrrrrrrrr}
+\toprule
+{} &   Pole\_Lat &  Pole\_Long &      A\_95 &          K &        CSD &   N &          r &   Paleolat \\
+\midrule
+Teel\_magnetite\_tc & -36.495314 &  16.038788 &  5.236274 &  34.392364 &  13.811918 &  23 &  22.360323 & -19.292649 \\
+Teel\_hematite\_tc  & -39.717588 &  91.918678 &  7.536314 &  22.013320 &  17.264033 &  18 &  17.227740 &   3.063432 \\
+Teel\_hematite\_geo & -40.795648 &  89.426839 &  5.608638 &  38.960325 &  12.976983 &  18 &  17.563659 &   1.925148 \\
+\bottomrule
+\end{tabular}}
+
+    
+
+    \section{Pole compilation for Siberia, North China, and Mongolian
+terranes}\label{pole-compilation-for-siberia-north-china-and-mongolian-terranes}
+
+    \subsection{Import existing paleomagnetic
+data}\label{import-existing-paleomagnetic-data}
+
+    \subsubsection{Siberia}\label{siberia}
+
+    Note that a rotation needs to be applied for relative rotation between
+Aldan and Anabar blocks before the Devonian Period due to Devonian
+rifting in the Viljuy Basin near the centre of the craton. Here are two
+rotations used in the literature: Euler Pole (Lat, Long, rotation)
+
+\begin{itemize}
+\tightlist
+\item
+  (60ºN, 120ºE, 13º) from Smethurst et al. (1998)
+\item
+  (60ºN, 115ºE, 25º) everything pre-Devonian (Evans, 2009)
+\item
+  (60ºN, 120ºE, 16º) Cambrian to Early Silurian correction (Cocks and
+  Torsvik, 2007)
+\item
+  (62ºN, 117ºE, 20º) pre-Devonian (Pavlov et al. (2008) also used in
+  Powerman et al. (2013))
+\end{itemize}
+
+Most Siberia poles are imported from Cocks and Torsvik (2007) in which
+the data are rotated from the ``southern'' Siberia (Aldan) into the
+northern Siberia (Anabar) reference frame according to Smethurst et al.
+(1998), which the authors argue brings N and S pre-Devonian poles into
+the best agreement.
+
+    Torsvik et al. (2012) updated their Siberia apparent polar wander path
+by adding data from Shatsillo et al. (2007) that superceded results from
+the coeval Lena River sediments (Rodianov et al., 1982; Torsvik et al.,
+1995). However, there are more results from Siberia that must have been
+discarded by Cocks and Torsvik (2007) and subsequently by other authors.
+We discuss these poles later on.
+
+
+
+    Below we plot the paleomagnetic data compiled by Cocks and Torsvik
+(2007) for Siberia, shaded according to age.
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_201_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    In the following analyses, we update this pole list to include
+additional poles from the area in order to construct a paleolatitdue
+plot of Siberia through the Phanerozoic Eon.
+
+    We use the Haversine formula to calculate the distance between the VGPs
+and a reference point on a given plate. This is then used to calculate
+the paleolatite of the reference point.
+
+
+    We first load poles for stable Europe from 250 Ma to the present day
+from Torsvik et al. (2012).
+
+\texttt{\color{outcolor}Out[{\color{outcolor}105}]:}
+    
+    {\tiny\begin{tabular}{lrrrrrrrrr}
+\toprule
+{} &  high\_age &  low\_age &  median\_age &   A95 &  PLat &   PLon &  Paleolat &  PLat\_N &  PLon\_N \\
+\midrule
+0 &       1.0 &      0.0 &         0.5 &   3.6 & -80.6 &  267.5 &    60.638 &    80.6 &    87.5 \\
+1 &       1.0 &      0.0 &         0.5 &   4.4 & -86.4 &  296.1 &    55.206 &    86.4 &   116.1 \\
+2 &      10.0 &      6.0 &         8.0 &  12.9 & -84.3 &  357.7 &    52.907 &    84.3 &   177.7 \\
+3 &      11.0 &      8.0 &         9.5 &   1.8 & -78.9 &  328.3 &    58.733 &    78.9 &   148.3 \\
+4 &      11.0 &      9.0 &        10.0 &   3.5 & -77.4 &  314.2 &    61.900 &    77.4 &   134.2 \\
+\bottomrule
+\end{tabular}}
+
+    
+
+    Poles from Siberia are then loaded (545 to 250 Ma). Most of the poles
+were taken from Cocks and Torsvik (2007) and Torsvik et al. (2012), but
+we also added additional data gathered from the Global Paleomagnetic
+Database.
+
+\texttt{\color{outcolor}Out[{\color{outcolor}106}]:}
+    \begin{sidewaystable}
+    {\tiny\begin{tabular}{lrrrrrrrlrrr}
+\toprule
+{} &  plate\_ID &  high\_age &  low\_age &  median\_age &   A95 &  PLat &   PLon &                                          Reference &  Paleolat &  PLat\_N &  PLon\_N \\
+\midrule
+0  &       401 &       245 &      243 &       244.0 &  10.0 & -59.0 &  330.0 &  GPDB2832, Gurevitch et al. (1995) from Cocks a... &    63.178 &    59.0 &   150.0 \\
+1  &       401 &       258 &      238 &       248.0 &   7.8 & -59.3 &  325.8 &  Walderhaug et al. (2005) from Cocks and Torsvi... &    65.344 &    59.3 &   145.8 \\
+2  &       401 &       253 &      248 &       251.0 &   3.3 & -56.2 &  326.0 &  Gurevitch et al. (2004) from Cocks and Torsvik... &    65.004 &    56.2 &   146.0 \\
+3  &       401 &       253 &      248 &       251.0 &   9.7 & -52.8 &  334.4 &  GPDB3486, Kravchinsky et al. (2002) from Cocks... &    59.477 &    52.8 &   154.4 \\
+4  &       401 &       253 &      248 &       251.0 &   2.2 & -56.6 &  307.9 &  Pavlov and Gallet (1996) from Cocks and Torsvi... &    74.988 &    56.6 &   127.9 \\
+5  &       401 &       285 &      265 &       275.0 &   8.6 & -50.5 &  301.4 &  Pisarevsky et al. (2006) from Cocks and Torsvi... &    78.724 &    50.5 &   121.4 \\
+6  &       401 &       363 &      290 &       326.5 &   1.3 & -21.0 &  350.0 &           GPDB1991, Davydov and Kravchinsky (1973) &    30.794 &    21.0 &   170.0 \\
+7  &       401 &       352 &      332 &       342.0 &  17.0 & -16.0 &  295.0 &                         GPDB1986, Kamysheva (1971) &    53.142 &    16.0 &   115.0 \\
+8  &       401 &       348 &      340 &       344.0 &   5.8 & -25.2 &  320.0 &                    GPDB3041, Zhitkov et al. (1994) &    51.715 &    25.2 &   140.0 \\
+9  &       401 &       377 &      350 &       360.0 &   8.9 & -11.1 &  329.7 &  GPDB3486, Kravchinsky et al. (2002) from Cocks... &    34.892 &    11.1 &   149.7 \\
+10 &       401 &       377 &      350 &       363.5 &  10.1 & -27.8 &  339.9 &                GPDB3486, Kravchinsky et al. (2002) &    42.021 &    27.8 &   159.9 \\
+11 &       401 &       377 &      350 &       363.5 &  11.9 & -22.8 &  339.4 &                GPDB3486, Kravchinsky et al. (2002) &    38.641 &    22.8 &   159.4 \\
+12 &       401 &       391 &      363 &       377.0 &   5.0 & -13.0 &  302.0 &                         GPDB1997, Kamysheva (1975) &    48.523 &    13.0 &   122.0 \\
+13 &       410 &       430 &      397 &       413.5 &   3.2 &   8.2 &  292.0 &                             Powerman et al. (2013) &    29.655 &    -8.2 &   112.0 \\
+14 &       401 &       443 &      423 &       433.0 &   4.6 &  19.0 &  308.0 &  Shatsillo et al. (2007) from Cocks and Torsvik... &    16.126 &   -19.0 &   128.0 \\
+15 &       410 &       444 &      423 &       433.5 &   4.4 &  18.4 &  302.7 &                             Powerman et al. (2013) &    17.919 &   -18.4 &   122.7 \\
+16 &       401 &       454 &      424 &       439.0 &   8.0 &  14.0 &  304.0 &  Smethurst et al. (1998) from Cocks and Torsvik... &    21.927 &   -14.0 &   124.0 \\
+17 &       401 &       460 &      440 &       450.0 &  17.3 &  19.4 &  315.3 &  Smethurst et al. (1998) from Cocks and Torsvik... &    13.660 &   -19.4 &   135.3 \\
+18 &       410 &       461 &      443 &       452.0 &   5.1 &  27.5 &  332.0 &                             Powerman et al. (2013) &     0.109 &   -27.5 &   152.0 \\
+19 &       401 &       464 &      458 &       461.0 &   2.5 &  22.8 &  334.2 &  GPDB3473, Iosifidi et al. (1999) from Cocks an... &     3.312 &   -22.8 &   154.2 \\
+20 &       401 &       464 &      458 &       461.0 &   5.1 &  22.1 &  324.9 &  GPDB3473, Iosifidi et al. (1999) from Cocks an... &     7.787 &   -22.1 &   144.9 \\
+21 &       401 &       473 &      453 &       463.0 &   4.0 &  23.0 &  338.0 &  Smethurst et al. (1998) from Cocks and Torsvik... &     1.413 &   -23.0 &   158.0 \\
+22 &       401 &       470 &      464 &       467.0 &   3.2 &  30.9 &  332.7 &  GPDB3448 Gallet and Pavlov (1998) from Cocks a... &    -3.183 &   -30.9 &   152.7 \\
+23 &       401 &       478 &      458 &       468.0 &   3.1 &  24.4 &  346.0 &  Smethurst et al. (1998) from Cocks and Torsvik... &    -3.645 &   -24.4 &   166.0 \\
+24 &       401 &       479 &      459 &       469.0 &   4.0 &  30.0 &  337.0 &  Smethurst et al. (1998) from Cocks and Torsvik... &    -4.193 &   -30.0 &   157.0 \\
+25 &       401 &       480 &      460 &       470.0 &   9.0 &  17.9 &  342.8 &  Smethurst et al. (1998) from Cocks and Torsvik... &     3.434 &   -17.9 &   162.8 \\
+26 &       401 &       488 &      468 &       478.0 &   2.2 &  33.9 &  331.7 &  Smethurst et al. (1998) from Cocks and Torsvik... &    -5.441 &   -33.9 &   151.7 \\
+27 &       401 &       495 &      470 &       482.5 &   5.8 &  36.2 &  338.8 &  GPDB3474, Surkis et al. (1999) from Cocks and ... &   -10.298 &   -36.2 &   158.8 \\
+28 &       401 &       493 &      473 &       483.0 &   9.0 &  40.0 &  318.0 &  Smethurst et al. (1998) from Cocks and Torsvik... &    -6.498 &   -40.0 &   138.0 \\
+29 &       401 &       495 &      485 &       490.0 &   4.9 &  35.2 &  307.2 &  GPDB3448, Gallet and Pavlov (1998) from Cocks ... &     0.651 &   -35.2 &   127.2 \\
+30 &       401 &       495 &      485 &       490.0 &   2.3 &  41.9 &  315.8 &  GPDB3192, Pavlov and Gallet (1998) from Cocks ... &    -7.711 &   -41.9 &   135.8 \\
+31 &       401 &       510 &      490 &       500.0 &   6.0 &  37.0 &  318.0 &  Smethurst et al. (1998) from Cocks and Torsvik... &    -3.690 &   -37.0 &   138.0 \\
+32 &       401 &       505 &      495 &       500.0 &   3.0 &  36.1 &  310.7 &  GPDB3192, Pavlov and Gallet (1998) from Cocks ... &    -0.974 &   -36.1 &   130.7 \\
+33 &       401 &       518 &      495 &       506.5 &   4.5 &  32.6 &  333.8 &  GPDB3472, Rodionov et al. (1998) from Cocks an... &    -5.123 &   -32.6 &   153.8 \\
+34 &       401 &       514 &      500 &       507.0 &   2.6 &  43.7 &  320.5 &  GPDB3537, Gallet et al. (2003) from Cocks and ... &   -10.622 &   -43.7 &   140.5 \\
+35 &       401 &       518 &      505 &       511.5 &   4.6 &  36.4 &  319.6 &  GPDB3164, Pisarevsky et al. (1997) from Cocks ... &    -3.591 &   -36.4 &   139.6 \\
+36 &       401 &       520 &      510 &       515.0 &   5.1 &  53.3 &  315.0 &  GPDB3537, Gallet et al. (2003) from Cocks and ... &   -18.264 &   -53.3 &   135.0 \\
+37 &       401 &       535 &      518 &       526.5 &   6.8 &  44.8 &  338.7 &  GPDB3164, Pisarevsky et al. (1997) from Cocks ... &   -17.577 &   -44.8 &   158.7 \\
+38 &       401 &       538 &      518 &       528.0 &   7.0 &  32.0 &  317.0 &  Smethurst et al. (1998) from Cocks and Torsvik... &     1.285 &   -32.0 &   137.0 \\
+39 &       401 &       545 &      525 &       535.0 &   6.2 &  16.6 &  244.5 &  GPDB1627, Kirschvink and Rozanov (1984) from C... &    13.732 &   -16.6 &    64.5 \\
+40 &       401 &       545 &      535 &       540.0 &  12.8 &  37.6 &  345.0 &  GPDB3164, Pisarevsky et al. (1997) from Cocks ... &   -14.154 &   -37.6 &   165.0 \\
+\bottomrule
+\end{tabular}}
+\end{sidewaystable}
+    
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_209_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subsubsection{North China}\label{north-china}
+
+    We first load the paleomagnetic data for North China compiled in Cocks
+and Torsvik (2013).
+
+
+    We also add some additional poles from North China that were not
+included in Cocks and Torsvik (2013) including a compilation of data
+from Huang et al. (1999) and additional poles from Embleton et al.
+(1996), Huang et al. (2001), and Doh and Piper (1994).
+
+\texttt{\color{outcolor}Out[{\color{outcolor}109}]:}
+    
+    {\tiny\begin{tabular}{lrrrrrrlr}
+\toprule
+{} &  high\_age &  low\_age &  median\_age &   A95 &  PLat &   PLon &                        References &  Paleolat \\
+\midrule
+0  &        88 &       68 &        78.0 &   5.8 &  79.7 &  170.8 &     see Van der Voo et al. (2015) &    46.149 \\
+1  &        98 &       78 &        88.0 &   5.3 &  81.1 &  294.5 &     see Van der Voo et al. (2015) &    33.136 \\
+2  &       110 &       90 &       100.0 &   4.7 &  70.6 &  156.7 &     see Van der Voo et al. (2015) &    52.870 \\
+3  &       123 &      103 &       113.0 &   5.2 &  76.8 &  192.1 &     see Van der Voo et al. (2015) &    42.209 \\
+4  &       126 &      106 &       116.0 &   4.6 &  83.6 &  172.3 &     see Van der Voo et al. (2015) &    44.602 \\
+5  &       128 &      108 &       118.0 &   5.9 &  75.2 &  147.7 &     see Van der Voo et al. (2015) &    52.663 \\
+6  &       128 &      108 &       118.0 &  12.2 &  69.0 &  200.7 &     see Van der Voo et al. (2015) &    38.082 \\
+7  &       131 &      111 &       121.0 &   3.0 &  84.8 &   30.2 &     see Van der Voo et al. (2015) &    42.801 \\
+8  &       131 &      111 &       121.0 &   6.5 &  82.7 &  159.6 &     see Van der Voo et al. (2015) &    46.356 \\
+9  &       138 &      118 &       128.0 &   6.8 &  73.9 &  153.3 &     see Van der Voo et al. (2015) &    52.221 \\
+10 &       165 &      145 &       155.0 &   6.8 &  59.9 &  240.3 &     see Van der Voo et al. (2015) &    19.446 \\
+11 &       165 &      145 &       155.0 &   7.9 &  72.8 &  180.3 &     see Van der Voo et al. (2015) &    45.207 \\
+12 &       165 &      145 &       155.0 &   5.9 &  74.9 &  175.4 &     see Van der Voo et al. (2015) &    46.347 \\
+13 &       165 &      145 &       155.0 &   6.9 &  78.0 &  166.8 &     see Van der Voo et al. (2015) &    47.463 \\
+14 &       165 &      145 &       155.0 &   5.7 &  70.7 &  162.2 &     see Van der Voo et al. (2015) &    51.138 \\
+15 &       170 &      150 &       160.0 &   6.6 &  68.7 &  159.1 &     see Van der Voo et al. (2015) &    52.805 \\
+16 &       179 &      159 &       169.0 &   8.3 &  71.8 &  148.2 &     see Van der Voo et al. (2015) &    54.640 \\
+17 &       179 &      159 &       169.0 &   6.4 &  78.9 &  218.6 &     see Van der Voo et al. (2015) &    37.490 \\
+18 &       179 &      159 &       169.0 &   4.5 &  78.1 &  175.2 &     see Van der Voo et al. (2015) &    45.774 \\
+19 &       198 &      178 &       188.0 &   6.8 &  84.0 &  112.9 &     see Van der Voo et al. (2015) &    47.985 \\
+20 &       198 &      178 &       188.0 &   5.5 &  84.4 &   98.6 &     see Van der Voo et al. (2015) &    47.499 \\
+21 &       235 &      208 &       221.5 &   5.8 &  70.9 &   49.8 &     see Van der Voo et al. (2015) &    49.184 \\
+22 &       235 &      208 &       221.5 &   3.8 &  65.6 &   36.1 &     see Van der Voo et al. (2015) &    44.398 \\
+23 &       241 &      235 &       238.0 &   4.0 &  64.7 &   22.1 &     see Van der Voo et al. (2015) &    38.471 \\
+24 &       241 &      235 &       238.0 &   3.1 &  52.8 &   36.6 &     see Van der Voo et al. (2015) &    41.977 \\
+25 &       241 &      235 &       238.0 &   3.9 &  52.2 &   46.9 &     see Van der Voo et al. (2015) &    47.889 \\
+26 &       245 &      241 &       243.0 &   6.6 &  55.1 &  359.9 &     see Van der Voo et al. (2015) &    24.183 \\
+27 &       251 &      245 &       248.0 &   3.8 &  67.7 &    7.5 &     see Van der Voo et al. (2015) &    34.254 \\
+28 &       251 &      245 &       248.0 &   4.8 &  55.7 &   19.8 &     see Van der Voo et al. (2015) &    33.960 \\
+29 &       261 &      251 &       256.0 &  18.9 &  64.7 &   27.4 &     see Van der Voo et al. (2015) &    40.643 \\
+30 &       261 &      251 &       256.0 &   6.9 &  48.8 &    5.6 &     see Van der Voo et al. (2015) &    22.956 \\
+31 &       261 &      251 &       256.0 &   4.0 &  52.9 &    7.4 &     see Van der Voo et al. (2015) &    26.331 \\
+32 &       261 &      251 &       256.0 &   6.9 &  42.0 &    9.5 &     see Van der Voo et al. (2015) &    20.891 \\
+33 &       270 &      256 &       263.0 &  12.2 &  20.9 &    1.4 &  GPDB3086, Embleton et al. (1996) &     1.649 \\
+34 &       303 &      295 &       299.0 &  16.7 &  33.3 &   10.2 &     GPDB3468, Huang et al. (2001) &    15.804 \\
+35 &       320 &      307 &       313.5 &   7.2 &  44.6 &  335.7 &    GPDB2734, Doh and Piper (1994) &     6.139 \\
+36 &       350 &      321 &       335.5 &   6.2 &  10.5 &   14.0 &     GPDB3468, Huang et al. (2001) &     3.340 \\
+37 &       416 &      360 &       388.0 &   8.8 &  34.2 &  228.7 &           see Huang et al. (1999) &     4.105 \\
+38 &       444 &      416 &       430.0 &   8.2 &  26.2 &  228.4 &           see Huang et al. (1999) &    -1.828 \\
+39 &       488 &      444 &       466.0 &  12.3 &  28.8 &  310.9 &           see Huang et al. (1999) &   -16.372 \\
+40 &       472 &      461 &       466.5 &   7.0 &  31.5 &  327.7 &               Huang et al. (1999) &    -8.331 \\
+41 &       472 &      461 &       466.5 &  10.6 &  43.2 &  332.5 &           see Huang et al. (1999) &     3.732 \\
+42 &       472 &      461 &       466.5 &   9.2 &  27.9 &  310.4 &           see Huang et al. (1999) &   -17.360 \\
+43 &       488 &      472 &       480.0 &   8.5 &  37.4 &  324.3 &               Huang et al. (1999) &    -4.325 \\
+44 &       501 &      488 &       494.5 &   5.4 &  31.7 &  329.6 &               Huang et al. (1999) &    -7.381 \\
+45 &       513 &      501 &       507.0 &   5.5 &  37.0 &  326.7 &               Huang et al. (1999) &    -3.836 \\
+46 &       542 &      513 &       527.5 &   6.5 &  18.5 &  341.9 &               Huang et al. (1999) &   -12.286 \\
+47 &       542 &      513 &       527.5 &  12.4 &  21.2 &  335.2 &           see Huang et al. (1999) &   -13.744 \\
+48 &       542 &      513 &       527.5 &   9.9 &  15.0 &  298.6 &           see Huang et al. (1999) &   -32.316 \\
+49 &       542 &      513 &       527.5 &   8.9 &  26.8 &  334.5 &           see Huang et al. (1999) &    -9.395 \\
+\bottomrule
+\end{tabular}}
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_215_1.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subsubsection{Mongolia pole
+compilation}\label{mongolia-pole-compilation}
+
+    Edel et al. (2014) published paleomagnetic data from 12 sites in the
+Trans-Altai and South Gobi zones. This work identified magnetic
+overprint directions for which a variety of arguments are made as to
+their temporal relationship. The progression of directions as
+interpretted by the authors leads to an appreciable change in magnetic
+declination from overprints intrepretted to be Middle--Late
+Carboniferous in age to magnetizations that are interpreted to be
+Permian in age. The authors propose that this declination change is the
+result of vertical axis rotation associated with oroclinal bending of a
+Mongolian ribbon continent (an illustraion of this model shown below
+form that paper).
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_218_0.png}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    We import paleomagnetic data that have been compiled for Mongolia and
+some of the surrounding terranes between Siberia and North China and
+assigned them to established terranes pertinent to this study.
+
+\texttt{\color{outcolor}Out[{\color{outcolor}112}]:}
+    
+    {\tiny\begin{tabular}{llrrrrrrlr}
+\toprule
+{} &            terrane &  high\_age &  low\_age &  median\_age &   A95 &  PLat &   PLon &                               Reference &  Paleolat \\
+\midrule
+0  &    Zavkhan\_Baidrag &       105 &       92 &        98.5 &   3.9 &  81.1 &  165.7 &            van Hinsbergen et al. (2008) &    49.393 \\
+1  &    Zavkhan\_Baidrag &       146 &       65 &       105.5 &  21.4 &  86.9 &  252.8 &                 GPDB2443, Pruner (1992) &    44.225 \\
+2  &    Zavkhan\_Baidrag &       124 &       92 &       108.0 &   2.5 &  80.8 &  158.4 &            van Hinsbergen et al. (2008) &    50.579 \\
+3  &    Zavkhan\_Baidrag &       119 &      115 &       117.0 &   4.9 &  75.6 &  132.3 &            van Hinsbergen et al. (2008) &    57.658 \\
+4  &     greater\_Amuria &       130 &      110 &       120.0 &   5.2 &  70.8 &  322.4 &                     Cogne et al. (2005) &    32.628 \\
+5  &     greater\_Amuria &       145 &       97 &       121.0 &   4.2 &  58.3 &   51.0 &                     Halim et al. (1998) &    61.511 \\
+6  &    Zavkhan\_Baidrag &       125 &      118 &       121.5 &   4.3 &  82.0 &  172.3 &            van Hinsbergen et al. (2008) &    48.319 \\
+7  &     greater\_Amuria &       133 &      125 &       129.0 &   7.4 &  86.8 &   61.8 &                     Cogne et al. (2005) &    49.735 \\
+8  &     greater\_Amuria &       161 &      145 &       153.0 &   3.1 &  58.9 &  327.3 &                     Cogne et al. (2005) &    24.229 \\
+9  &     greater\_Amuria &       176 &      145 &       160.5 &   4.2 &  59.6 &  279.0 &               Kravchinsky et al. (2002) &    16.741 \\
+10 &     greater\_Amuria &       245 &      208 &       226.5 &  16.8 &  32.0 &   32.7 &                 GPDB2443, Pruner (1992) &    40.779 \\
+11 &  southern\_terranes &       260 &      228 &       244.0 &   8.0 &  50.0 &  201.0 &                      Edel et al. (2014) &    26.317 \\
+12 &    Zavkhan\_Baidrag &       260 &      240 &       250.0 &  11.0 &  55.0 &  131.3 &                        Kovalenko (2010) &    66.385 \\
+13 &     greater\_Amuria &       271 &      260 &       265.5 &  14.4 &  63.1 &  151.0 &               Kravchinsky et al. (2002) &    55.811 \\
+14 &     greater\_Amuria &       290 &      256 &       273.0 &  11.6 &  44.8 &  335.1 &                 GPDB2443, Pruner (1992) &    15.820 \\
+15 &  southern\_terranes &       310 &      245 &       277.5 &   8.0 &  46.0 &  273.0 &                      Edel et al. (2014) &     3.123 \\
+16 &  southern\_terranes &       300 &      280 &       290.0 &   7.8 &  71.0 &  188.0 &                        Kovalenko (2010) &    43.039 \\
+17 &    Zavkhan\_Baidrag &       323 &      290 &       306.5 &  10.4 &  37.5 &  320.1 &                 GPDB2443, Pruner (1992) &     3.567 \\
+18 &  southern\_terranes &       363 &      323 &       343.0 &  13.0 &  -1.0 &  354.1 &  GPDB3045, Pechersky and Didenko (1995) &    -8.390 \\
+19 &  southern\_terranes &       391 &      363 &       377.0 &   3.4 &  39.9 &  244.3 &  GPDB3045, Pechersky and Didenko (1995) &     1.297 \\
+20 &  southern\_terranes &       391 &      363 &       377.0 &   4.6 &  51.7 &  282.7 &  GPDB3045, Pechersky and Didenko (1995) &     8.999 \\
+21 &  southern\_terranes &       391 &      363 &       377.0 &   3.5 &  38.0 &  244.0 &         GPDB2594, Grishin et al. (1991) &    -0.399 \\
+22 &  southern\_terranes &       391 &      363 &       377.0 &   5.1 &  52.0 &  280.0 &         GPDB2594, Grishin et al. (1991) &     9.179 \\
+23 &  southern\_terranes &       363 &      245 &       304.0 &  11.9 &  50.0 &  354.0 &         GPDB2594, Grishin et al. (1991) &    28.348 \\
+24 &  southern\_terranes &       340 &      299 &       319.5 &  13.0 &   5.0 &  341.0 &                      Edel et al. (2014) &   -12.479 \\
+25 &    Zavkhan\_Baidrag &       440 &      200 &       320.0 &   5.6 &  40.8 &  269.4 &                              This study &    -1.939 \\
+26 &  southern\_terranes &       360 &      320 &       340.0 &   4.9 &  10.0 &  330.0 &                        Kovalenko (2010) &   -15.126 \\
+27 &          Lake\_Zone &       423 &      397 &       410.0 &   5.8 & -13.3 &   63.7 &                 Bachtadse et al. (2000) &    23.280 \\
+28 &          Lake\_Zone &       428 &      397 &       412.5 &   6.1 &  26.3 &  144.0 &                 Bachtadse et al. (2000) &    46.717 \\
+29 &          Lake\_Zone &       428 &      416 &       422.0 &   3.6 & -17.5 &  100.1 &                 Bachtadse et al. (2000) &    25.260 \\
+30 &    Zavkhan\_Baidrag &       450 &      410 &       430.0 &  12.3 &   7.0 &  106.7 &                      Kravchinsky (2010) &    48.745 \\
+31 &    Zavkhan\_Baidrag &       449 &      443 &       446.0 &   5.2 &  36.5 &  196.0 &                              This study &    19.566 \\
+32 &    Zavkhan\_Baidrag &       542 &      360 &       451.0 &   4.6 &   3.5 &  114.9 &                     Evans et al. (1996) &    43.245 \\
+33 &    Zavkhan\_Baidrag &       545 &      518 &       531.5 &  13.5 &  21.4 &  347.1 &                      Kravchinsky (2001) &     3.927 \\
+34 &    Zavkhan\_Baidrag &       545 &      518 &       531.5 &  10.1 &  14.7 &  228.6 &  GPDB3045, Pechersky and Didenko (1995) &   -15.368 \\
+35 &    Zavkhan\_Baidrag &       545 &      518 &       531.5 &   4.4 &  24.1 &  283.3 &  GPDB3045, Pechersky and Didenko (1995) &   -18.442 \\
+36 &    Zavkhan\_Baidrag &       650 &      518 &       584.0 &   4.7 &  17.6 &  309.7 &  GPDB3045, Pechersky and Didenko (1995) &   -18.324 \\
+37 &    Zavkhan\_Baidrag &       650 &      518 &       584.0 &   5.4 &  22.6 &  285.6 &  GPDB3045, Pechersky and Didenko (1995) &   -19.692 \\
+\bottomrule
+\end{tabular}}
+
+    
+
+
+    Calculate paleolatitudes for the Mongolia poles, considering that many
+may have experienced horizonatal-axis rotations during the formation of
+the COAB and possibly earlier.
+
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_224_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \subsection{Paleolatitude diagram}\label{paleolatitude-diagram}
+
+    We plot the data from Siberia, North China, and Mongolia (from Zavkhan,
+Baidrag, Lake Zone, and other southern terranes) on a paleolatitude
+versus time plot. The paleolatitudes given for each block are for
+specific reference points on each terrane. For Mongolia, the site of the
+Teel Formation is used (95.38 ºN, 47.1 ºE). For Siberia, coordinates at
+the southern tip of the craton (51.7 ºN, 103.5 ºE) are given seeing as
+this would be the proposed conjugate margin for Mongolia. For North
+China, a reference point on the northern margin (42 ºN, 109 ºE) is given
+to represent the alternative conjugate margin that would have shared
+similar paleolatitudes with Mongolia if they were attached.
+
+    There are a handful of Mongolian poles that we exclude because of wide
+age uncertainties or lack of statistical robustness. The Bachtadse et
+al. (2000) component B pole is excluded because of the small number or
+samples used to calculate the mean direction (25 samples; unblocking
+temperatures of 270--420 ºC); it is very similar to two Levashova (2010)
+directions which may be overprints (see below). The Evans et al. (1996)
+Bayan-Gol pole was superseded by results from Kravchinsky (2001) and may
+be a pre-folding overprint, given the increase in precision after tilt
+correction. The Kravchinsky et al. (2010) pole, that they call a
+remagnetization, has a very uncertain age and is not tilt-corrected,
+therefore we see it as unreliable for a paleolatitude estimate. The
+Kovalenko (2010) pole from the granite at Hanbogd is excluded because it
+is only from one site and is in the Trans-Altai zone, which is severely
+affected by early Triassic deformation along the Gobi-Tienshan fault
+(Lehmann et al., 2010). The ``Mongolian sediments and volcanics,
+Gurvan-Sayhan Range, post-folding'' pole from Grishin et al. (1991)
+(also discussed in Pechersky and Didenko (1995)) is not included because
+it is likely underaveraged (only from one site) and because of its large
+age uncertainty; it is also a post-folding remanence.
+
+
+    
+    \begin{verbatim}
+<matplotlib.figure.Figure at 0x11bb2bcd0>
+    \end{verbatim}
+
+    
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_228_1.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    \section{Regional overprints in Precambrian
+rocks}\label{regional-overprints-in-precambrian-rocks}
+
+    In order to understand the regional paleomagnetic directions,
+specifically possible overprints, we compare results from the Zavkhan
+block to see if there are dominant overprints that affected all rocks.
+These results are from Levashova et al. (2010), Kravchinsky et al.
+(2001), Evans et al. (1996), this study, and preliminary data from the
+Zavkhan volcanics.
+
+\texttt{\color{outcolor}Out[{\color{outcolor}117}]:}
+    
+    {\tiny\begin{tabular}{llrrrrrrrrrl}
+\toprule
+{} &            ID &    N &  k\_geo &  Dec\_geo &  Inc\_geo &  a95\_geo &   k\_tc &  Dec\_tc &  Inc\_tc &  a95\_tc &                    comments \\
+\midrule
+0  &     Lev10-INT &   18 &   19.0 &    272.8 &    -66.2 &      8.2 &    3.0 &   158.7 &   -42.8 &    24.7 &                         NaN \\
+1  &      Lev10-HT &   11 &    3.0 &    311.7 &    -11.0 &     30.1 &   19.0 &   321.9 &   -65.0 &    10.7 &                         NaN \\
+2  &     Lev11-INT &   27 &   14.0 &    207.9 &    -30.6 &      7.8 &    6.0 &   210.4 &    -4.0 &    12.4 &                         NaN \\
+3  &      Lev11-HT &   18 &   10.0 &    194.2 &     29.2 &     11.5 &   41.0 &   179.6 &    53.7 &     5.4 &                         NaN \\
+4  &    Krav01-LOW &   10 &   59.7 &      4.1 &     70.9 &      6.3 &   96.8 &   181.2 &    85.6 &     4.9 &  data from both B-G and T-O \\
+5  &    Krav01-INT &    9 &   31.3 &    209.2 &    -66.0 &      9.3 &  117.6 &   284.3 &   -79.7 &     4.8 &  data from both B-G and T-O \\
+6  &     Krav01-HT &    6 &   14.9 &    118.5 &      5.3 &     17.9 &   13.3 &   118.3 &    -6.3 &    19.0 &               data from B-G \\
+7  &      Teel\_mag &   23 &   29.1 &    186.6 &    -64.9 &      5.7 &   38.5 &   236.6 &   -35.0 &     4.9 &                         NaN \\
+8  &      Teel\_hem &   18 &   14.9 &    184.6 &      3.8 &      9.3 &   14.2 &   182.9 &     6.1 &     9.5 &                         NaN \\
+9  &      Evans\_HT &  193 &    NaN &      NaN &      NaN &      NaN &    5.8 &   331.9 &   -62.6 &     4.6 &                         NaN \\
+10 &   Z09\_cgl\_INT &   20 &   32.3 &    200.7 &    -62.2 &      5.8 &   32.3 &   212.3 &    -5.8 &     5.8 &                         NaN \\
+11 &  Z104\_cgl\_INT &   31 &  165.4 &    174.8 &    -61.7 &      2.0 &  165.2 &    61.9 &   -71.4 &     2.0 &                         NaN \\
+\bottomrule
+\end{tabular}}
+
+    
+
+    All directions are first plotted in geographic coordinates.
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_233_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Then the overprint data are plotted in tilt-corrected coordinates.
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_235_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    Given geological and statistical paleomagnetic context (improvement
+during tilt correction) we create a plot of what we consider to be the
+overprint directions if they were acquired either before or after
+folding.
+
+
+    \begin{center}
+    \adjustimage{max size={0.9\linewidth}{0.9\paperheight}}{Teel_Formation_pmag_files/Teel_Formation_pmag_237_0.pdf}
+    \end{center}
+    { \hspace*{\fill} \\}
+    
+    As stated in the main text, the Kravchinsky et al. (2001) intermediate
+component from late Neoproterozoic to early Cambrian in geographic
+coordinates is similar to the Teel magnetite component in geographic
+coordinates. It is possible that the Ordovician magmatism recorded in
+the Teel Formation basalts caused this overprint in older lithologies.
+
+    \section{Data Repository References}\label{data-repository-references}
+
+    Bachtadse, V., Pavlov, V. E., Kazansky, A. Y., and Tait, J. A., 2000,
+Siluro-Devonian paleomagnetic results from the Tuva Terrane (southern
+Siberia, Russia): implications for the paleogeography of Siberia:
+Journal of Geophysical Research: Solid Earth, vol.~105,
+pp.~13,509-13,518, doi:10.1029/1999JB900429.
+
+Cogne, J.-P., Kravchinsky, V. A., Halim, N., and Hankard, F., 2005, Late
+Jurassic-Early Cretaceous closure of the Mongol-Okhotsk Ocean
+demonstrated by new Mesozoic palaeomagnetic results from the
+Trans-Baikal area (SE Siberia): Geophysical Journal International,
+vol.~163, pp.~813-832, doi:10.1111/j.1365-246X.2005.02782.x.
+
+Edel, J. B., Schulmann, K., Hanzl, P., and Lexa, O., 2014,
+Palaeomagnetic and structural constraints on 90º anticlockwise rotation
+in SW Mongolia during the Permo-Triassic: Implications for Altaid
+oroclinal bending. Preliminary palaeomagnetic results: Journal of Asian
+Earth Sciences, vol.~94, pp.~157-171, doi:10.1016/j.jseaes.2014.07.039.
+
+Evans, D. A., Zhuravlev, A. Y., Budney, C. J., and Kirschvink, J. L.,
+1996, Palaeomagnetism of the Bayan Gol Formation, western Mongolia:
+Geological Magazine, vol.~133, pp.~487-496.
+
+Grishin, D., Didenko, A., Pechersky, D., and T.L., T., 1991,
+{[}Paleomagnetic study and petromagnetic study of structure and
+evolution of paleooceanic lithosphere (Phanerozoic ophiolites of
+Asia){]} (in Russian), VNIGRI, Leningrad, Russia, pp.~135-149.
+
+Halim, N., Kravchinsky, V., Gilder, S., Cogne, J.-P., Alexyutin, M.,
+Sorokin, A., Courtillot, V., and Chen, Y., 1998, A palaeomagnetic study
+from the Mongol-Okhotsk region: rotated Early Cretaceous volcanics and
+remagnetized Mesozoic sediments: Earth and Planetary Science Letters,
+vol.~159, pp.~133-145, doi:10.1016/S0012-821X(98)00072-7.
+
+Kovalenko, D., 2010, Paleomagnetism of Late Paleozoic, Mesozoic, and
+Cenozoic rocks in Mongolia: Russian Geology and Geophysics, vol.~51,
+pp.~387-403, doi:10.1016/j.rgg.2010.03.006.
+
+Kravchinsky, V., Konstantinov, K., and Conge, J., 2001, Palaeomagnetic
+study of Vendian and Early Cambrian rocks of South Siberia and Central
+Mongolia: Was the Siberian platform assembled at this time?: Precambrian
+Research, vol.~110, pp.~61-92.
+
+Kravchinsky, V. A., Cogne, J.-P., Harbert, W. P., and Kuzmin, M. I.,
+2002, Evolution of the Mongol-Okhotsk Ocean as constrained by new
+palaeomagnetic data from the Mongol-Okhotsk suture zone, Siberia:
+Geophysical Journal International, vol.~148, pp.~34-57.
+
+Kravchinsky, V. A., Sklyarov, E. V., Gladkochub, D. P., and Harbert, W.
+P., 2010, Paleomagnetism of the Precambrian Eastern Sayan rocks:
+Implications for the Ediacaran-Early Cambrian paleogeography of the
+Tuva-Mongolian composite terrane: Tectonophysics, vol.~486, pp.~65-80,
+doi:10.1016/j.tecto.2010.02.010.
+
+Pechersky, D. and Didenko, A., 1995, Paleo-Asian Ocean (in Russian):
+United Institute of Earth's Physics Publ., Moscow, 298 pp.
+
+Pruner, P., 1992, Palaeomagnetism and palaeogeography of Mongolia from
+the Carboniferous to the Cretaceous - final report: Physics of the Earth
+and Planetary Interiors, vol.~70, pp.~169-177,
+doi:10.1016/0031-9201(92)90179-Y.
+
+Van Hinsbergen, D. J. J., Straathof, G. B., Kuiper, K. F., Cunningham,
+W. D., and Wijbrans, J., 2008, No vertical axis rotations during Neogene
+transpressional orogeny in the NE Gobi Altai: coinciding Mongolian and
+Eurasian early Cretaceous apparent polar wander paths: Geophysical
+Journal International, vol.~173, pp.~105-126,
+doi:10.1111/j.1365-246X.2007.03712.x.
+
+
+
+
+    % Add a bibliography block to the postdoc
+    
+    
+    
+    \end{document}

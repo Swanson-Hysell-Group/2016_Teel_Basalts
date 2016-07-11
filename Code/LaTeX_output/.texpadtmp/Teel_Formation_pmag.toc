@@ -1,0 +1,57 @@
+\contentsline {section}{\numberline {1}Paleomagnetism of the Teel Formation}{1}{section.1}
+\contentsline {section}{\numberline {2}Teel Volcanics Data Analysis}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}Import Modules}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Sampling localities}{2}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Site level data}{4}{subsection.2.3}
+\contentsline {paragraph}{Z30}{4}{section*.3}
+\contentsline {paragraph}{Z31}{5}{section*.4}
+\contentsline {paragraph}{Z32}{6}{section*.5}
+\contentsline {paragraph}{Z33}{7}{section*.6}
+\contentsline {paragraph}{Z34}{8}{section*.7}
+\contentsline {paragraph}{Z35}{9}{section*.8}
+\contentsline {paragraph}{Z36}{10}{section*.9}
+\contentsline {paragraph}{Z37}{11}{section*.10}
+\contentsline {paragraph}{Z38}{12}{section*.11}
+\contentsline {paragraph}{Z39}{13}{section*.12}
+\contentsline {paragraph}{Z40}{14}{section*.13}
+\contentsline {paragraph}{Z41}{15}{section*.14}
+\contentsline {paragraph}{Z42}{16}{section*.15}
+\contentsline {paragraph}{Z43}{17}{section*.16}
+\contentsline {paragraph}{Z44}{18}{section*.17}
+\contentsline {paragraph}{Z45}{19}{section*.18}
+\contentsline {paragraph}{Z46}{20}{section*.19}
+\contentsline {paragraph}{Z47}{21}{section*.20}
+\contentsline {paragraph}{Z48}{22}{section*.21}
+\contentsline {paragraph}{Z49}{23}{section*.22}
+\contentsline {paragraph}{Z50}{24}{section*.23}
+\contentsline {paragraph}{Z51}{25}{section*.24}
+\contentsline {paragraph}{Z52}{26}{section*.25}
+\contentsline {paragraph}{Z53}{27}{section*.26}
+\contentsline {paragraph}{Z54}{28}{section*.27}
+\contentsline {paragraph}{Z55}{29}{section*.28}
+\contentsline {paragraph}{Z56}{30}{section*.29}
+\contentsline {paragraph}{Z57}{31}{section*.30}
+\contentsline {paragraph}{Z58}{32}{section*.31}
+\contentsline {subsection}{\numberline {2.4}Paleomagnetic site data summary}{33}{subsection.2.4}
+\contentsline {paragraph}{Magnetite directions}{33}{section*.32}
+\contentsline {subparagraph}{Geographic coordinates - magnetite}{33}{section*.33}
+\contentsline {subparagraph}{Tilt-corrected coordinates - magnetite}{36}{section*.35}
+\contentsline {paragraph}{Hematite directions}{39}{section*.37}
+\contentsline {subparagraph}{Geographic coordinates - hematite}{39}{section*.38}
+\contentsline {subparagraph}{Tilt-corrected coordinates - hematite}{42}{section*.40}
+\contentsline {paragraph}{Mid-temperature directions}{45}{section*.42}
+\contentsline {subsection}{\numberline {2.5}Paleomagnetic Poles for the Teel Formation}{47}{subsection.2.5}
+\contentsline {paragraph}{Primary magnetite pole - including tilt test}{47}{section*.44}
+\contentsline {paragraph}{Secondary hematite pole - including tilt test}{52}{section*.45}
+\contentsline {subparagraph}{Common mean test (bootstrap method)}{58}{section*.46}
+\contentsline {paragraph}{Present local field overprint - negative fold test}{59}{section*.47}
+\contentsline {subparagraph}{Bootstrap fold test (Tauxe and Watson, 1994)}{59}{section*.50}
+\contentsline {paragraph}{Teel poles summary}{64}{section*.51}
+\contentsline {section}{\numberline {3}Pole compilation for Siberia, North China, and Mongolian terranes}{64}{section.3}
+\contentsline {subsection}{\numberline {3.1}Import existing paleomagnetic data}{64}{subsection.3.1}
+\contentsline {subsubsection}{\numberline {3.1.1}Siberia}{64}{subsubsection.3.1.1}
+\contentsline {subsubsection}{\numberline {3.1.2}North China}{68}{subsubsection.3.1.2}
+\contentsline {subsubsection}{\numberline {3.1.3}Mongolia pole compilation}{70}{subsubsection.3.1.3}
+\contentsline {subsection}{\numberline {3.2}Paleolatitude diagram}{72}{subsection.3.2}
+\contentsline {section}{\numberline {4}Regional overprints in Precambrian rocks}{73}{section.4}
+\contentsline {section}{\numberline {5}Data Repository References}{77}{section.5}
